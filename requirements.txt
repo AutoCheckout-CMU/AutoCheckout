@@ -1,0 +1,4 @@
+pymongo>=3.9.0,<4.0.0
+requests==2.22.0
+sh
+numpy==1.17.3
