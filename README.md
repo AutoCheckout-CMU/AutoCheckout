@@ -6,7 +6,8 @@ This repository will help you get started with examples on how to use the Public
 
 To start please download the data labelled as: "Simple Example" without depth (For your first example).
 
-During the competition you will need a competitor token that will distinguish your submission from all other competitors. However you do not need this token for your local testing environment.
+During the competition you will need a competitor token that will distinguish your submission from all other competitors. However you dos
+o not need this token for your local testing environment.
 
 ## Sample Data
 
@@ -18,6 +19,34 @@ Download Videos [Here](https://storage.googleapis.com/aifi-public-data/AiFi%20Na
 Download Data without Depth Images [Here](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-01/cps-test-01-nodepth.archive) (239MB)
 
 Download Data with Depth Images [Here](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-01/cps-test-01-all.archive) (2.0GB)
+
+### Multiple People Dataset
+| Test Case | Video | Data w/ Depth| Data w/o Depth |
+|---|---|---|---|---|
+| Simple Case | [Donwload](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-01/cps-test-videos.gz?authuser=1) |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-01/cps-test-01-all.archive?authuser=1) | [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-01/cps-test-01-nodepth.archive?authuser=1) | 
+| Test 2 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-02/cps-test-02-all.archive?authuser=1) | Coming Soon | 
+| Test 3 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-03/cps-test-03-all.archive?authuser=1) | Coming Soon | 
+| Test 4 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-04/cps-test-04-all.archive?authuser=1) | Coming Soon | 
+| Test 5 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-05/cps-test-05-all.archive?authuser=1) | Coming Soon | 
+| Test 6 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-06/cps-test-06-all.archive?authuser=1) | Coming Soon | 
+| Test 7 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-07/cps-test-07-all.archive?authuser=1) | Coming Soon | 
+| Test 8 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-08/cps-test-08-all.archive?authuser=1) | Coming Soon | 
+| Test 9 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-09/cps-test-09-all.archive?authuser=1) | Coming Soon | 
+| Test 10 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-10/cps-test-10-all.archive?authuser=1) | Coming Soon | 
+| Test 11 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-11/cps-test-11-all.archive?authuser=1) | Coming Soon | 
+| Test 12 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-12/cps-test-12-all.archive?authuser=1) | Coming Soon | 
+| Test 13 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-13/cps-test-13-all.archive?authuser=1) | Coming Soon | 
+| Test 14 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-14/cps-test-14-all.archive?authuser=1) | Coming Soon | 
+| Test 15 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-15/cps-test-15-all.archive?authuser=1) | Coming Soon | 
+| Test 16 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-16/cps-test-16-all.archive?authuser=1) | Coming Soon | 
+| Test 17 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-17/cps-test-17-all.archive?authuser=1) | Coming Soon | 
+| Test 18 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-18/cps-test-18-all.archive?authuser=1) | Coming Soon | 
+| Test 19 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-19/cps-test-19-all.archive?authuser=1) | Coming Soon | 
+| Test 20 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-20/cps-test-20-all.archive?authuser=1) | Coming Soon | 
+| Test 21 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-21/cps-test-21-all.archive?authuser=1) | Coming Soon | 
+| Test 22 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-22/cps-test-22-all.archive?authuser=1) | Coming Soon | 
+| Test 23 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-23/cps-test-23-all.archive?authuser=1) | Coming Soon | 
+| Test 24 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-24/cps-test-24-all.archive?authuser=1) | Coming Soon | 
 
 ## Getting Started
 
