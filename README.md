@@ -13,9 +13,6 @@ not need this token for your local testing environment.
 
 In order for the example to work properly download the data into `data/downloads`.
 
-### Camera Parameters
-Extrinsics and Intrinsics [Here](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/calibration/cps_week_test_cases_2-24_camera_calibration.json)
-
 ### Simple Example
 Download Videos [Here](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-01/cps-test-videos.gz) (17.1MB)
 
