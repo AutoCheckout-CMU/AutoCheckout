@@ -199,7 +199,6 @@ class DepthFrame(NamedTuple):
         """
         doc = recorded["document"]
         frames = doc["frame_message"]["frames"]
-        depth = np.empty()
         for frame in frames:
             _type = frame['frame_source']['camera_id']['camera_type']
             if _type == "DEPTH":
