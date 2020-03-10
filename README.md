@@ -49,6 +49,11 @@ Simple Case | [Donwload](https://storage.cloud.google.com/aifi-public-data/AiFi%
 | Test 23 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-23/cps-test-23-all.archive?authuser=1) | Coming Soon | [Download](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/calibration/cps_week_test_cases_2-24_camera_calibration.json)
 | Test 24 | Coming Soon |  [Download](https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-24/cps-test-24-all.archive?authuser=1) | Coming Soon | [Download](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/calibration/cps_week_test_cases_2-24_camera_calibration.json)
 
+### Product Images
+
+You can find high-quality images of the products in the store [here](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/training/products_18.zip). Feel free to use them to train product detection/classification models.  
+Note: For now, images from only 18 products are available, we'll update the readme as soon as other products become available.
+
 ## Getting Started
 
 ### Obtain a competitor token
@@ -96,3 +101,19 @@ Yes. See Docker's guide on leveraging GPU in docker containers.
 
 ### The docker compose never returns!
 You can send a SIGTERM to the program while it's in the foreground with ctrl-C or you can run the `docker-compose` command with the option `--abort-on-container-exit`
+
+### Sensor Data Questions
+####  What is the sample rate?
+The sensor data is sampled at 60Hz. Each message contains a batch of 12 samples.
+
+####  What is the noise level?
+The noise level varies highly from testcase to testcase and from shelf to shelf due to environmental factors such as nearby vibrations and electrical noise.
+
+#### What is the max weight?
+The sensors are rated for 20kg per plate.
+
+#### Do I need to account for sensor nonlinearity?
+No. The nonlinearity error is orders of magnitude below the baseline noise from the environment.
+
+#### Are the absolute weight values reliable?
+No. The absolute weight measured by the sensors is not zeroed and may drift over long periods of time (hours or days). Relatively changes, however, are reliable.
