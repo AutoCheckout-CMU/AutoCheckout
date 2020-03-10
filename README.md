@@ -99,7 +99,7 @@ You can send a SIGTERM to the program while it's in the foreground with ctrl-C o
 
 ### Sensor Data Questions
 ####  What is the sample rate?
-The sensordata is sampled at 60Hz. Each message contains a batch of 12 samples.
+The sensor data is sampled at 60Hz. Each message contains a batch of 12 samples.
 
 ####  What is the noise level?
 The noise level varies highly from testcase to testcase and from shelf to shelf due to environmental factors such as nearby vibrations and electrical noise.
