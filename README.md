@@ -6,12 +6,12 @@ This repository will help you get started with examples on how to use the Public
 
 To start please download the data labelled as: "Simple Example" without depth (For your first example).
 
-During the competition you will need a competitor token that will distinguish your submission from all other competitors. However you dos
-o not need this token for your local testing environment.
+During the competition you will need a competitor token that will distinguish your submission from all other competitors. However you do
+not need this token for your local testing environment.
 
 ## Sample Data
 
-In order for the example to work properly download the data into `data/donwloads`.
+In order for the example to work properly download the data into `data/downloads`.
 
 ### Simple Example
 Download Videos [Here](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-01/cps-test-videos.gz) (17.1MB)
@@ -52,7 +52,7 @@ Simple Case | [Donwload](https://storage.cloud.google.com/aifi-public-data/AiFi%
 ## Getting Started
 
 ### Obtain a competitor token
-After submitting your abstract describing your approach You will receive a competitor token.
+After submitting your abstract describing your approach you will receive a competitor token.
 Do not share your token with anyone outside your team. It will be used to uniquely identify you, access test cases, and to submit your results.
 Set it to an env variable for later use.
 ```
@@ -68,8 +68,8 @@ Before you begin, you will need to setup a few dependencies:
 This repo provides everything you need to get started. Begin by cloning this repo.
 ```
 # Clone the repo
-git clone git@gitlab.com:aifi-ml/aifi-public/cpsweek.git
-cd cpsweek/
+git clone https://github.com/JoaoDiogoFalcao/AutoCheckout.git
+cd AutoCheckout/
 ```
 
 ### Test
