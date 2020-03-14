@@ -16,13 +16,13 @@ def parse_configs(args=None):
     parser.add_argument(
         "--command",
         type=str,
-        default=environ.get(f"{ENVIRON_BASE}COMMAND", "test"),
+        default=environ.get(f"{ENVIRON_BASE}COMMAND", "cps-test-01"),
         help="Either the ID of a specific test case or 'submit'",
     )
     parser.add_argument(
         "--sample",
         type=str,
-        default=environ.get(f"{ENVIRON_BASE}SAMPLE", "nodepth"),
+        default=environ.get(f"{ENVIRON_BASE}SAMPLE", "all"),
         help="A subsample of data: 'all', 'nodepth'",
     )
     # Addresses
@@ -31,7 +31,7 @@ def parse_configs(args=None):
         type=str,
         default=environ.get(
             f"{ENVIRON_BASE}DB_ADDRESS",
-            "mongodb://root:example@localhost:27017",
+            "mongodb://localhost:27017",
         ),
         help="The URI for a mongo dbms",
     )

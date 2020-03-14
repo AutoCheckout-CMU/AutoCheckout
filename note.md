@@ -23,7 +23,10 @@ mongo
 show dbs
 use cps-test-01
 db.plate_data.find().limit(1).pretty()
-brew services stop mongodb-community  
+brew services stop mongodb-community
+
+### python connector
+client = MongoClient('mongodb://localhost:27017')
 
 ## docker not working
 AIFI_CPSWEEK_COMP__COMMAND=cps-test-01 AIFI_CPSWEEK_COMP__SAMPLE=all docker-compose up --build
