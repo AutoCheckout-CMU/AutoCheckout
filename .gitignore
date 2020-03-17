@@ -3,3 +3,5 @@ data
 .DS_Store
 __pycache__
 settings.json
+*.mp4
+*.avi
