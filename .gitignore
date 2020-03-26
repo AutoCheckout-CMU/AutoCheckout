@@ -1,4 +1,5 @@
 .ipynb_checkpoints
 data
+*.pth
 .DS_Store
 __pycache__
