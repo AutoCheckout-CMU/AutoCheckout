@@ -5,3 +5,5 @@ __pycache__
 settings.json
 *.mp4
 *.avi
+env
+*.lock
