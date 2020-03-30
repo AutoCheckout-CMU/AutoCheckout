@@ -2,7 +2,7 @@ import numpy as np
 from cpsdriver.codec import DocObjectCodec
 
 
-class fullEventTrigger:
+class WeightTrigger:
 
     # full event trigger: to get all event triggers from the current database
     # results: a list of events including their information of:
