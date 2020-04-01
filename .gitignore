@@ -7,3 +7,5 @@ settings.json
 *.avi
 env
 *.lock
+*.jpg
+*.png
