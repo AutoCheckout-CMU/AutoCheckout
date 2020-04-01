@@ -1,3 +1,7 @@
+# general env
+git config --global user.name "Mengmeng ZHANG"
+git config --global user.email "qiuyu8290@gmail.com"
+
 # virtual env
 python3 -m venv env
 source env/bin/activate
