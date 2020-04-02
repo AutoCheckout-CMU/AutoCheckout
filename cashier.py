@@ -4,17 +4,15 @@ import base64
 from cpsdriver.codec import DocObjectCodec
 import datetime as dt
 from WeightTrigger import WeightTrigger
-from DataManager import DataManager
+from BookKeeper import BookKeeper
 import math_utils
 import math
 
-mongoClient = MongoClient('localhost:27017')
 
-db = mongoClient['cps-test-01']
 
-weightTrigger = WeightTrigger(db)
-dataManager = DataManager(db)
-# print(weightTrigger.plate_data)
+
+bookKeeper = BookKeeper()
+weightTrigger = WeightTrigger(bookKeeper.db)
 
 
 
@@ -39,7 +37,7 @@ def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
         p[i] = math_utils.areaUnderTwoGaussians(weight_mean[i], weight_std[i], abs(deltaW), weightScaleVar)
     return p
 
-planogram = dataManager.planogram
+planogram = bookKeeper.planogram
 
 receipts = []
 
@@ -73,7 +71,7 @@ for event in events:
     possibleProductIDs = planogram[gondolaIndex][shelfIndex]
     # print(possibleProductIDs)
 
-    productsDB = db['products']
+    productsDB = bookKeeper.DBs.productsDB
     products = {}
 
     arrangementProbabilityPerProduct = {}

@@ -1,17 +1,25 @@
 import numpy as np
+from pymongo import MongoClient
+from collections import namedtuple
 
-class DataManager:
+class BookKeeper:
 
-    def __init__(self, db):
-        self.db = db
+    def __init__(self):
+        mongoClient = MongoClient('localhost:27017')
+        self.db = mongoClient['cps-test-01']
+
+        DBs = namedtuple('DBs', 'planogramDB, productsDB, plateDB')
+        self.DBs = DBs(planogramDB=self.db['planogram'], productsDB=self.db['products'], plateDB=self.db['plate_data'])
+
         self.planogram = self.loadPlanogram()
+        self.products = self.loadProducts()
 
     def loadPlanogram(self):
         num_gondola = 5
         num_shelf = 6
         num_plate = 12
         planogram = np.empty((num_gondola, num_shelf, num_plate), dtype=object)
-        planogramDB = self.db['planogram']
+        planogramDB = self.DBs.planogramDB
 
 
         for item in planogramDB.find():
@@ -26,4 +34,5 @@ class DataManager:
 
         return planogram
 
-    
+    def loadProducts(self):
+        return None
