@@ -30,7 +30,7 @@ docker-compose run mongodb
 docker-compose stop mongodb
 AIFI_CPSWEEK_COMP__COMMAND=cps-test-01 docker-compose up --build
 
-# mongodb local
+# mongodb mac
 brew install  mongodb-community
 brew services start mongodb-community
 mongorestore --archive=/Users/mzhang/git-clones/AutoCheckout-CMU-F4/data/downloads/cps-test-01-all.archive
@@ -41,6 +41,15 @@ db.plate_data.find().limit(1).pretty()
 brew services stop mongodb-community
 
 client = MongoClient('mongodb://localhost:27017')
+
+# mongodb linux
+wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+sudo systemctl start mongod
+mongorestore --archive=/home/ubuntu/git-clones/AutoCheckout-CMU-F4/data/downloads/cps-test-01-all.archive
+mongo
 
 # monitor
 sudo iotop

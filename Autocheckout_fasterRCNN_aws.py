@@ -133,10 +133,10 @@ cfg.DATASETS.TRAIN = ("my_dataset",)
 cfg.DATASETS.TEST = ()
 cfg.DATALOADER.NUM_WORKERS = 0
 cfg.MODEL.WEIGHTS = "detectron2://COCO-Detection/faster_rcnn_R_50_FPN_3x/137849458/model_final_280758.pkl"  # Let training initialize from model zoo
-cfg.SOLVER.CHECKPOINT_PERIOD = 1000 # checkpoint every 10min
+cfg.SOLVER.CHECKPOINT_PERIOD = 2000 # checkpoint every 20min
 cfg.SOLVER.IMS_PER_BATCH = 2
 cfg.SOLVER.BASE_LR = 0.02  # pick a good LR
-cfg.SOLVER.MAX_ITER = 500    # 300 iterations seems good enough for this toy dataset; you may need to train longer for a practical dataset
+cfg.SOLVER.MAX_ITER = 60000    # 300 iterations seems good enough for this toy dataset; you may need to train longer for a practical dataset
 cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 512   # faster, and good enough for this toy dataset (default: 512)
 cfg.MODEL.ROI_HEADS.NUM_CLASSES = 18 
 
