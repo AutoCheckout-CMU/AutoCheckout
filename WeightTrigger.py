@@ -55,6 +55,7 @@ class WeightTrigger:
         timestamps = self.init_1D_array(number_gondolas)
         date_times = self.init_1D_array(number_gondolas)
         plate_data = self.db['plate_data']
+
         for item in plate_data.find():
             gondola_id = item['gondola_id']
             plate_data_item = DocObjectCodec.decode(doc=item, collection='plate_data')
@@ -188,6 +189,7 @@ class WeightTrigger:
                 for active_idx in valid_active_intervals:
                     if active_idx <= min_next_active_interval:
                         continue
+
                     stable_idx = -1
                     for i in valid_stable_intervals:
                         if i >= active_idx:
@@ -195,6 +197,7 @@ class WeightTrigger:
                             break
                     if stable_idx == -1:
                         break
+
                     n_begin = state_change_inds[active_inds[active_idx] - 1] - thresholds.get('N_low', 5)
                     n_end = state_change_inds[stable_inds[stable_idx] - 1] + 1 + thresholds.get('N_low', 5)
                     w_begin = weight_shelf_mean[gondola_id][shelf_id][n_begin]
@@ -223,4 +226,3 @@ class WeightTrigger:
                         events.append(event)
                     min_next_active_interval = stable_idx
         return events
-
