@@ -1,862 +1,866 @@
 {
-   "lists":{
-      "dataset":"2019-11-07_02-35",
-      "events":[
-         {
-            "eventID":1,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2019-11-07_02-35-28",
-               "position":{
-                  "gondola":2,
-                  "shelf":6,
-                  "plates":[
-                     8,
-                     9
-                  ]
+   "lists": [
+      {
+         "dataset": "2019-11-07_02-35",
+         "events": [
+            {
+               "eventID": 1,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2019-11-07_02-35-28",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 6,
+                     "plates": [
+                        8,
+                        9
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 2,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2019-11-07_02-35-38",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 1,
+                     "plates": [
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 3,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2019-11-07_02-35-44",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 6,
+                     "plates": [
+                        4
+                     ]
+                  }
                }
             }
-         },
-         {
-            "eventID":2,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2019-11-07_02-35-38",
-               "position":{
-                  "gondola":1,
-                  "shelf":1,
-                  "plates":[
-                     5,
-                     6
-                  ]
+         ]
+      },
+      {
+         "dataset": "2019-11-07_02-41",
+         "events": [
+            {
+               "eventID": 1,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2019-11-07_02-42-40",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 5,
+                     "plates": [
+                        4,
+                        5
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 2,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2019-11-07_02-42-21",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 2,
+                     "plates": [
+                        9,
+                        10
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 3,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2019-11-07_02-42-31",
+                  "position": {
+                     "gondola": 4,
+                     "shelf": 6,
+                     "plates": [
+                        6,
+                        7
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 4,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "1:52 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 4,
+                     "plates": [
+                        7,
+                        8
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 5,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "1:55 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 4,
+                     "plates": [
+                        8,
+                        9
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 6,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2:01 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 4,
+                     "plates": [
+                        4,
+                        5
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 7,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2:21 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 4,
+                     "shelf": 6,
+                     "plates": [
+                        2
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 8,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2:28 + 2019-11-07_02-41-16",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 5,
+                     "plates": [
+                        4,
+                        5
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 9,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2:31 + 2019-11-07_02-41-16",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 3,
+                     "plates": [
+                        11
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 10,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "2:55 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 5,
+                     "plates": [
+                        3
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 11,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "3:09 + 2019-11-07_02-41-16",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 3,
+                     "plates": [
+                        7,
+                        8
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 12,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "3:12 + 2019-11-07_02-41-16",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 4,
+                     "plates": [
+                        7,
+                        8
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 13,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "4:00 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 3,
+                     "plates": [
+                        3,
+                        4
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 13,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "4:06 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 4,
+                     "plates": [
+                        6,
+                        7
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 14,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "4:14 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 4,
+                     "plates": [
+                        6,
+                        7
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 15,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "4:18 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 4,
+                     "plates": [
+                        8,
+                        9
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 16,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "4:27 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 4,
+                     "plates": [
+                        8,
+                        9
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 17,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "4:33 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 3,
+                     "plates": [
+                        2,
+                        3
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 18,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "4:41 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 3,
+                     "plates": [
+                        2,
+                        3
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 19,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "4:48 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 3,
+                     "plates": [
+                        3,
+                        4
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 20,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "4:53 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 3,
+                     "plates": [
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 21,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "5:04 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 3,
+                     "plates": [
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 22,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "5:08 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 3,
+                     "plates": [
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 23,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "5:20 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 2,
+                     "plates": [
+                        12
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 24,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "5:56 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 4,
+                     "shelf": 1,
+                     "plates": [
+                        4,
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 25,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "6:02 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 6,
+                     "plates": [
+                        4,
+                        5
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 26,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "6:08 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 6,
+                     "plates": [
+                        6,
+                        7
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 27,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "6:49 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 2,
+                     "shelf": 5,
+                     "plates": [
+                        2,
+                        3
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 28,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "6:58 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 2,
+                     "plates": [
+                        9,
+                        10
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 29,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "7:04 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 3,
+                     "plates": [
+                        10,
+                        11
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 30,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "7:17 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 3,
+                     "plates": [
+                        1,
+                        2
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 31,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "7:24 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 3,
+                     "plates": [
+                        1,
+                        2
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 32,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "7:30 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 5,
+                     "plates": [
+                        6,
+                        7
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 33,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "7:37 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 4,
+                     "plates": [
+                        7
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 34,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "7:44 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 5,
+                     "plates": [
+                        12
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 35,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "8:15 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 4,
+                     "shelf": 6,
+                     "plates": [
+                        1,
+                        2
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 36,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "8:21 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 4,
+                     "shelf": 5,
+                     "plates": [
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 37,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "8:23 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 4,
+                     "shelf": 5,
+                     "plates": [
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 38,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "8:25 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 4,
+                     "plates": [
+                        11,
+                        12
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 39,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "8:28 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 5,
+                     "shelf": 5,
+                     "plates": [
+                        3
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 40,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "8:28 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 4,
+                     "plates": [
+                        2,
+                        3
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 41,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "8:42 + 2019-11-07_02-41-17",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 5,
+                     "plates": [
+                        12
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 42,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "8:43 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 4,
+                     "plates": [
+                        7
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 43,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "8:48 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 4,
+                     "plates": [
+                        7
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 44,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "8:49 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 3,
+                     "shelf": 4,
+                     "plates": [
+                        1,
+                        2
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 45,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "9:32 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 2,
+                     "plates": [
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 46,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "9:41 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 2,
+                     "plates": [
+                        5,
+                        6
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 47,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "9:46 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 1,
+                     "plates": [
+                        5
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 48,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "9:52 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 1,
+                     "shelf": 1,
+                     "plates": [
+                        5
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 49,
+               "putback": 0,
+               "observe": {
+                  "product": "",
+                  "time": "9:55 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 4,
+                     "shelf": 1,
+                     "plates": [
+                        3,
+                        4
+                     ]
+                  }
+               }
+            },
+            {
+               "eventID": 50,
+               "putback": 1,
+               "observe": {
+                  "product": "",
+                  "time": "9:56 + 2019-11-07_02-41-19",
+                  "position": {
+                     "gondola": 4,
+                     "shelf": 1,
+                     "plates": [
+                        3,
+                        4
+                     ]
+                  }
                }
             }
-         },
-         {
-            "eventID":3,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2019-11-07_02-35-44",
-               "position":{
-                  "gondola":1,
-                  "shelf":6,
-                  "plates":[
-                     4
-                  ]
-               }
-            }
-         }
-      ],
-      "dataset":"2019-11-07_02-41",
-      "events":[
-         {
-            "eventID":1,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2019-11-07_02-42-40",
-               "position":{
-                  "gondola":3,
-                  "shelf":5,
-                  "plates":[
-                     4,
-                     5
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":2,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2019-11-07_02-42-21",
-               "position":{
-                  "gondola":3,
-                  "shelf":2,
-                  "plates":[
-                     9,
-                     10
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":3,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2019-11-07_02-42-31",
-               "position":{
-                  "gondola":4,
-                  "shelf":6,
-                  "plates":[
-                     6,
-                     7
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":4,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"1:52 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":3,
-                  "shelf":4,
-                  "plates":[
-                     7,
-                     8
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":5,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"1:55 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":3,
-                  "shelf":4,
-                  "plates":[
-                     8,
-                     9
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":6,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2:01 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":3,
-                  "shelf":4,
-                  "plates":[
-                     4,
-                     5
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":7,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2:21 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":4,
-                  "shelf":6,
-                  "plates":[
-                     2
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":8,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2:28 + 2019-11-07_02-41-16",
-               "position":{
-                  "gondola":2,
-                  "shelf":5,
-                  "plates":[
-                     4,
-                     5
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":9,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2:31 + 2019-11-07_02-41-16",
-               "position":{
-                  "gondola":1,
-                  "shelf":3,
-                  "plates":[
-                     11
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":10,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"2:55 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":5,
-                  "plates":[
-                     3
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":11,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"3:09 + 2019-11-07_02-41-16",
-               "position":{
-                  "gondola":2,
-                  "shelf":3,
-                  "plates":[
-                     7,
-                     8
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":12,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"3:12 + 2019-11-07_02-41-16",
-               "position":{
-                  "gondola":2,
-                  "shelf":4,
-                  "plates":[
-                     7,
-                     8
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":13,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"4:00 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":3,
-                  "plates":[
-                     3,
-                     4
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":13,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"4:06 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":2,
-                  "shelf":4,
-                  "plates":[
-                     6,
-                     7
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":14,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"4:14 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":2,
-                  "shelf":4,
-                  "plates":[
-                     6,
-                     7
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":15,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"4:18 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":2,
-                  "shelf":4,
-                  "plates":[
-                     8,
-                     9
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":16,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"4:27 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":2,
-                  "shelf":4,
-                  "plates":[
-                     8,
-                     9
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":17,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"4:33 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":2,
-                  "shelf":3,
-                  "plates":[
-                     2,
-                     3
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":18,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"4:41 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":2,
-                  "shelf":3,
-                  "plates":[
-                     2,
-                     3
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":19,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"4:48 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":3,
-                  "plates":[
-                     3,
-                     4
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":20,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"4:53 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":3,
-                  "plates":[
-                     5,
-                     6
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":21,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"5:04 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":3,
-                  "plates":[
-                     5,
-                     6
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":22,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"5:08 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":3,
-                  "plates":[
-                     5,
-                     6
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":23,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"5:20 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":1,
-                  "shelf":2,
-                  "plates":[
-                     12
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":24,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"5:56 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":4,
-                  "shelf":1,
-                  "plates":[
-                     4,
-                     5,
-                     6
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":25,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"6:02 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":3,
-                  "shelf":6,
-                  "plates":[
-                     4,
-                     5
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":26,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"6:08 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":2,
-                  "shelf":6,
-                  "plates":[
-                     6,
-                     7
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":27,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"6:49 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":2,
-                  "shelf":5,
-                  "plates":[
-                     2,
-                     3
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":28,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"6:58 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":3,
-                  "shelf":2,
-                  "plates":[
-                     9,
-                     10
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":29,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"7:04 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":3,
-                  "shelf":3,
-                  "plates":[
-                     10,
-                     11
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":30,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"7:17 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":3,
-                  "plates":[
-                     1,
-                     2
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":31,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"7:24 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":3,
-                  "plates":[
-                     1,
-                     2
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":32,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"7:30 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":3,
-                  "shelf":5,
-                  "plates":[
-                     6,
-                     7
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":33,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"7:37 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":1,
-                  "shelf":4,
-                  "plates":[
-                     7
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":34,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"7:44 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":1,
-                  "shelf":5,
-                  "plates":[
-                     12
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":35,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"8:15 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":4,
-                  "shelf":6,
-                  "plates":[
-                     1,
-                     2
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":36,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"8:21 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":4,
-                  "shelf":5,
-                  "plates":[
-                     5,
-                     6
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":37,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"8:23 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":4,
-                  "shelf":5,
-                  "plates":[
-                     5,
-                     6
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":38,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"8:25 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":3,
-                  "shelf":4,
-                  "plates":[
-                     11,
-                     12
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":39,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"8:28 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":5,
-                  "shelf":5,
-                  "plates":[
-                     3
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":40,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"8:28 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":3,
-                  "shelf":4,
-                  "plates":[
-                     2,
-                     3
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":41,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"8:42 + 2019-11-07_02-41-17",
-               "position":{
-                  "gondola":1,
-                  "shelf":5,
-                  "plates":[
-                     12
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":42,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"8:43 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":3,
-                  "shelf":4,
-                  "plates":[
-                     7
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":43,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"8:48 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":3,
-                  "shelf":4,
-                  "plates":[
-                     7
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":44,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"8:49 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":3,
-                  "shelf":4,
-                  "plates":[
-                     1,
-                     2
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":45,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"9:32 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":1,
-                  "shelf":2,
-                  "plates":[
-                     5,
-                     6
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":46,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"9:41 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":1,
-                  "shelf":2,
-                  "plates":[
-                     5,
-                     6
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":47,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"9:46 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":1,
-                  "shelf":1,
-                  "plates":[
-                     5
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":48,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"9:52 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":1,
-                  "shelf":1,
-                  "plates":[
-                     5
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":49,
-            "putback":0,
-            "observe":{
-               "product":"",
-               "time":"9:55 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":4,
-                  "shelf":1,
-                  "plates":[
-                     3,
-                     4
-                  ]
-               }
-            }
-         },
-         {
-            "eventID":50,
-            "putback":1,
-            "observe":{
-               "product":"",
-               "time":"9:56 + 2019-11-07_02-41-19",
-               "position":{
-                  "gondola":4,
-                  "shelf":1,
-                  "plates":[
-                     3,
-                     4
-                  ]
-               }
-            }
-         }
-      ]
-   }
+         ]
+      }
+   ]
 }
