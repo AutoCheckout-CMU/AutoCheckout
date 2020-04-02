@@ -4,6 +4,7 @@ import base64
 from cpsdriver.codec import DocObjectCodec
 import datetime as dt
 from WeightTrigger import WeightTrigger
+from DataManager import DataManager
 import math_utils
 import math
 
@@ -12,14 +13,16 @@ mongoClient = MongoClient('localhost:27017')
 db = mongoClient['cps-test-01']
 
 weightTrigger = WeightTrigger(db)
+dataManager = DataManager(db)
 # print(weightTrigger.plate_data)
 
 
 
 # weight_mean,weight_std,timestamps,date_times = weightTrigger.get_weights_per_shelf()
 
-weight_plate_mean,weight_plate_std,weight_shelf_mean,weight_shelf_std,timestamps,date_times = weightTrigger.get_weights()
-
+# weight_plate_mean,weight_plate_std,weight_shelf_mean,weight_shelf_std,timestamps,date_times = weightTrigger.get_weights()
+weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std = weightTrigger.get_moving_weight()
+date_times = weightTrigger.get_agg_date_times()
 print(len(weight_plate_mean))
 
 
@@ -28,26 +31,6 @@ events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std,
 # print(len(events))
 
 
-def loadPlanogram():
-
-    num_gondola = 5
-    num_shelf = 6
-    num_plate = 12
-    planogram = np.empty((num_gondola, num_shelf, num_plate), dtype=object)
-    planogramDB = db['planogram']
-
-
-    for item in planogramDB.find():
-        for plate in item['plate_ids']:
-            shelf = plate['shelf_id']
-            gondola = shelf['gondola_id']
-            gondolaID = gondola['id']
-            shelfID = shelf['shelf_index']
-            plateID = plate['plate_index']
-
-            planogram[gondolaID-1][shelfID-1][plateID-1] = item['planogram_product_id']['id']
-
-    return planogram
 
 
 def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
@@ -56,7 +39,7 @@ def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
         p[i] = math_utils.areaUnderTwoGaussians(weight_mean[i], weight_std[i], abs(deltaW), weightScaleVar)
     return p
 
-planogram = loadPlanogram()
+planogram = dataManager.planogram
 
 receipts = []
 
