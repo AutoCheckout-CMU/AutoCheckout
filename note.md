@@ -42,3 +42,11 @@ brew services stop mongodb-community
 
 client = MongoClient('mongodb://localhost:27017')
 
+# monitor
+sudo iotop
+sudo nethogs
+
+# tmux
+tmux new -s s0
+tmux attach -t s0
+detach: ctrl+b d
