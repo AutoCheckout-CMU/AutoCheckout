@@ -17,6 +17,8 @@ class WeightTrigger:
     def __init__(self, db):
         self.db = db
         self.plate_data = db['plate_data']
+        self.agg_plate_data, self.agg_shelf_data, self.timestamps, self.date_times = self.get_agg_weight()
+
 
     def init_1D_array(self, dim):
         array = np.array([None for i in range(dim)],
@@ -121,19 +123,19 @@ class WeightTrigger:
             timestamps[gondola_id - 1].append(timestamp)
             date_times[gondola_id - 1].append(date_time)
 
-        return agg_plate_data, agg_shelf_data
+        return agg_plate_data, agg_shelf_data, timestamps, date_times
 
-    def rolling_window(a, window):
+    def rolling_window(self, a, window):
         shape = a.shape[:-1] + (a.shape[-1] - window + 1, window)
         strides = a.strides + (a.strides[-1],)
         return np.lib.stride_tricks.as_strided(a, shape=shape, strides=strides)
 
-    def get_agg_date_times(self, date_times, number_gondolas=5):
+    def get_agg_date_times(self, number_gondolas=5):
         agg_date_times = self.init_1D_array(number_gondolas)
         for gondola_id in range(number_gondolas):
-            for i, date_time in enumerate(date_times[gondola_id]):
-                if i < len(date_times[gondola_id]) - 1:
-                    next_date_time = date_times[gondola_id][i + 1]
+            for i, date_time in enumerate(self.date_times[gondola_id]):
+                if i < len(self.date_times[gondola_id]) - 1:
+                    next_date_time = self.date_times[gondola_id][i + 1]
                     time_delta = (next_date_time - date_time) / 12
                 agg_date_times[gondola_id] += [date_time + time_delta * j for j in range(0, 12)]
         return agg_date_times
@@ -143,7 +145,7 @@ class WeightTrigger:
         moving_weight_plate_std = []
         moving_weight_shelf_mean = []
         moving_weight_shelf_std = []
-        for gondola_id in range(5):
+        for gondola_id in range(num_gondola):
             moving_weight_shelf_mean.append(np.mean(self.rolling_window(self.agg_shelf_data[gondola_id], window_size), -1))
             moving_weight_shelf_std.append(np.std(self.rolling_window(self.agg_shelf_data[gondola_id], window_size), -1))
             moving_weight_plate_mean.append(np.mean(self.rolling_window(self.agg_plate_data[gondola_id], window_size), -1))
@@ -162,7 +164,8 @@ class WeightTrigger:
     # of the n continuous active time spots, then find delta mean weight.
     # Trigger an event if the difference is large than a threshold
 
-    def detect_weight_events(weight_shelf_mean,
+    def detect_weight_events(self,
+                             weight_shelf_mean,
                              weight_shelf_std,
                              weight_plate_mean,
                              weight_plate_std,
