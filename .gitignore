@@ -9,3 +9,4 @@ env
 *.lock
 *.jpg
 *.png
+cifar_net.pth
