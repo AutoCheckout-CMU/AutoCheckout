@@ -4,15 +4,14 @@ import base64
 from cpsdriver.codec import DocObjectCodec
 import datetime as dt
 from WeightTrigger import WeightTrigger
-from BookKeeper import BookKeeper
+import BookKeeper as BK
 import math_utils
 import math
 
 
 
 
-bookKeeper = BookKeeper()
-weightTrigger = WeightTrigger(bookKeeper.db)
+weightTrigger = WeightTrigger()
 
 
 
@@ -29,14 +28,12 @@ events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std,
 
 
 
-
 def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
     p = np.zeros((len(weight_mean), 1))
     for i in range(0, len(weight_mean)-1):
         p[i] = math_utils.areaUnderTwoGaussians(weight_mean[i], weight_std[i], abs(deltaW), weightScaleVar)
     return p
 
-planogram = bookKeeper.planogram
 
 receipts = []
 print(len(events))
@@ -70,12 +67,12 @@ for event in events:
     print(plates)
     # a trivial mean plate number
 
-   
 
-    possibleProductIDs = planogram[gondolaIndex][shelfIndex]
+
+    possibleProductIDs = BK.getProductFromRelativePos(gondolaIndex, shelfIndex)
     # print(possibleProductIDs)
 
-    productsDB = bookKeeper.DBs.productsDB
+    productsDB = BK.DBs.productsDB
     products = {}
 
     arrangementProbabilityPerProduct = {}
@@ -84,7 +81,7 @@ for event in events:
     totalProbabilityPerProduct = {}
     
     for productID in possibleProductIDs:
-        if (productID in arrangementProbabilityPerProduct) != True:
+        if productID not in arrangementProbabilityPerProduct:
             products[productID] = productsDB.find_one({'product_id.id': productID})
 
             arrangementProbabilityPerProduct[productID] = 0
