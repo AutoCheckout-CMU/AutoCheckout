@@ -6,7 +6,7 @@ class BookKeeper:
 
     def __init__(self):
         mongoClient = MongoClient('localhost:27017')
-        self.db = mongoClient['cps-test-01']
+        self.db = mongoClient['cps-test-2']
 
         DBs = namedtuple('DBs', 'planogramDB, productsDB, plateDB')
         self.DBs = DBs(planogramDB=self.db['planogram'], productsDB=self.db['products'], plateDB=self.db['plate_data'])

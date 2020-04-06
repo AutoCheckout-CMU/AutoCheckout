@@ -1,5 +1,6 @@
 import numpy as np
 from cpsdriver.codec import DocObjectCodec
+from datetime import datetime
 
 
 class WeightTrigger:
@@ -108,6 +109,10 @@ class WeightTrigger:
             plate_data_item = DocObjectCodec.decode(doc=item, collection='plate_data')
             date_time = item['date_time']
             timestamp = plate_data_item.timestamp  # seconds since epoch
+            # bug fix for the inconsistency of the date_time property in MongoDB
+            if type(date_time) != datetime:
+                date_time = datetime.strptime(date_time, '%m_%d_%Y_%H:%M:%S')
+                # print(date_time)
             np_plate = plate_data_item.data  # [time,shelf,plate]
             np_plate = np_plate[:, 1:13, 1:13]  # remove NaN elements
             np_shelf = np_plate.sum(axis=2)  # [time,shelf]

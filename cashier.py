@@ -21,7 +21,6 @@ weightTrigger = WeightTrigger(bookKeeper.db)
 # weight_plate_mean,weight_plate_std,weight_shelf_mean,weight_shelf_std,timestamps,date_times = weightTrigger.get_weights()
 weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std = weightTrigger.get_moving_weight()
 date_times = weightTrigger.get_agg_date_times()
-print(len(weight_plate_mean))
 
 
 events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, date_times)
@@ -40,8 +39,13 @@ def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
 planogram = bookKeeper.planogram
 
 receipts = []
-
+print(len(events))
 for event in events:
+
+    print('=======')
+    print(event['trigger_begin'])
+    print('=======')
+    print(event['trigger_end'])
 
     # event = {'trigger_begin': trigger_begin,
     #         'trigger_end': trigger_end,
