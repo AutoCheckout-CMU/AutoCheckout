@@ -61,7 +61,7 @@ def getProductRelativePos(productID):
         return None
     middleIndex = math.floor(len(positions) / 2)
     midPos = positions[middleIndex]
-    return RelativePos(midPos[0], midPos[1], midPos[3])
+    return RelativePos(midPos[0], midPos[1], midPos[2])
         
 
 def getProductAbsolutePos(productID):
