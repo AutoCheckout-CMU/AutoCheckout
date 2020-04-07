@@ -1,6 +1,7 @@
 import numpy as np
 from cpsdriver.codec import DocObjectCodec
-
+from datetime import datetime
+import BookKeeper as BK
 
 class WeightTrigger:
 
@@ -14,9 +15,9 @@ class WeightTrigger:
     # a list plates where event happens.
 
 
-    def __init__(self, db):
-        self.db = db
-        self.plate_data = db['plate_data']
+    def __init__(self):
+        self.db = BK.db
+        self.plate_data = BK.DBs.plateDB
         self.agg_plate_data, self.agg_shelf_data, self.timestamps, self.date_times = self.get_agg_weight()
 
 
@@ -108,6 +109,10 @@ class WeightTrigger:
             plate_data_item = DocObjectCodec.decode(doc=item, collection='plate_data')
             date_time = item['date_time']
             timestamp = plate_data_item.timestamp  # seconds since epoch
+            # bug fix for the inconsistency of the date_time property in MongoDB
+            if type(date_time) != datetime:
+                date_time = datetime.strptime(date_time, '%m_%d_%Y_%H:%M:%S')
+                # print(date_time)
             np_plate = plate_data_item.data  # [time,shelf,plate]
             np_plate = np_plate[:, 1:13, 1:13]  # remove NaN elements
             np_shelf = np_plate.sum(axis=2)  # [time,shelf]
@@ -229,4 +234,3 @@ class WeightTrigger:
                         events.append(event)
                     min_next_active_interval = stable_idx
         return events
-
