@@ -13,7 +13,7 @@ https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/prerequ
 
 ## cuda10
 https://developer.nvidia.com/cuda-downloads
-sudo sh cuda_10.2.89_440.33.01_linux.run -silent
+sudo sh cuda_10.2.89_440.33.01_linux.run --silent
 
 ## cuDNN7.5
 https://developer.nvidia.com/cudnn

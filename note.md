@@ -62,3 +62,7 @@ detach: ctrl+b d
 
 # opencv contrib for background substraction
 pip3 install opencv-contrib-python
+
+# if GPU driver broken
+https://developer.nvidia.com/cuda-downloads
+sudo sh cuda_10.2.89_440.33.01_linux.run --silent
