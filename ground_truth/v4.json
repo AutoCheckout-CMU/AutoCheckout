@@ -1,0 +1,262 @@
+{
+  "lists": [
+    {
+      "dataset": "2019-11-07_02-35",
+      "events": []
+    },
+    {
+      "dataset": "2019-11-07_02-41",
+      "events": [
+        {
+          "eventID": 20,
+          "observation": {
+            "position": {
+              "gondola": 5,
+              "plates": [
+                8,
+                9
+              ],
+              "shelf": 3
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "042238380868",
+                "name": "Haribo Peaches Gummi Candy",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/download-70_3e95e001-c942-453e-9a39-14f78bab0d0b_128x.jpg?v=1565210289",
+                "weight": 145.3300018310547
+              }
+            ],
+            "time": "4:53 + 2019-11-07_02-41-17"
+          },
+          "putback": 0
+        },
+        {
+          "eventID": 21,
+          "observation": {
+            "position": {
+              "gondola": 5,
+              "plates": [
+                7,
+                8
+              ],
+              "shelf": 3
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "042238380868",
+                "name": "Haribo Peaches Gummi Candy",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/download-70_3e95e001-c942-453e-9a39-14f78bab0d0b_128x.jpg?v=1565210289",
+                "weight": 145.3300018310547
+              }
+            ],
+            "time": "5:04 + 2019-11-07_02-41-17"
+          },
+          "putback": 1
+        },
+        {
+          "eventID": 22,
+          "observation": {
+            "position": {
+              "gondola": 5,
+              "plates": [
+                7,
+                8
+              ],
+              "shelf": 3
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "042238380868",
+                "name": "Haribo Peaches Gummi Candy",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/download-70_3e95e001-c942-453e-9a39-14f78bab0d0b_128x.jpg?v=1565210289",
+                "weight": 145.3300018310547
+              }
+            ],
+            "time": "5:08 + 2019-11-07_02-41-17"
+          },
+          "putback": 0
+        },
+        {
+          "eventID": 39,
+          "observation": {
+            "position": {
+              "gondola": 5,
+              "plates": [
+                4,
+                5
+              ],
+              "shelf": 5
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "034000996629",
+                "name": "Hershey Kit Kat Mini Pouch",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/prod_10331_969_medium_b9a6fc1d-8ca9-4c83-9ade-ffcc8f52ec9a_128x.jpg?v=1565210297",
+                "weight": 220.6699981689453
+              },
+              {
+                "barcodeType": "UPC",
+                "id": "040000513018",
+                "name": "M&M's Candies Peanut Butter",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/1035845295_6ad91e2d-f657-46d4-9074-11695aa15c99_128x.jpg?v=1565210329",
+                "weight": 278.6700134277344
+              }
+            ],
+            "time": "8:28 + 2019-11-07_02-41-17"
+          },
+          "putback": 0
+        },
+        {
+          "eventID": 45,
+          "observation": {
+            "position": {
+              "gondola": 1,
+              "plates": [
+                7,
+                8
+              ],
+              "shelf": 2
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "042238302556",
+                "name": "Haribo Gold Bears Gummi Candy",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/900_d81a2d0b-991b-45fc-857e-43f1dfd56a7e_128x.jpg?v=1565210287",
+                "weight": 295.3299865722656
+              }
+            ],
+            "time": "9:32 + 2019-11-07_02-41-19"
+          },
+          "putback": 0
+        },
+        {
+          "eventID": 46,
+          "observation": {
+            "position": {
+              "gondola": 1,
+              "plates": [
+                7,
+                8
+              ],
+              "shelf": 2
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "042238302556",
+                "name": "Haribo Gold Bears Gummi Candy",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/900_d81a2d0b-991b-45fc-857e-43f1dfd56a7e_128x.jpg?v=1565210287",
+                "weight": 295.3299865722656
+              }
+            ],
+            "time": "9:41 + 2019-11-07_02-41-19"
+          },
+          "putback": 1
+        },
+        {
+          "eventID": 47,
+          "observation": {
+            "position": {
+              "gondola": 1,
+              "plates": [
+                8,
+                9
+              ],
+              "shelf": 1
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "042238722149",
+                "name": "Haribo Starmix",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/71RwUf2GldL._SL1291_e44c948b-9399-4989-80d5-c4c525ac8d60_128x.jpg?v=1565210293",
+                "weight": 148
+              },
+              {
+                "barcodeType": "UPC",
+                "id": "042238312210",
+                "name": "Haribo, Gold-bears, Sour Gummi Candy",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/81rkuS81J9L._SL1500_70a6d07f-3f5c-422c-927a-34f317e23d69_128x.jpg?v=1565210291",
+                "weight": 130
+              }
+            ],
+            "time": "9:46 + 2019-11-07_02-41-19"
+          },
+          "putback": 0
+        },
+        {
+          "eventID": 48,
+          "observation": {
+            "position": {
+              "gondola": 1,
+              "plates": [
+                8,
+                9
+              ],
+              "shelf": 1
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "042238722149",
+                "name": "Haribo Starmix",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/71RwUf2GldL._SL1291_e44c948b-9399-4989-80d5-c4c525ac8d60_128x.jpg?v=1565210293",
+                "weight": 148
+              },
+              {
+                "barcodeType": "UPC",
+                "id": "042238312210",
+                "name": "Haribo, Gold-bears, Sour Gummi Candy",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/81rkuS81J9L._SL1500_70a6d07f-3f5c-422c-927a-34f317e23d69_128x.jpg?v=1565210291",
+                "weight": 130
+              }
+            ],
+            "time": "9:52 + 2019-11-07_02-41-19"
+          },
+          "putback": 1
+        },
+        {
+          "eventID": 51,
+          "observation": {
+            "position": {
+              "gondola": 4,
+              "plates": [
+                1,
+                2
+              ],
+              "shelf": 1
+            },
+            "products": [
+              {
+                "barcodeType": "UPC",
+                "id": "030100199434",
+                "name": "Keebler Soft Batch Cookies Chocolate Chip",
+                "price": 1,
+                "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Keebler-Soft-Batch-Chocolate-Chip.jpg?v=1565210317",
+                "weight": 65.66999816894531
+              }
+            ],
+            "time": "10:03 + 2019-11-07_02-41-19"
+          },
+          "putback": 0
+        }
+      ]
+    }
+  ]
+}

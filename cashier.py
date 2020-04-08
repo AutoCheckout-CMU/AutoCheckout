@@ -1,9 +1,10 @@
 from pymongo import MongoClient
 import numpy as np
 import base64
-from cpsdriver.codec import DocObjectCodec
+# from cpsdriver.codec import DocObjectCodec
+import cpsdriver.codec as codec
 import datetime as dt
-from WeightTrigger import WeightTrigger
+from WeightTrigger import WeightTrigger as WT
 import BookKeeper as BK
 import math_utils
 import math
@@ -11,7 +12,7 @@ import math
 
 
 
-weightTrigger = WeightTrigger()
+weightTrigger = WT()
 
 
 
@@ -36,34 +37,26 @@ def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
 
 
 receipts = []
-print(len(events))
+
 for event in events:
-
     print('=======')
-    print(event['trigger_begin'])
+    print(event.triggerBegin)
     print('=======')
-    print(event['trigger_end'])
+    print(event.triggerEnd)
 
-    # event = {'trigger_begin': trigger_begin,
-    #         'trigger_end': trigger_end,
-    #         'n_begin': n_begin,
-    #         'n_end': n_end,
-    #         'delta_weight': delta_w,
-    #         'gondola': gondola_id + 1,
-    #         'shelf': shelf_id + 1,
-    #         'plates': plates, 
-    #         }
+    BK.getFramesForEvent(event)
 
     # a trivial implementation
     # get all products on this shelf
 
     # TODO: omg this is weird. might need to concatenate adjacent events
-    if event['delta_weight'] > 0:
+    if event.deltaWeight > 0:
         continue
+    
+    gondolaIndex = event.gondola - 1
+    shelfIndex = event.shelf - 1
+    plates = event.plates
 
-    gondolaIndex = event['gondola'] - 1
-    shelfIndex = event['shelf'] - 1
-    plates = event['plates']
     print(plates)
     # a trivial mean plate number
 
@@ -72,7 +65,7 @@ for event in events:
     possibleProductIDs = BK.getProductFromRelativePos(gondolaIndex, shelfIndex)
     # print(possibleProductIDs)
 
-    productsDB = BK.DBs.productsDB
+    productsDB = BK.productsDB
     products = {}
 
     arrangementProbabilityPerProduct = {}
@@ -82,7 +75,7 @@ for event in events:
     
     for productID in possibleProductIDs:
         if productID not in arrangementProbabilityPerProduct:
-            products[productID] = productsDB.find_one({'product_id.id': productID})
+            products[productID] = BK.getProductByID(productID)
 
             arrangementProbabilityPerProduct[productID] = 0
             weightProbabilityPerProduct[productID] = 0
@@ -117,11 +110,11 @@ for event in events:
 
     for productID in products:
         product = products[productID]
-        weight = product['metadata']['weight']
+        weight = product.weight
 
         # When productW=deltaW, e^(-|productW - deltaW|)=1.0
         
-        weightProb = (math.e)**(-abs(weight-abs(event['delta_weight'])))
+        weightProb = (math.e)**(-abs(weight-abs(event.deltaWeight)))
         # print("======weight")
         # print(weightProb)
         weightProbabilityPerProduct[productID] = weightProb
@@ -138,7 +131,6 @@ for event in events:
     
     # print(mostPossible)
     receipts.append(mostPossible[0])
-
 
 
     # probWeight = computeWeightProbability(event['delta_weight'], weight_plate_mean, weight_plate_std)
