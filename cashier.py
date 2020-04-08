@@ -4,12 +4,28 @@ import base64
 # from cpsdriver.codec import DocObjectCodec
 import cpsdriver.codec as codec
 import datetime as dt
+from datetime import datetime
 from WeightTrigger import WeightTrigger as WT
 import BookKeeper as BK
 import math_utils
 import math
 
 
+class CustomerReceipt():
+    """
+    checkIn/Out: time when customer enters/leaves the store
+    customerID: identify of each customer
+    purchaneList: [PickUpEvent], containing all the purchased items
+    """
+    checkIn: datetime
+    checkOut: datetime
+    customerID: int
+    purchaseList: list
+    def __init__(self, customerID):
+        self.customerID = customerID
+
+    def purchase(self, product):
+        self.purchaseList.append(product)
 
 
 weightTrigger = WT()
