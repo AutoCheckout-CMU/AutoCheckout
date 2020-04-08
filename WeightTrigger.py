@@ -3,6 +3,26 @@ from cpsdriver.codec import DocObjectCodec
 from datetime import datetime
 import BookKeeper as BK
 
+
+class WeightChangeEvent():
+    triggerBegin: datetime
+    triggerEnd: datetime
+    nBegin: int
+    nEnd: int
+    deltaWeight: np.float
+    gondolaID: int
+    shelfID: int
+    plateIDs: list
+    def __init__(self, triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondolaID, shelfID, plateIDs):
+        self.triggerBegin = triggerBegin
+        self.triggerEnd = triggerEnd
+        self.nBegin = nBegin
+        self.nEnd = nEnd
+        self.deltaWeight = deltaWeight
+        self.gondolaID = gondolaID
+        self.shelfID = shelfID
+        self.plateIDs = plateIDs
+
 class WeightTrigger:
 
     # full event trigger: to get all event triggers from the current database
@@ -17,7 +37,7 @@ class WeightTrigger:
 
     def __init__(self):
         self.db = BK.db
-        self.plate_data = BK.DBs.plateDB
+        self.plate_data = BK.plateDB
         self.agg_plate_data, self.agg_shelf_data, self.timestamps, self.date_times = self.get_agg_weight()
 
 
@@ -180,10 +200,10 @@ class WeightTrigger:
         events = []
         num_gondola = len(weight_shelf_mean)
         num_times = len(date_times[0])
-        for gondola_id in range(num_gondola):
-            num_shelf = weight_shelf_mean[gondola_id].shape[0]
-            for shelf_id in range(num_shelf):
-                var_is_active = np.array(weight_shelf_std[gondola_id][shelf_id]) > thresholds.get('std_shelf', 40)
+        for gondola_idx in range(num_gondola):
+            num_shelf = weight_shelf_mean[gondola_idx].shape[0]
+            for shelf_idx in range(num_shelf):
+                var_is_active = np.array(weight_shelf_std[gondola_idx][shelf_idx]) > thresholds.get('std_shelf', 40)
                 state_changes = np.diff(var_is_active)
                 state_change_inds = [i for i, v in enumerate(state_changes) if v > 0]
                 state_lengths = np.diff([0] + state_change_inds + [len(var_is_active) - 1])
@@ -208,29 +228,31 @@ class WeightTrigger:
 
                     n_begin = state_change_inds[active_inds[active_idx] - 1] - thresholds.get('N_low', 5)
                     n_end = state_change_inds[stable_inds[stable_idx] - 1] + 1 + thresholds.get('N_low', 5)
-                    w_begin = weight_shelf_mean[gondola_id][shelf_id][n_begin]
-                    w_end = weight_shelf_mean[gondola_id][shelf_id][n_end]
+                    w_begin = weight_shelf_mean[gondola_idx][shelf_idx][n_begin]
+                    w_end = weight_shelf_mean[gondola_idx][shelf_idx][n_end]
                     delta_w = w_end - w_begin
 
                     if abs(delta_w) > thresholds.get('mean_shelf', 10):
-                        trigger_begin = date_times[gondola_id][n_begin]
-                        trigger_end = date_times[gondola_id][n_end]
+                        trigger_begin = date_times[gondola_idx][n_begin]
+                        trigger_end = date_times[gondola_idx][n_end]
 
                         plates = [0] * num_plate
                         for plate_id in range(num_plate):
-                            plates[plate_id] = int(abs(weight_plate_mean[gondola_id][shelf_id][plate_id][n_end]
-                                                       - weight_plate_mean[gondola_id][shelf_id][plate_id][n_begin])
+                            plates[plate_id] = int(abs(weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_end]
+                                                       - weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_begin])
                                                    > thresholds.get('mean_plate', 5))
 
-                        event = {'trigger_begin': trigger_begin,
-                                 'trigger_end': trigger_end,
-                                 'n_begin': n_begin,
-                                 'n_end': n_end,
-                                 'delta_weight': delta_w,
-                                 'gondola': gondola_id + 1,
-                                 'shelf': shelf_id + 1,
-                                 'plates': plates,
-                                 }
+                        event = WeightChangeEvent(
+                            trigger_begin, 
+                            trigger_end,
+                            n_begin,
+                            n_end,
+                            delta_w,
+                            gondola_idx+1,
+                            shelf_idx+1,
+                            plates
+                        )
+
                         events.append(event)
                     min_next_active_interval = stable_idx
         return events
