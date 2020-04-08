@@ -3,6 +3,26 @@ from cpsdriver.codec import DocObjectCodec
 from datetime import datetime
 import BookKeeper as BK
 
+
+class WeightChangeEvent():
+    triggerBegin: datetime
+    triggerEnd: datetime
+    nBegin: int
+    nEnd: int
+    deltaWeight: np.float
+    gondola: int
+    shelf: int
+    plates: list
+    def __init__(self, triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondola, shelf, plates):
+        self.triggerBegin = triggerBegin
+        self.triggerEnd = triggerEnd
+        self.nBegin = nBegin
+        self.nEnd = nEnd
+        self.deltaWeight = deltaWeight
+        self.gondola = gondola
+        self.shelf = shelf
+        self.plates = plates
+
 class WeightTrigger:
 
     # full event trigger: to get all event triggers from the current database
@@ -17,7 +37,7 @@ class WeightTrigger:
 
     def __init__(self):
         self.db = BK.db
-        self.plate_data = BK.DBs.plateDB
+        self.plate_data = BK.plateDB
         self.agg_plate_data, self.agg_shelf_data, self.timestamps, self.date_times = self.get_agg_weight()
 
 
@@ -222,15 +242,17 @@ class WeightTrigger:
                                                        - weight_plate_mean[gondola_id][shelf_id][plate_id][n_begin])
                                                    > thresholds.get('mean_plate', 5))
 
-                        event = {'trigger_begin': trigger_begin,
-                                 'trigger_end': trigger_end,
-                                 'n_begin': n_begin,
-                                 'n_end': n_end,
-                                 'delta_weight': delta_w,
-                                 'gondola': gondola_id + 1,
-                                 'shelf': shelf_id + 1,
-                                 'plates': plates,
-                                 }
+                        event = WeightChangeEvent(
+                            trigger_begin, 
+                            trigger_end,
+                            n_begin,
+                            n_end,
+                            delta_w,
+                            gondola_id+1,
+                            shelf_id+1,
+                            plates
+                        )
+
                         events.append(event)
                     min_next_active_interval = stable_idx
         return events

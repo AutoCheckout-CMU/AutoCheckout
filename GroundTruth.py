@@ -1,7 +1,7 @@
 import json
 from collections import namedtuple
 from pymongo import MongoClient
-import cashier
+
 
 def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
 def json2obj(data): return json.load(data, object_hook=_json_object_hook)
@@ -72,7 +72,7 @@ class Position(Serializable):
     def __init__(self, gondola, shelf, plates):
         self.gondola = gondola
         self.shelf = shelf
-        self.plates = plates
+        self.platesMeta = plates
 
 class Product(Serializable):
     def __init__(self, id, barcodeType, name, thumbnail, price, weight):
@@ -100,6 +100,19 @@ class Dataset(Serializable):
         self.dataset = dataset
         self.events = events
 
+# gondolasMeta = None
+# shelvesMeta = None
+# platesMeta = None
+with open('./store_meta/Gondolas.json') as f:
+    gondolasMeta = json.load(f)['gondolas']
+with open('./store_meta/Shelves.json') as f:
+    shelvesMeta = json.load(f)['shelves']
+with open('./store_meta/Plates.json') as f:
+    platesMeta = json.load(f)['plates']
+
+print(len(gondolasMeta))
+print(len(shelvesMeta))
+print(len(platesMeta))
 
 # {
 #   "lists": [
@@ -145,6 +158,6 @@ class Dataset(Serializable):
 
 # class GroundTruth(Serializable):
 
-if __name__ == '__main__':
-    """Main function"""
-    gtLabeler = GTLabeler(cashier.planogram)
+# if __name__ == '__main__':
+#     """Main function"""
+#     # gtLabeler = GTLabeler(cashier.planogram)
