@@ -59,3 +59,6 @@ sudo nethogs
 tmux new -s s0
 tmux attach -t s0
 detach: ctrl+b d
+
+# opencv contrib for background substraction
+pip3 install opencv-contrib-python
