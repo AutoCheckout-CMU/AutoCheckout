@@ -1,0 +1,314 @@
+{
+  "gondolas": [
+    {
+      "shelf_ids": [
+        {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        }
+      ],
+      "id": {
+        "id": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.02539999969303608,
+            "y": 0.4921000003814697,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.03180000185966492,
+        "dim_z": 2.0701000690460205
+      }
+    },
+    {
+      "shelf_ids": [
+        {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        }
+      ],
+      "id": {
+        "id": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.2446000576019287,
+            "y": 0.4921000003814697,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.03180000185966492,
+        "dim_z": 2.0701000690460205
+      }
+    },
+    {
+      "shelf_ids": [
+        {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        }
+      ],
+      "id": {
+        "id": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 2.1589999198913574,
+            "y": 0.4921000003814697,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.03180000185966492,
+        "dim_z": 2.0701000690460205
+      }
+    },
+    {
+      "shelf_ids": [
+        {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        }
+      ],
+      "id": {
+        "id": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 3.378200054168701,
+            "y": 0.4921000003814697,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.03180000185966492,
+        "dim_z": 2.0701000690460205
+      }
+    },
+    {
+      "shelf_ids": [
+        {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        }
+      ],
+      "id": {
+        "id": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 4.914899826049805,
+            "y": -0.30160000920295715,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -1.5707999467849731
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.03180000185966492,
+        "dim_z": 2.0701000690460205
+      }
+    }
+  ],
+  "header": {
+    "ancestors": [],
+    "status": null,
+    "t_origin": null,
+    "t_issue": {
+      "seconds": "1575408790",
+      "nanos": 357927249
+    },
+    "uuid": null
+  }
+}
