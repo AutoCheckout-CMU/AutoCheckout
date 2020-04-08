@@ -18,7 +18,7 @@ productID = '071142008582'
 absolutePos = BK.getProductAbsolutePos(productID)
 print(absolutePos.x, absolutePos.y, absolutePos.z)
 
-camera = CAMERA_CALIBRATION["cameras"]["1"]
+camera = CAMERA_CALIBRATION["cameras"]["8"]
 
 point = camera_projection(absolutePos.x, absolutePos.y, absolutePos.z, camera)
 
@@ -38,4 +38,4 @@ for item in frame_message.find({'camera_id': 6}):
     draw.point(point)
     im.show()
     i += 1
-    break
+    # break
