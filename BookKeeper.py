@@ -204,6 +204,13 @@ class Coordinates:
         self.y += delta_y
         self.z += delta_z
 
+    def __repr__(self):
+        return str(self)
+
+    def __str__(self):
+        return 'Coordinates(%d, %d, %d)' % (self.x, self.y, self.z)
+
+        
 # class Frame:
 
 class ProductExtended():
