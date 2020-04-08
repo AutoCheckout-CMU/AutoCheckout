@@ -4,7 +4,7 @@ from datetime import datetime
 import BookKeeper as BK
 
 
-class WeightChangeEvent():
+class PickUpEvent():
     triggerBegin: datetime
     triggerEnd: datetime
     nBegin: int
@@ -242,7 +242,7 @@ class WeightTrigger:
                                                        - weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_begin])
                                                    > thresholds.get('mean_plate', 5))
 
-                        event = WeightChangeEvent(
+                        event = PickUpEvent(
                             trigger_begin, 
                             trigger_end,
                             n_begin,

@@ -44,7 +44,7 @@ for event in events:
     print('=======')
     print(event.triggerEnd)
 
-    BK.getFramesForEvent(event)
+    # BK.getFramesForEvent(event)
 
     # a trivial implementation
     # get all products on this shelf
@@ -57,11 +57,9 @@ for event in events:
 
     print(plateIDs)
     # a trivial mean plate number
-
     possibleProductIDs = BK.getProductIDsFromPosition(event.gondolaID, event.shelfID)
     # print(possibleProductIDs)
 
-    productsDB = BK.productsDB
     products = {}
 
     arrangementProbabilityPerProduct = {}
