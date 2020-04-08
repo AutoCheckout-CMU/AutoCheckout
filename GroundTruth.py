@@ -8,8 +8,8 @@ def json2obj(data): return json.load(data, object_hook=_json_object_hook)
 
 groundTruth = None
 
-with open('groundTruthLabelWeightTrigger.json', 'r') as f:
-    groundTruth = json2obj(f)
+# with open('groundTruthLabelWeightTrigger.json', 'r') as f:
+#     groundTruth = json2obj(f)
 
 mongoClient = MongoClient('localhost:27017')
 
