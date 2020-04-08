@@ -1,15 +1,15 @@
 import json
 from collections import namedtuple
 from pymongo import MongoClient
-
+import BookKeeper
 
 def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
 def json2obj(data): return json.load(data, object_hook=_json_object_hook)
 
 groundTruth = None
 
-# with open('groundTruthLabelWeightTrigger.json', 'r') as f:
-#     groundTruth = json2obj(f)
+with open('ground_truth/v3.json', 'r') as f:
+    groundTruth = json2obj(f)
 
 mongoClient = MongoClient('localhost:27017')
 
@@ -18,18 +18,19 @@ productsDB = db['products']
 products = {}
 
 class GTLabeler:
-    def __init__(self, planogram):
+    def __init__(self):
         gt = GroundTruth()
         for dataset in groundTruth.lists:
             objEvents = []
             for event in dataset.events:
                 isProductIncluded = {}
                 productList = []
-                position = event.observe.position
+                position = event.observation.position
                 gondola = position.gondola - 1
                 shelf = position.shelf - 1
                 for plate in position.plates:
-                    productID = planogram[gondola][shelf][plate-1]
+                    # productID = planogram[gondola][shelf][plate-1]
+                    productID = BookKeeper.getProductFromRelativePos(gondola, shelf, plate-1)
                     if (productID in isProductIncluded) != True:
                         isProductIncluded[productID] = True
                         if (productID in products) != True:
@@ -49,14 +50,14 @@ class GTLabeler:
                             products[productID] = objProduct
                         productList.append(products[productID])
                 objPosition = Position(position.gondola, position.shelf, position.plates)
-                objObservation = Observation(productList, event.observe.time, objPosition)
+                objObservation = Observation(productList, event.observation.time, objPosition, getattr(event.observation, 'todo', None))
                 objEvent = Event(event.eventID, event.putback, objObservation)
                 objEvents.append(objEvent)
             objDataset = Dataset(dataset.dataset, objEvents)
             gt.lists.append(objDataset)
         
         print(len(gt.lists))
-        dump = open("./gt.json", 'w')
+        dump = open("ground_truth/v6.json", 'w')
         dump.write(gt.toJSON())
 
 class Serializable:
@@ -72,7 +73,7 @@ class Position(Serializable):
     def __init__(self, gondola, shelf, plates):
         self.gondola = gondola
         self.shelf = shelf
-        self.platesMeta = plates
+        self.plates = plates
 
 class Product(Serializable):
     def __init__(self, id, barcodeType, name, thumbnail, price, weight):
@@ -84,10 +85,11 @@ class Product(Serializable):
         self.weight = weight
 
 class Observation(Serializable):
-    def __init__(self, products, time, position):
+    def __init__(self, products, time, position, todo):
         self.products = products
         self.time = time
         self.position = position
+        self.todo = todo
 
 class Event(Serializable):
     def __init__(self, eventID, putback, observation):
@@ -158,6 +160,6 @@ print(len(platesMeta))
 
 # class GroundTruth(Serializable):
 
-# if __name__ == '__main__':
-#     """Main function"""
-#     # gtLabeler = GTLabeler(cashier.planogram)
+if __name__ == '__main__':
+    """Main function"""
+    gtLabeler = GTLabeler()
