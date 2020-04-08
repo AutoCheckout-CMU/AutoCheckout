@@ -4,27 +4,28 @@ from collections import namedtuple
 import cpsdriver.codec as codec
 import GroundTruth as GT
 import math
+from typing import NamedTuple
 
 
-__mongoClient = MongoClient('localhost:27017')
-db = __mongoClient['cps-test-2']
+_mongoClient = MongoClient('localhost:27017')
+db = _mongoClient['cps-test-2']
 planogramDB = db['planogram']
 productsDB = db['products']
 plateDB = db['plate_data']
 
-__frameDB = db['frame_message']
-__planogram = None
-__productsCache = {}
-__relativePositionsPerProduct = {}
-__absoluteCoordinatesPerProduct = {}
+_frameDB = db['frame_message']
+_planogram = None
+_productsCache = {}
+_positionsPerProduct = {}
+_coordinatesPerProduct = {}
 
 # store meta
-__gondolasDict = None
-__shelvesDict = None
-__platesDict = None
+_gondolasDict = None
+_shelvesDict = None
+_platesDict = None
 
 
-def __loadPlanogram():
+def _loadPlanogram():
     num_gondola = 5
     num_shelf = 6
     num_plate = 12
@@ -42,33 +43,43 @@ def __loadPlanogram():
             globalCoordinates = item['global_coordinates']['transform']['translation']
             if productID != '':
                 planogram[gondolaID-1][shelfID-1][plateID-1] = productID
-                if productID not in __relativePositionsPerProduct:
-                    __relativePositionsPerProduct[productID]  = []
-                __relativePositionsPerProduct[productID].append((gondolaID, shelfID, plateID))
+                if productID not in _positionsPerProduct:
+                    _positionsPerProduct[productID]  = []
+                _positionsPerProduct[productID].append((gondolaID, shelfID, plateID))
 
                 # TODO: gondola 5 has rotation
-                __absoluteCoordinatesPerProduct[productID] = globalCoordinates
+                _coordinatesPerProduct[productID] = globalCoordinates
     
     return  planogram
 
-def __loadProducts():
+def _loadProducts():
     return None
 
+
 def getProductByID(productID):
-    if productID in __productsCache:
-        return __productsCache[productID]
+    if productID in _productsCache:
+        return _productsCache[productID]
     else:
         product = codec.Product.from_dict(productsDB.find_one({'product_id.id': productID}))
-        __productsCache[productID] = product
-        return product
 
+        productExtended = ProductExtended()
+        productExtended.barcode_type = product.product_id.barcode_type
+        productExtended.barcode = product.product_id.barcode
+        productExtended.name = product.name
+        productExtended.thumbnail = product.thumbnail
+        productExtended.price = product.price
+        productExtended.weight = product.price
+        productExtended.positions = getProductPositions(productExtended.barcode)
+        print(productExtended.positions)
+        _productsCache[productID] = productExtended
+        return productExtended
 
 def getFramesForEvent(event):
     timeBegin = event.triggerBegin
     timeEnd = event.triggerEnd
     frames = {}
     # TODO: date_time different format in test 2
-    framesCursor = __frameDB.find({
+    framesCursor = _frameDB.find({
         'date_time': {
             '$gte': timeBegin,
             '$lt': timeEnd
@@ -90,41 +101,41 @@ def getFramesForEvent(event):
 
     print(len(frames))
 
-def __findOptimalPlateForEvent(event):
+def _findOptimalPlateForEvent(event):
     return 1
 
-def __get3DCoordinatesForPlate(gondola, shelf, plate):
-    if __gondolasDict == None:
-        __buildDictsFromStoreMeta()
+def _get3DCoordinatesForPlate(gondola, shelf, plate):
+    if _gondolasDict == None:
+        _buildDictsFromStoreMeta()
     gondolaMetaKey = str(gondola)
     shelfMetaKey = str(gondola) + '_' + str(shelf)
     plateMetaKey = str(gondola) + '_' + str(shelf) + '_' + str(plate)
 
     #TODO: rotation values for one special gondola
-    absolute3D = AbsoluteCoord(0, 0, 0)
-    gondolaTranslation = __getTranslation(__gondolasDict[gondolaMetaKey])
+    absolute3D = Coordinates(0, 0, 0)
+    gondolaTranslation = _getTranslation(_gondolasDict[gondolaMetaKey])
     absolute3D.translateBy(gondolaTranslation['x'], gondolaTranslation['y'], gondolaTranslation['z'])
 
-    shelfTranslation = __getTranslation(__shelvesDict[shelfMetaKey])
+    shelfTranslation = _getTranslation(_shelvesDict[shelfMetaKey])
     absolute3D.translateBy(shelfTranslation['x'], shelfTranslation['y'], shelfTranslation['z'])
 
-    plateTranslation = __getTranslation(__platesDict[plateMetaKey])
+    plateTranslation = _getTranslation(_platesDict[plateMetaKey])
     absolute3D.translateBy(plateTranslation['x'], plateTranslation['y'], plateTranslation['z'])
 
-def __getTranslation(meta):
+def _getTranslation(meta):
     return meta['coordinates']['transform']['translation']
 
 
-def __buildDictsFromStoreMeta():
+def _buildDictsFromStoreMeta():
     for gondolaMeta in GT.gondolasMeta:
-        __gondolasDict[str(gondolaMeta['id']['id'])] = gondolaMeta
+        _gondolasDict[str(gondolaMeta['id']['id'])] = gondolaMeta
 
     for shelfMeta in GT.shelvesMeta:
         IDs = shelfMeta['id']
         gondolaID = IDs['gondola_id']['id']
         shelfID = IDs['shelf_index']
         shelfMetaIndexKey = str(gondolaID) + '_' + str(shelfID)
-        __shelvesDict[shelfMetaIndexKey] = shelfMetaIndexKey
+        _shelvesDict[shelfMetaIndexKey] = shelfMetaIndexKey
 
     for plateMeta in GT.platesMeta:
         IDs = plateMeta['id']
@@ -132,39 +143,57 @@ def __buildDictsFromStoreMeta():
         shelfID = IDs['shelf_id']['shelf_index']
         plateID = IDs['plate_index']
         plateMetaIndexKey = str(gondolaID) + '_' + str(shelfID) + '_' + str(plateID)
-        __platesDict[plateMetaIndexKey] = plateMeta
+        _platesDict[plateMetaIndexKey] = plateMeta
     
 
-def getProductFromRelativePos(*argv):
-    gondola = argv[0]
+def getProductIDsFromPosition(*argv):
+    gondolaIdx = argv[0] - 1
     if len(argv) == 2:
-        shelf = argv[1]
-        return __planogram[gondola][shelf]
+        shelfIdx = argv[1] - 1
+        # remove Nones
+        products = [product for product in _planogram[gondolaIdx][shelfIdx] if product]
+        # deduplication
+        products = list(dict.fromkeys(products))
+        return products
     if len(argv) == 3:
-        shelf = argv[1]
-        plate = argv[2]
-        return __planogram[gondola][shelf][plate]
+        shelfIdx = argv[1] - 1
+        plateIdx = argv[2] - 1
+        return _planogram[gondolaIdx][shelfIdx][plateIdx]
 
-def getProductRelativePos(productID):
-    positions = __relativePositionsPerProduct[productID]
+def getProductPosAverage(productID):
+    positions = _positionsPerProduct[productID]
     if len(positions) <= 0:
         return None
     middleIndex = math.floor(len(positions) / 2)
     midPos = positions[middleIndex]
-    return RelativePos(midPos[0], midPos[1], midPos[2])
-        
+    return Position(midPos[0], midPos[1], midPos[2])
 
-def getProductAbsolutePos(productID):
-    pos = __absoluteCoordinatesPerProduct[productID]
-    return AbsoluteCoord(pos['x'], pos['y'], pos['z'])
+def getProductPositions(productID):
+    positions = []
+    for pos in _positionsPerProduct[productID]:
+        positions.append(Position(pos[0], pos[1], pos[2]))
+    return positions
 
-class RelativePos:
+def getProductCoordinates(productID):
+    coord = _coordinatesPerProduct[productID]
+    return Coordinates(coord['x'], coord['y'], coord['z'])
+
+class Position():
+    gondola: int
+    shelf: int
+    plate: int
     def __init__(self, gondola, shelf, plate):
         self.gondola = gondola
         self.shelf = shelf
         self.plate = plate
+    
+    def __repr__(self):
+        return str(self)
 
-class AbsoluteCoord: 
+    def __str__(self):
+        return 'Position(gondola=%d, shelf=%d, plate=%d)' % (self.gondola, self.shelf, self.plate)
+
+class Coordinates: 
     def __init__(self, x, y, z):
         self.x = x
         self.y = y
@@ -177,8 +206,29 @@ class AbsoluteCoord:
 
 # class Frame:
 
+class ProductExtended():
+    barcode_type: str
+    barcode: str
+    name: str
+    thumbnail: str
+    price: float
+    weight: float
+    positions: list
+    
+    def __repr__(self):
+        return str(self)
+    
+    def __str__(self):
+        return 'Product(barcode_type=%s, barcode=%s, name=%s, thumbnail=%s, price=%f, weight=%f, positions=%s)' % (
+            self.barcode_type,
+            self.barcode,
+            self.name,
+            self.thumbnail,
+            self.price,
+            self.weight,
+            str(self.positions)
+        )
+_planogram = _loadPlanogram()
 
-__planogram = __loadPlanogram()
-
-__products = __loadProducts()
+_products = _loadProducts()
 

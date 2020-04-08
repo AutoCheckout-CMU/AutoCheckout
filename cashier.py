@@ -53,16 +53,12 @@ for event in events:
     if event.deltaWeight > 0:
         continue
     
-    gondolaIndex = event.gondola - 1
-    shelfIndex = event.shelf - 1
-    plates = event.plates
+    plateIDs = event.plateIDs
 
-    print(plates)
+    print(plateIDs)
     # a trivial mean plate number
 
-
-
-    possibleProductIDs = BK.getProductFromRelativePos(gondolaIndex, shelfIndex)
+    possibleProductIDs = BK.getProductIDsFromPosition(event.gondolaID, event.shelfID)
     # print(possibleProductIDs)
 
     productsDB = BK.productsDB
@@ -86,13 +82,13 @@ for event in events:
     # arrangement probability
     plateProb = 0
     probPerPlate = []
-    if (sum(plates) == 0):
-        plateProb = 1/len(plates)
-        for i in range(0, len(plates)):
+    if (sum(plateIDs) == 0):
+        plateProb = 1/len(plateIDs)
+        for i in range(0, len(plateIDs)):
             probPerPlate.append(plateProb)
     else:
-        plateProb = 1/sum(plates)
-        for plate in plates:
+        plateProb = 1/sum(plateIDs)
+        for plate in plateIDs:
             if plate == 0:
                 probPerPlate.append(0)
             else:
