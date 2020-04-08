@@ -7,7 +7,7 @@ import math
 
 
 __mongoClient = MongoClient('localhost:27017')
-db = __mongoClient['cps-test-01']
+db = __mongoClient['cps-test-2']
 planogramDB = db['planogram']
 productsDB = db['products']
 plateDB = db['plate_data']
