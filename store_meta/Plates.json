@@ -1,0 +1,8582 @@
+{
+  "plates": [
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 11
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.0160000324249268,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 2
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 10
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.9143999814987183,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.40639999508857727,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 7
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.6096000075340271,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 8
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.7111999988555908,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.10159999877214432,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 4
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 5
+          },
+          "shelf_index": 6
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 4
+          },
+          "shelf_index": 3
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 2
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.30480000376701355,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 3
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.5080000162124634,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.20319999754428864,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 1
+        },
+        "plate_index": 12
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 1.1175999641418457,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    },
+    {
+      "id": {
+        "shelf_id": {
+          "gondola_id": {
+            "id": 1
+          },
+          "shelf_index": 5
+        },
+        "plate_index": 9
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0.8127999901771545,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.10159999877214432,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0
+      }
+    }
+  ],
+  "header": {
+    "ancestors": [],
+    "status": null,
+    "t_origin": null,
+    "t_issue": {
+      "seconds": "1575408949",
+      "nanos": 477309773
+    },
+    "uuid": null
+  }
+}

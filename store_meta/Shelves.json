@@ -1,0 +1,1886 @@
+{
+  "shelves": [
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 5
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 6
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 1
+        },
+        "shelf_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.3301999866962433
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.19370000064373016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 1
+        },
+        "shelf_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.5555999875068665
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.2222999930381775
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 5
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 1
+        },
+        "shelf_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.8095999956130981
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.24770000576972961
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 1
+        },
+        "shelf_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.0889999866485596
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.2540000081062317
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 5
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 4
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 1
+        },
+        "shelf_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.3747999668121338
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.2921000123023987
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 1
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 1
+        },
+        "shelf_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.6986000537872314
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.3714999854564667
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 1
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 2
+        },
+        "shelf_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.3301999866962433
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.23180000483989716
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 2
+        },
+        "shelf_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.5936999917030334
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.26350000500679016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 1
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 2
+        },
+        "shelf_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.8889999985694885
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.24770000576972961
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 1
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 2
+        },
+        "shelf_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.1684000492095947
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.2222999930381775
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 2
+        },
+        "shelf_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.4223999977111816
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.19370000064373016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 2
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 4
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 2
+        },
+        "shelf_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.6477999687194824
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.4223000109195709
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 5
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 3
+        },
+        "shelf_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.3301999866962433
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.23180000483989716
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 5
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 6
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 3
+        },
+        "shelf_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.5936999917030334
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.26350000500679016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 3
+        },
+        "shelf_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.8889999985694885
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.24770000576972961
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 1
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 3
+        },
+        "shelf_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.1684000492095947
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.2222999930381775
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 3
+        },
+        "shelf_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.4223999977111816
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.19370000064373016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 3
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 3
+        },
+        "shelf_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.6477999687194824
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 1.2192000150680542,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.4223000109195709
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 4
+        },
+        "shelf_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.3301999866962433
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.23180000483989716
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 4
+        },
+        "shelf_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.5936999917030334
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.26350000500679016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 4
+        },
+        "shelf_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.8889999985694885
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.24770000576972961
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 5
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 4
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 4
+        },
+        "shelf_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.1684000492095947
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.2222999930381775
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 4
+        },
+        "shelf_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.4223999977111816
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.19370000064373016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 5
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 4
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 4
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 4
+        },
+        "shelf_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.6477999687194824
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.4223000109195709
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 1
+          },
+          "bin_index": 1
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 5
+        },
+        "shelf_index": 1
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.3301999866962433
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.23180000483989716
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 2
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 5
+        },
+        "shelf_index": 2
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.5936999917030334
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.26350000500679016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 3
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 5
+        },
+        "shelf_index": 3
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 0.8889999985694885
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.24770000576972961
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 3
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 4
+          },
+          "bin_index": 2
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 5
+        },
+        "shelf_index": 4
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.1684000492095947
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.2222999930381775
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 4
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 5
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 5
+        },
+        "shelf_index": 5
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.4223999977111816
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.19370000064373016
+      }
+    },
+    {
+      "bin_ids": [
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 1
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 2
+        },
+        {
+          "shelf_id": {
+            "gondola_id": {
+              "id": 5
+            },
+            "shelf_index": 6
+          },
+          "bin_index": 3
+        }
+      ],
+      "id": {
+        "gondola_id": {
+          "id": 5
+        },
+        "shelf_index": 6
+      },
+      "coordinates": {
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -0.40639999508857727,
+            "z": 1.6477999687194824
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dim_x": 0.9143999814987183,
+        "dim_y": 0.40639999508857727,
+        "dim_z": 0.4223000109195709
+      }
+    }
+  ],
+  "header": {
+    "ancestors": [],
+    "status": null,
+    "t_origin": null,
+    "t_issue": {
+      "seconds": "1575408908",
+      "nanos": 288141144
+    },
+    "uuid": null
+  }
+}

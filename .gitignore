@@ -3,3 +3,4 @@ data
 *.pth
 .DS_Store
 __pycache__
+env
