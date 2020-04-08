@@ -93,7 +93,7 @@
               ],
               "shelf": 5
             },
-//            todo: both are wrong product matched
+            "todo": "todo: both are wrong product matched",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -152,7 +152,7 @@
               ],
               "shelf": 6
             },
-//            todo: both wrong matched products
+            "todo": "todo: both wrong matched products",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -186,7 +186,7 @@
               ],
               "shelf": 4
             },
-//            todo : wrong matched product, correct plates
+            "todo": "todo : wrong matched product, correct plates",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -212,7 +212,7 @@
               ],
               "shelf": 4
             },
-//            todo: wrong matched product, correct plates
+            "todo": "todo: wrong matched product, correct plates",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -262,8 +262,8 @@
                 3
               ],
               "shelf": 6
-           },
-//            todo: wrong matched product, correct plates
+            },
+            "todo": "todo: wrong matched product, correct plates",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -338,9 +338,8 @@
               ],
               "shelf": 5
             },
-//            todo : re-do: product
-            "products": [
-            ],
+            "todo": "todo : re-do: product",
+            "products": [],
             "time": "2:55 + 2019-11-07_02-41-17"
           },
           "putback": 0
@@ -356,7 +355,7 @@
               ],
               "shelf": 3
             },
-//            todo: wrong product matched, correct plates
+            "todo": "todo: wrong product matched, correct plates",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -382,7 +381,7 @@
               ],
               "shelf": 4
             },
-//            todo: wrong product matched, correct position
+            "todo": "todo: wrong product matched, correct position",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -433,7 +432,7 @@
               ],
               "shelf": 4
             },
-//            todo : not match
+            "todo": "todo : not match",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -459,7 +458,7 @@
               ],
               "shelf": 4
             },
-//            todo : not match
+            "todo": "todo : not match",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -485,7 +484,7 @@
               ],
               "shelf": 4
             },
-//            todo : product not match with the correct position
+            "todo": "todo : product not match with the correct position",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -511,7 +510,7 @@
               ],
               "shelf": 4
             },
-//            todo : product not match with the correct position
+            "todo": "todo : product not match with the correct position",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -587,7 +586,7 @@
               ],
               "shelf": 3
             },
-//            todo : note : thumbnail pic does not match with the video, same product though
+            "todo": "todo : note : thumbnail pic does not match with the video, same product though",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -613,9 +612,8 @@
               ],
               "shelf": 3
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "4:53 + 2019-11-07_02-41-17"
           },
           "putback": 0
@@ -631,9 +629,8 @@
               ],
               "shelf": 3
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "5:04 + 2019-11-07_02-41-17"
           },
           "putback": 1
@@ -649,9 +646,8 @@
               ],
               "shelf": 3
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "5:08 + 2019-11-07_02-41-17"
           },
           "putback": 0
@@ -716,7 +712,7 @@
               ],
               "shelf": 6
             },
-//            todo : why no product matched?
+            "todo": "todo : why no product matched?",
             "products": [],
             "time": "6:02 + 2019-11-07_02-41-19"
           },
@@ -882,7 +878,7 @@
               ],
               "shelf": 5
             },
-//            todo : product not match with the correct position
+            "todo": "todo : product not match with the correct position",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -955,7 +951,7 @@
               ],
               "shelf": 6
             },
-//            todo : product not match with the correct position
+            "todo": "todo : product not match with the correct position",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -1031,7 +1027,7 @@
               ],
               "shelf": 4
             },
-//            todo : product not match with the correct position
+            "todo": "todo : product not match with the correct position",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -1057,9 +1053,8 @@
               ],
               "shelf": 5
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "8:28 + 2019-11-07_02-41-17"
           },
           "putback": 0
@@ -1075,8 +1070,7 @@
               ],
               "shelf": 4
             },
-//            todo : product not match with the correct position
-//            finding : mapping between product and position messed up for shelf 6 and shelf 4 on gondola 3
+            "todo": "todo : product not match with the correct position,finding : mapping between product and position messed up for shelf 6 and shelf 4 on gondola 3",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -1125,7 +1119,7 @@
               ],
               "shelf": 4
             },
-//            todo : WHAT THE FUCK no product matches the correct position on gondola 3
+            "todo": "todo : WHAT THE FUCK no product matches the correct position on gondola 3",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -1150,7 +1144,7 @@
               ],
               "shelf": 4
             },
-//            todo : wrong match with the correct position
+            "todo": "todo : wrong match with the correct position",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -1176,7 +1170,7 @@
               ],
               "shelf": 4
             },
-//            todo : wrong match with the correct position
+            "todo": "todo : wrong match with the correct position",
             "products": [
               {
                 "barcodeType": "UPC",
@@ -1202,9 +1196,8 @@
               ],
               "shelf": 2
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "9:32 + 2019-11-07_02-41-19"
           },
           "putback": 0
@@ -1220,9 +1213,8 @@
               ],
               "shelf": 2
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "9:41 + 2019-11-07_02-41-19"
           },
           "putback": 1
@@ -1238,9 +1230,8 @@
               ],
               "shelf": 1
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "9:46 + 2019-11-07_02-41-19"
           },
           "putback": 0
@@ -1256,9 +1247,8 @@
               ],
               "shelf": 1
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "9:52 + 2019-11-07_02-41-19"
           },
           "putback": 1
@@ -1324,9 +1314,8 @@
               ],
               "shelf": 1
             },
-//            todo : re-do product
-            "products": [
-            ],
+            "todo": "todo : re-do product",
+            "products": [],
             "time": "10:03 + 2019-11-07_02-41-19"
           },
           "putback": 0
