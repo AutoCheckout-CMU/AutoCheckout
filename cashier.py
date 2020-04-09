@@ -10,26 +10,25 @@ import BookKeeper as BK
 import math_utils
 import math
 
+from utils import *
+
 
 class CustomerReceipt():
     """
-    checkIn/Out: time when customer enters/leaves the store
-    customerID: identify of each customer
-    purchaneList: [PickUpEvent], containing all the purchased items
+    checkIn/Out (datetime): time when customer enters/leaves the store
+    customerID (String): identify of each customer
+    purchaseList (list): [PickUpEvent], containing all the purchased items
+    target (BK.Target): Target object for this customer
     """
-    checkIn: datetime
-    checkOut: datetime
-    customerID: int
-    purchaseList: list
     def __init__(self, customerID):
         self.customerID = customerID
+        self.purchaseList = []
 
     def purchase(self, product):
         self.purchaseList.append(product)
 
 
 weightTrigger = WT()
-
 
 
 # weight_mean,weight_std,timestamps,date_times = weightTrigger.get_weights_per_shelf()
@@ -52,15 +51,18 @@ def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
     return p
 
 
-receipts = []
+# Non-associated purchasing products
+active_products = []
+
+# dictionary recording all receipts
+# KEY: customer ID, VALUE: CustomerReceipt
+receipts = {}
 
 for event in events:
     print('=======')
     print(event.triggerBegin)
     print('=======')
     print(event.triggerEnd)
-
-    # BK.getFramesForEvent(event)
 
     # a trivial implementation
     # get all products on this shelf
@@ -71,7 +73,7 @@ for event in events:
     
     plateIDs = event.plateIDs
 
-    print(plateIDs)
+    # print(plateIDs)
     # a trivial mean plate number
     possibleProductIDs = BK.getProductIDsFromPosition(event.gondolaID, event.shelfID)
     # print(possibleProductIDs)
@@ -137,11 +139,47 @@ for event in events:
             mostPossibleIsInitialized = True
         else:
             if mostPossible[1] <= totalProb:
-                mostPossible = (product, totalProb)
-    
-    # print(mostPossible)
-    receipts.append(mostPossible[0])
+                mostPossible = (product, totalProb, event.triggerEnd)
 
+    active_products.append(mostPossible)
+
+    ################################ Naive Association ################################
+    product, _, _ = active_products[-1]
+    productID = product.barcode
+    absolutePos = BK.getProductCoordinates(productID)
+    
+    targets = BK.getTargetsForEvent(event)
+    
+    id_result, target_result =  associate_product_naive(absolutePos, targets)
+    # print(id_result, target_result)
+
+    # # Use the trigger end time to capture the frame
+    # timestamp = event.triggerEnd.timestamp()
+    # print("Trigger end time stamp is: ", timestamp)
+    # frames = BK.getFramesForEvent(event)
+    # print("Frame length: ", len(frames))
+    # camera_id = 4
+    # camera_frame = frames[camera_id]
+
+    ################################ Update receipt records ################################
+    # New customer, create a new receipt
+    if id_result not in receipts:
+        customer_receipt = CustomerReceipt(id_result)
+        receipts[id_result] = customer_receipt
+    # Existing customer, update receipt
+    else:
+        customer_receipt = receipts[id_result]
+    
+    customer_receipt.purchase(product)
 
     # probWeight = computeWeightProbability(event['delta_weight'], weight_plate_mean, weight_plate_std)
-print(receipts)
+
+print("\n")
+################ Display all receipts ################
+num_receipt = 0
+for id, customer_receipt in receipts.items():
+    print("============== Receipt {} ==============".format(num_receipt))
+    print("Customer ID: " + id)
+    print("Purchase List: ")
+    for product in customer_receipt.purchaseList:
+        print("*"+product.name)

@@ -15,14 +15,14 @@ import BookKeeper as BK
 from detector import *
 
 productID = '071142008582'
-absolutePos = BK.getProductAbsolutePos(productID)
-print(absolutePos.x, absolutePos.y, absolutePos.z)
+# absolutePos = BK.getProductCoordinates(productID)
+# print(absolutePos.x, absolutePos.y, absolutePos.z)
 
-camera = CAMERA_CALIBRATION["cameras"]["8"]
+# camera = CAMERA_CALIBRATION["cameras"]["8"]
 
-point = camera_projection(absolutePos.x, absolutePos.y, absolutePos.z, camera)
+# point = camera_projection(absolutePos.x, absolutePos.y, absolutePos.z, camera)
 
-print(point)
+# print(point)
 
 frame_message = db['frame_message']
 
@@ -34,8 +34,8 @@ for item in frame_message.find({'camera_id': 6}):
     imageStream = io.BytesIO(rgb.frame)
     im = Image.open(imageStream)
     # imageFile.save("camera_angles/" + str(camera_id), "PNG")
-    draw = ImageDraw.Draw(im)
-    draw.point(point)
-    im.show()
+    # draw = ImageDraw.Draw(im)
+    # draw.point(point)
+    # im.show()
     i += 1
     # break

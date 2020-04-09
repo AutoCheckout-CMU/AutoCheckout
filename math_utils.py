@@ -1,6 +1,7 @@
 import numpy as np
 import math
 import scipy.stats as ss
+import BookKeeper as BK
 
 def areaUnderTwoGaussians(mu1, sigma1, mu2, sigma2):
     # Find the intersection of both pdf's -> We used:
@@ -40,3 +41,9 @@ def areaUnderTwoGaussians(mu1, sigma1, mu2, sigma2):
 
 def normpdf(x, mu, sigma):
     return 1/(sigma*math.sqrt(2*math.pi))*math.exp(-1*(x-mu)**2/2*sigma**2)
+
+"""
+Function to calculate distance of two 3D coordinates
+"""
+def calculate_distance3D(loc_a, loc_b):
+    return math.sqrt((loc_a.x - loc_b.x)**2 + (loc_a.y - loc_b.y)**2 + (loc_a.z - loc_b.z)**2)

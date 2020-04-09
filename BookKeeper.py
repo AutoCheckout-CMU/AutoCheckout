@@ -5,15 +5,18 @@ import cpsdriver.codec as codec
 import GroundTruth as GT
 import math
 from typing import NamedTuple
+import io
+from PIL import Image, ImageDraw
 
 
-_mongoClient = MongoClient('localhost:27017')
-db = _mongoClient['cps-test-2']
+_mongoClient = MongoClient('mongodb://localhost:27017')
+db = _mongoClient['cps-test-01']
 planogramDB = db['planogram']
 productsDB = db['products']
 plateDB = db['plate_data']
-
+_targetsDB = db['targets']
 _frameDB = db['frame_message']
+
 _planogram = None
 _productsCache = {}
 _positionsPerProduct = {}
@@ -91,15 +94,97 @@ def getFramesForEvent(event):
         if cameraID not in frames:
             frames[cameraID] = frameDoc
         else:
-            if frames[cameraID]['date_time'] > frameDoc['date_time']:
+            if frames[cameraID]['date_time'] <= frameDoc['date_time']:
                 # pick an earlier frame for this camera
                 frames[cameraID] = frameDoc
     
     for frameKey in frames:
+        # print("Frame Key (camera ID) is: ", frameKey)
         rgbFrame = codec.DocObjectCodec.decode(frames[frameKey], 'frame_message')
-        frames[frameKey] = rgbFrame
+        imageStream = io.BytesIO(rgbFrame.frame)
+        im = Image.open(imageStream)
+        frames[frameKey] = im
 
-    print(len(frames))
+    print("Capture {} camera frames in this event".format(len(frames)))
+    return frames
+
+"""
+Function to get a frame Image from the database
+Input:
+    timestamp: double/string
+    camera_id: int/string, if camera id is not specified, returns all the image with camera IDs
+Output:
+    (with camera ID) PIL Image: Image object RGB format
+    (without camera ID): dictionary {camera_id: PIL Image}
+"""
+def getFrameImage(timestamp, camera_id=None):
+    if camera_id is not None:
+        framesCursor = _frameDB.find({
+            'timestamp': float(timestamp),
+            'camera_id': int(camera_id)
+        })
+        # One timestamp should corresponds to only one frame
+        if (framesCursor.count() == 0):
+            return None
+        item = framesCursor[0]
+        rgb = codec.DocObjectCodec.decode(doc=item, collection='frame_message')
+        imageStream = io.BytesIO(rgb.frame)
+        im = Image.open(imageStream)
+        return im
+    else:
+        image_dict = {}
+        framesCursor = _frameDB.find({
+            'timestamp': float(timestamp),
+        })
+        if (framesCursor.count() == 0):
+            return None
+        for item in framesCursor:
+            # print("Found image with camera id: ", item['camera_id'])
+            camera_id = item['camera_id']
+            rgb = codec.DocObjectCodec.decode(doc=item, collection='frame_message')
+            imageStream = io.BytesIO(rgb.frame)
+            im = Image.open(imageStream)
+            image_dict[camera_id] = im
+        return image_dict
+
+"""
+Function to get lastest targets for an event
+Input:
+    event
+Output:
+    List[target]: all the in-store target during this event period
+"""
+def getTargetsForEvent(event):
+    timeBegin = event.triggerBegin
+    timeEnd = event.triggerEnd
+    targetsCursor = _targetsDB.find({
+        'date_time': {
+            '$gte': timeBegin,
+            '$lt': timeEnd
+        }
+    })
+    # Sort the all targets entry in a timely order
+    targetsCursor.sort([('date_time', 1)])
+
+    targets = {}
+    for targetDoc in targetsCursor:
+        target_list = targetDoc['document']['targets']['targets']
+        for target in target_list:
+            target_id = target['target_id']['id']
+            valid_entrance = target['target_state'] == 'TARGETSTATE_VALID_ENTRANCE'
+            x, y, z = target['head']['point']['x'], target['head']['point']['y'], target['head']['point']['z']
+            score = target['head']['score']
+            coordinate = Coordinates(x, y, z)
+
+            if target_id not in targets:
+                # Create new target during this period
+                targets[target_id] = Target(target_id, coordinate, score, valid_entrance)
+            else:
+                # Update existing target
+                targets[target_id].update(target_id, coordinate, score, valid_entrance)
+
+    print("Capture {} targets in this event".format(len(targets)))
+    return targets
 
 def _findOptimalPlateForEvent(event):
     return 1
@@ -178,7 +263,7 @@ def getProductCoordinates(productID):
     coord = _coordinatesPerProduct[productID]
     return Coordinates(coord['x'], coord['y'], coord['z'])
 
-class Position():
+class Position:
     gondola: int
     shelf: int
     plate: int
@@ -210,8 +295,31 @@ class Coordinates:
     def __str__(self):
         return 'Coordinates(%d, %d, %d)' % (self.x, self.y, self.z)
 
-        
 # class Frame:
+
+"""
+Class for customer target
+Attributes:
+    self.head: Coordinates. global coordinate of head position. Usage: Coordinates.x, Coordinates.y, Coordinates.z
+    self.id: STRING. Identify of the target.
+    self.score: FLOAT. Confidence score of the target existence.
+    self.valid_entrance: BOOL. Whether this target is a valid entrance at the store.
+"""
+class Target:
+    def __init__(self, id, Coordinates, score, valid_entrance=True):
+        self.head = Coordinates
+        self.id = id
+        self.score = score
+        self.valid_entrance = valid_entrance
+    
+    def update(self, id, Coordinates, score, valid_entrance=True):
+        self.head = Coordinates
+        self.id = id
+        self.score = score
+        self.valid_entrance = valid_entrance
+    
+    def __str__(self):
+        return 'Target(ID: {})'.format(str(self.id))
 
 class ProductExtended():
     barcode_type: str
@@ -238,4 +346,3 @@ class ProductExtended():
 _planogram = _loadPlanogram()
 
 _products = _loadProducts()
-
