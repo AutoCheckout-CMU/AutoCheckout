@@ -163,6 +163,16 @@ class WeightTrigger:
                 agg_date_times[gondola_id] += [date_time + time_delta * j for j in range(0, 12)]
         return agg_date_times
 
+    def get_agg_timestamps(self, number_gondolas=5):
+        agg_timestamps = self.init_1D_array(number_gondolas)
+        for gondola_id in range(number_gondolas):
+            for i, date_time in enumerate(self.timestamps[gondola_id]):
+                if i < len(self.timestamps[gondola_id]) - 1:
+                    next_date_time = self.timestamps[gondola_id][i + 1]
+                    time_delta = (next_date_time - date_time) / 12
+                    agg_timestamps[gondola_id] += [date_time + time_delta * j for j in range(0, 12)]
+        return agg_timestamps
+
     def get_moving_weight(self, num_gondola=5, window_size=60):
         moving_weight_plate_mean = []
         moving_weight_plate_std = []

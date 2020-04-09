@@ -9,7 +9,7 @@ import io
 from PIL import Image, ImageDraw
 
 class BookKeeper():
-    def __init__(self, dbname='cps-test-0'):
+    def __init__(self, dbname='cps-test-01'):
         _mongoClient = MongoClient('mongodb://localhost:27017')
         self.db = _mongoClient[dbname]
         self.planogramDB = self.db['planogram']
@@ -162,13 +162,13 @@ class BookKeeper():
         timeBegin = event.triggerBegin
         timeEnd = event.triggerEnd
         targetsCursor = self._targetsDB.find({
-            'date_time': {
+            'timestamp': {
                 '$gte': timeBegin,
                 '$lt': timeEnd
             }
         })
         # Sort the all targets entry in a timely order
-        targetsCursor.sort([('date_time', 1)])
+        targetsCursor.sort([('timestamp', 1)])
 
         targets = {}
         for targetDoc in targetsCursor:
