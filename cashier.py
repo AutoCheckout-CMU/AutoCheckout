@@ -189,7 +189,6 @@ class Cashier():
 
             # probWeight = computeWeightProbability(event['delta_weight'], weight_plate_mean, weight_plate_std)
 
-        print("\n")
         ################ Display all receipts ################
         num_receipt = 0
         if (len(receipts) == 0):
@@ -207,5 +206,5 @@ class Cashier():
         
         return receipts
 
-myCashier = Cashier()
-myCashier.process('cps-test-5')
+# myCashier = Cashier()
+# myCashier.process('cps-test-5')
