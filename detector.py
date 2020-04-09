@@ -87,7 +87,9 @@ def camera_projection(x, y, z, camera):
 
     world_coor = np.array([x, y, z, 1])
     camera_coor = np.matmul(intrinsics, np.matmul(extrinsics, world_coor))
-    camera_coor = camera_coor / camera_coor[2] #[u, v, 1]
+    print("u v z", camera_coor)
+    camera_coor = camera_coor #[u, v, 1]
+    camera_coor = camera_coor / camera_coor[2] * 100
 
     return camera_coor[:2]
 
