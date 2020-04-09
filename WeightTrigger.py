@@ -1,8 +1,6 @@
 import numpy as np
 from cpsdriver.codec import DocObjectCodec
 from datetime import datetime
-import BookKeeper as BK
-
 
 class PickUpEvent():
     triggerBegin: datetime
@@ -35,7 +33,7 @@ class WeightTrigger:
     # a list plates where event happens.
 
 
-    def __init__(self):
+    def __init__(self, BK):
         self.db = BK.db
         self.plate_data = BK.plateDB
         self.agg_plate_data, self.agg_shelf_data, self.timestamps, self.date_times = self.get_agg_weight()
