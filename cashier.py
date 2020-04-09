@@ -11,7 +11,7 @@ import math_utils
 import math
 
 from utils import *
-
+from config import *
 
 class CustomerReceipt():
     """
@@ -68,12 +68,14 @@ class Cashier():
         # dictionary recording all receipts
         # KEY: customer ID, VALUE: CustomerReceipt
         receipts = {}
-        print("Capture {} events in the databse {}".format(len(events), dbName))
+        if VERBOSE:
+            print("Capture {} events in the databse {}".format(len(events), dbName))
         for event in events:
-            print('=======')
-            print("Begin: ", event.triggerBegin)
-            print("End: ", event.triggerEnd)
-            print('=======')
+            if VERBOSE:
+                print('=======')
+                print("Begin: ", event.triggerBegin)
+                print("End: ", event.triggerEnd)
+                print('=======')
 
             # a trivial implementation
             # get all products on this shelf
@@ -190,21 +192,22 @@ class Cashier():
             # probWeight = computeWeightProbability(event['delta_weight'], weight_plate_mean, weight_plate_std)
 
         ################ Display all receipts ################
-        num_receipt = 0
-        if (len(receipts) == 0):
-            print("No receipts!")
-            return
+        if VERBOSE:
+            num_receipt = 0
+            if (len(receipts) == 0):
+                print("No receipts!")
+                return {}
         
-        for id, customer_receipt in receipts.items():
-            print("============== Receipt {} ==============".format(num_receipt))
-            print("Customer ID: " + id)
-            print("Purchase List: ")
-            for _, entry in customer_receipt.purchaseList.items():
-                product, quantity = entry
-                print("*Name: "+product.name + ", Quantities: " + str(quantity))
-            num_receipt += 1
+            for id, customer_receipt in receipts.items():
+                print("============== Receipt {} ==============".format(num_receipt))
+                print("Customer ID: " + id)
+                print("Purchase List: ")
+                for _, entry in customer_receipt.purchaseList.items():
+                    product, quantity = entry
+                    print("*Name: "+product.name + ", Quantities: " + str(quantity))
+                num_receipt += 1
         
         return receipts
 
 # myCashier = Cashier()
-# myCashier.process('cps-test-5')
+# myCashier.process('cps-test-2')

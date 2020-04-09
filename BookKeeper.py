@@ -7,6 +7,7 @@ import math
 from typing import NamedTuple
 import io
 from PIL import Image, ImageDraw
+from config import *
 
 class BookKeeper():
     def __init__(self, dbname='cps-test-01'):
@@ -108,8 +109,8 @@ class BookKeeper():
             imageStream = io.BytesIO(rgbFrame.frame)
             im = Image.open(imageStream)
             frames[frameKey] = im
-
-        print("Capture {} camera frames in this event".format(len(frames)))
+        if VERBOSE:
+            print("Capture {} camera frames in this event".format(len(frames)))
         return frames
 
     """
@@ -186,8 +187,8 @@ class BookKeeper():
                 else:
                     # Update existing target
                     targets[target_id].update(target_id, coordinate, score, valid_entrance)
-
-        print("Capture {} targets in this event".format(len(targets)))
+        if VERBOSE:
+            print("Capture {} targets in this event".format(len(targets)))
         return targets
 
     def _findOptimalPlateForEvent(self, event):
