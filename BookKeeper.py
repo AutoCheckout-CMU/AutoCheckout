@@ -87,7 +87,7 @@ class BookKeeper():
         frames = {}
         # TODO: date_time different format in test 2
         framesCursor = self._frameDB.find({
-            'date_time': {
+            'timestamp': {
                 '$gte': timeBegin,
                 '$lt': timeEnd
             }
