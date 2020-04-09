@@ -73,7 +73,7 @@ def getProductByID(productID):
         productExtended.price = product.price
         productExtended.weight = product.price
         productExtended.positions = getProductPositions(productExtended.barcode)
-        print(productExtended.positions)
+        # print(productExtended.positions)
         _productsCache[productID] = productExtended
         return productExtended
 
