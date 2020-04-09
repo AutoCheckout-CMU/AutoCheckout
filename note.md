@@ -66,3 +66,8 @@ pip3 install opencv-contrib-python
 # if GPU driver broken
 https://developer.nvidia.com/cuda-downloads
 sudo sh cuda_10.2.89_440.33.01_linux.run --silent
+
+# download from google drive
+pip3 install gdown
+https://drive.google.com/open\?id\=1xFSTIpdL3d9Z-PBLIRX0jFyhZ3tzscME
+gdown https://drive.google.com/uc\?id\=1xFSTIpdL3d9Z-PBLIRX0jFyhZ3tzscME
