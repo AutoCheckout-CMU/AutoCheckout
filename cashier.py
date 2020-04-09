@@ -71,9 +71,9 @@ class Cashier():
         print("Capture {} events in the databse {}".format(len(events), dbName))
         for event in events:
             print('=======')
-            print(event.triggerBegin)
+            print("Begin: ", event.triggerBegin)
+            print("End: ", event.triggerEnd)
             print('=======')
-            print(event.triggerEnd)
 
             # a trivial implementation
             # get all products on this shelf
@@ -160,6 +160,10 @@ class Cashier():
             absolutePos = myBK.getProductCoordinates(productID)
             
             targets = myBK.getTargetsForEvent(event)
+
+            # No target for the event found at all
+            if (len(targets)==0):
+                continue
             
             id_result, target_result =  associate_product_naive(absolutePos, targets)
             # print(id_result, target_result)
@@ -188,6 +192,10 @@ class Cashier():
         print("\n")
         ################ Display all receipts ################
         num_receipt = 0
+        if (len(receipts) == 0):
+            print("No receipts!")
+            return
+        
         for id, customer_receipt in receipts.items():
             print("============== Receipt {} ==============".format(num_receipt))
             print("Customer ID: " + id)
@@ -196,6 +204,8 @@ class Cashier():
                 product, quantity = entry
                 print("*Name:"+product.name + ", Quantities: " + str(quantity))
             num_receipt += 1
+        
+        return receipts
 
 myCashier = Cashier()
-myCashier.process('cps-test-1')
+myCashier.process('cps-test-5')
