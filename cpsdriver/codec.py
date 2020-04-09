@@ -234,10 +234,10 @@ class RGBFrame(NamedTuple):
         frames = doc["frame_message"]["frames"]
         rgb = b''
         for frame in frames:
-            _type = frame['frame_source']['camera_id']['camera_type']
-            if _type == "RGB":
-                rgb = b64decode(frame["frame"]['data'])
-            break
+            # _type = frame['frame_source']['camera_id']['camera_type']
+            # if _type == "RGB":
+            rgb = b64decode(frame["frame"]['data'])
+            # break
         return cls(
             timestamp=recorded["timestamp"],
             camera_id=recorded["camera_id"],
