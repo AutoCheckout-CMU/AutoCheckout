@@ -51,9 +51,9 @@ class Cashier():
 
         # weight_plate_mean,weight_plate_std,weight_shelf_mean,weight_shelf_std,timestamps,date_times = weightTrigger.get_weights()
         weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std = weightTrigger.get_moving_weight()
-        date_times = weightTrigger.get_agg_date_times()
+        timestamps = weightTrigger.get_agg_timestamps()
 
-        events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, date_times)
+        events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, timestamps)
 
         # def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
         #     p = np.zeros((len(weight_mean), 1))
@@ -198,4 +198,4 @@ class Cashier():
             num_receipt += 1
 
 myCashier = Cashier()
-myCashier.process('cps-test-1')
+myCashier.process('cps-test-01')

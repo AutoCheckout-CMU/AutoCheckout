@@ -9,7 +9,7 @@ import io
 from PIL import Image, ImageDraw
 
 class BookKeeper():
-    def __init__(self, dbname='cps-test-0'):
+    def __init__(self, dbname='cps-test-01'):
         _mongoClient = MongoClient('mongodb://localhost:27017')
         self.db = _mongoClient[dbname]
         self.planogramDB = self.db['planogram']
