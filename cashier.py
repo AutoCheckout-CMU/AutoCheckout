@@ -17,16 +17,22 @@ class CustomerReceipt():
     """
     checkIn/Out (datetime): time when customer enters/leaves the store
     customerID (String): identify of each customer
-    purchaseList (list): [PickUpEvent], containing all the purchased items
+    purchaseList (Dict):
+        KEY: product ID
+        Value: (product, quantities)
     target (BK.Target): Target object for this customer
     """
     def __init__(self, customerID):
         self.customerID = customerID
-        self.purchaseList = []
+        self.purchaseList = {}
 
     def purchase(self, product):
-        self.purchaseList.append(product)
-
+        productID = product.barcode
+        if productID in self.purchaseList:
+            product, quantity = self.purchaseList[productID]
+            self.purchaseList[productID] = (product, quantity+1)
+        else:
+            self.purchaseList[productID] = (product, 1)
 
 weightTrigger = WT()
 
@@ -181,5 +187,7 @@ for id, customer_receipt in receipts.items():
     print("============== Receipt {} ==============".format(num_receipt))
     print("Customer ID: " + id)
     print("Purchase List: ")
-    for product in customer_receipt.purchaseList:
-        print("*"+product.name)
+    for _, entry in customer_receipt.purchaseList.items():
+        product, quantity = entry
+        print("*Name:"+product.name + ", Quantities: " + str(quantity))
+    num_receipt += 1
