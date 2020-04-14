@@ -44,6 +44,7 @@ def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v9.json'):
         ########## Evaluate Ground truth ##########
         num_events = 0
         num_products = 0
+        num_correct_products = 0
         gt_entry = gt_list[i]
         # Find groundtruth entry for this database
         tmp_i = i
@@ -65,6 +66,7 @@ def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v9.json'):
                     if (predicted_products[gt_productID] == 0):
                         del predicted_products[gt_productID]
                     tp += 1
+                    num_correct_products += 1
                 else:
                     fn += 1
                 #     print("Product: ", num_products)
@@ -73,7 +75,7 @@ def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v9.json'):
 
         overall_num_preds += num_preds
         overall_products += num_products
-        print("Detected products for {}: {}/{}".format(dbName, num_preds, num_products))
+        print("Detected products for {}: {}/{}, correct products {}".format(dbName, num_preds, num_products, num_correct_products))
     
     print("\n================== Evaluation Summary ==================")
     print("Databases: ", dbs)
