@@ -261,6 +261,8 @@ class BookKeeper():
 
     def getProductPositions(self, productID):
         positions = []
+        if productID not in self._positionsPerProduct:
+            return positions
         for pos in self._positionsPerProduct[productID]:
             positions.append(Position(pos[0], pos[1], pos[2]))
         return positions

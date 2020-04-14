@@ -95,8 +95,7 @@ class Cashier():
         # dictionary recording all receipts
         # KEY: customer ID, VALUE: CustomerReceipt
         receipts = {}
-        if VERBOSE:
-            print("Capture {} events in the databse {}".format(len(events), dbName))
+        print("Capture {} events in the databse {}".format(len(events), dbName))
         for event in events:
             if VERBOSE:
                 print('=======')
