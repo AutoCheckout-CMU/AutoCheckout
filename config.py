@@ -1,1 +1,1 @@
-VERBOSE = 0
+VERBOSE = 1

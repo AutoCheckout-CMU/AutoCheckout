@@ -34,6 +34,15 @@ class CustomerReceipt():
         else:
             self.purchaseList[productID] = (product, 1)
 
+    def putback(self, product):
+        productID = product.barcode
+        if productID in self.purchaseList:
+            product, quantity = self.purchaseList[productID]
+            if quantity > 1:
+                self.purchaseList[productID] = (product, quantity-1)
+            else:
+                del self.purchaseList[productID]
+
 """
 Cashier class to generate receipts
 """
@@ -99,8 +108,9 @@ class Cashier():
             # get all products on this shelf
 
             # TODO: omg this is weird. might need to concatenate adjacent events
+            isPutbackEvent = False
             if event.deltaWeight > 0:
-                continue
+                isPutbackEvent = True
             
             plateIDs = event.plateIDs
 
@@ -205,7 +215,10 @@ class Cashier():
             else:
                 customer_receipt = receipts[id_result]
             
-            customer_receipt.purchase(product)
+            if isPutbackEvent:
+                customer_receipt.putback(product)
+            else:
+                customer_receipt.purchase(product)
 
             # probWeight = computeWeightProbability(event['delta_weight'], weight_plate_mean, weight_plate_std)
 
