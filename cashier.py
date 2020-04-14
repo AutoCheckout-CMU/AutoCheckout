@@ -51,8 +51,26 @@ class Cashier():
 
         # weight_plate_mean,weight_plate_std,weight_shelf_mean,weight_shelf_std,timestamps,date_times = weightTrigger.get_weights()
         weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std = weightTrigger.get_moving_weight()
+        
+        number_gondolas = 5
+        # reduce timestamp 
         timestamps = weightTrigger.get_agg_timestamps()
+        for i in range(number_gondolas):
+            timestamps[i] = timestamps[i][30:-29]
 
+        # sanity check
+        for i in range(number_gondolas):
+            # weight_shelf_mean: [gondola, shelf, timestamp]
+            # weight_shelf_std: [gondola, shelf, timestamp]
+            # weight_plate_mean: [gondola, shelf, plate, timestamp]
+            # weight_plate_std: [gondola, shelf, plate, timestamp]
+            # timestamps: [gondola, timestamp]
+            timestamps_count = len(timestamps[i])
+            assert (timestamps_count == weight_shelf_mean[i].shape[1])
+            assert (timestamps_count == weight_shelf_std[i].shape[1])
+            assert (timestamps_count == weight_plate_mean[i].shape[2])
+            assert (timestamps_count == weight_plate_std[i].shape[2])
+            
         events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, timestamps)
 
         # def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):

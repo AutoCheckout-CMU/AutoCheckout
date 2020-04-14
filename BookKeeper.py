@@ -170,9 +170,10 @@ class BookKeeper():
         })
         # Sort the all targets entry in a timely order
         targetsCursor.sort([('timestamp', 1)])
-
         targets = {}
         for targetDoc in targetsCursor:
+            if 'targets' not in targetDoc['document']['targets']:
+                continue
             target_list = targetDoc['document']['targets']['targets']
             for target in target_list:
                 target_id = target['target_id']['id']
