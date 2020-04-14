@@ -215,7 +215,10 @@ class Cashier():
                 customer_receipt = receipts[id_result]
             
             if isPutbackEvent:
-                customer_receipt.putback(product)
+                if DEBUG:
+                    customer_receipt.purchase(product) # In the evaluation code, putback is still an event, so we accumulate for debug purpose
+                else:
+                    customer_receipt.putback(product)
             else:
                 customer_receipt.purchase(product)
 

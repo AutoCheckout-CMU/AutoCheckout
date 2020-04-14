@@ -1,1 +1,2 @@
 VERBOSE = 1
+DEBUG = 1
