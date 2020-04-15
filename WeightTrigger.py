@@ -168,7 +168,8 @@ class WeightTrigger:
                                           state_lengths[ind] > thresholds.get('N_high')]
                 valid_stable_intervals = [i for i, ind in enumerate(stable_inds) if
                                           state_lengths[ind] > thresholds.get('N_low')]
-                min_next_active_interval = 0
+
+                min_next_active_interval = -1
                 for active_idx in valid_active_intervals:
                     if active_idx <= min_next_active_interval:
                         continue
