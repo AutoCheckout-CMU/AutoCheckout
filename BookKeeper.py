@@ -213,6 +213,8 @@ class BookKeeper():
         plateTranslation = self._getTranslation(self._platesDict[plateMetaKey])
         absolute3D.translateBy(plateTranslation['x'], plateTranslation['y'], plateTranslation['z'])
 
+        return absolute3D
+
     def _getTranslation(self, meta):
         return meta['coordinates']['transform']['translation']
 
