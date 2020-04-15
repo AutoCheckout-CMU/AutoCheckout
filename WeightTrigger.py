@@ -197,9 +197,11 @@ class WeightTrigger:
 
                         plates = [0] * num_plate
                         for plate_id in range(num_plate):
-                            plates[plate_id] = int(abs(weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_end]
-                                                       - weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_begin])
-                                                   > thresholds.get('mean_plate'))
+                            # plates[plate_id] = int(abs(weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_end]
+                            #                            - weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_begin])
+                            #                        > thresholds.get('mean_plate'))
+                            plates[plate_id] = weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_end] \
+                                               - weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_begin]
 
                         event = PickUpEvent(
                             trigger_begin, 
