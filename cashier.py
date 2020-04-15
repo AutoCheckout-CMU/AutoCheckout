@@ -134,20 +134,25 @@ class Cashier():
 
                     
 
-            # arrangement probability
+            # arrangement probability (with different weight sensed on different plate)
             plateProb = 0
             probPerPlate = []
-            if (sum(plateIDs) == 0):
+            overallDelta = sum(plateIDs)
+            # a potential bug: what if there are both negatives and positives and their sum is zero?
+            if (overallDelta == 0):
                 plateProb = 1/len(plateIDs)
                 for i in range(0, len(plateIDs)):
                     probPerPlate.append(plateProb)
             else:
-                plateProb = 1/sum(plateIDs)
+                # plateProb = 1/sum(plateIDs)
+                # for plate in plateIDs:
+                #     if plate == 0:
+                #         probPerPlate.append(0)
+                #     else:
+                #         probPerPlate.append(plateProb)
+
                 for plate in plateIDs:
-                    if plate == 0:
-                        probPerPlate.append(0)
-                    else:
-                        probPerPlate.append(plateProb)
+                    probPerPlate.append(plate/overallDelta)
             for i in range(0, len(possibleProductIDs)):
                 productID = possibleProductIDs[i]
                 positions = myBK.getProductPositions(productID)
