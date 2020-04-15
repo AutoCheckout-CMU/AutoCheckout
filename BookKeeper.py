@@ -76,7 +76,7 @@ class BookKeeper():
             productExtended.name = product.name
             productExtended.thumbnail = product.thumbnail
             productExtended.price = product.price
-            productExtended.weight = product.price
+            productExtended.weight = product.weight
             productExtended.positions = self.getProductPositions(productExtended.barcode)
             # print(productExtended.positions)
             self._productsCache[productID] = productExtended
