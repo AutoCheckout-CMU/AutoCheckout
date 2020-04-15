@@ -99,8 +99,7 @@ class Cashier():
         for event in events:
             if VERBOSE:
                 print('=======')
-                print("Begin: ", event.triggerBegin)
-                print("End: ", event.triggerEnd)
+                print (event)
                 print('=======')
 
             # a trivial implementation
@@ -149,10 +148,11 @@ class Cashier():
                         probPerPlate.append(0)
                     else:
                         probPerPlate.append(plateProb)
-            
             for i in range(0, len(possibleProductIDs)):
                 productID = possibleProductIDs[i]
-                arrangementProbabilityPerProduct[productID] += probPerPlate[i]
+                positions = myBK.getProductPositions(productID)
+                for position in positions:
+                    arrangementProbabilityPerProduct[productID] += probPerPlate[position.plate-1]
 
             # print(arrangementProbabilityPerProduct)
 
@@ -179,12 +179,12 @@ class Cashier():
                     mostPossibleIsInitialized = True
                 else:
                     if mostPossible[1] <= totalProb:
-                        mostPossible = (product, totalProb, event.triggerEnd)
-
+                        mostPossible = (product, totalProb)
+            
             active_products.append(mostPossible)
 
             ################################ Naive Association ################################
-            product, _, _ = active_products[-1]
+            product, _ = active_products[-1] 
             productID = product.barcode
             absolutePos = myBK.getProductCoordinates(productID)
             
@@ -239,7 +239,6 @@ class Cashier():
                     product, quantity = entry
                     print("*Name: "+product.name + ", Quantities: " + str(quantity))
                 num_receipt += 1
-        
         return receipts
 
 # myCashier = Cashier()

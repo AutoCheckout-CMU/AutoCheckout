@@ -21,6 +21,9 @@ class PickUpEvent():
         self.shelfID = shelfID
         self.plateIDs = plateIDs
 
+    def __str__(self):
+        return "deltaWeight: {}, position: {}, {}, {}".format(self.deltaWeight, self.gondolaID, self.shelfID, self.plateIDs)
+
 class WeightTrigger:
 
     # full event trigger: to get all event triggers from the current database
