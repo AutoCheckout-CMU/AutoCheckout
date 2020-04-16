@@ -6,6 +6,27 @@ from cashier import Cashier
 import json
 
 """
+Groundtruth file contains pickup event and putback event separately.
+remove_putback_products() will remove the putback event as well as its coresponding pickup event,
+so that the ground truth only contains file result. 
+"""
+def remove_putback_products(gt_list):
+    for db in gt_list:
+        final_events = []
+        for event in db['events']:
+            if event['putback'] == 0: # pick up
+                final_events.append(event)
+            else: # putback => remove from final_events the coresponding pickup event
+                for i in range(len(final_events)):
+                    final_event = final_events[i]
+                    if final_event['observation']['target_id'] != event['observation']['target_id']:
+                        continue 
+                    if final_event['observation']['products'][0]['id'] != event['observation']['products'][0]['id']:
+                        continue
+                    del final_events[i]
+        db['events'] = final_events
+
+"""
 1. Evaluate inventory status
 Metrics:
     1. Precision: TP/(TP+FP)
@@ -20,7 +41,11 @@ def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v10 (test-12 t
         gt_data = json.load(f)
 
     gt_list = gt_data['lists']
-    
+    if not DEBUG:
+        remove_putback_products(gt_list)
+        # with open('gt_final.json', 'w') as outfile:
+        #     json.dump(gt_data, outfile)
+
     # Metrics 
     tp, fp, tn, fn = 0, 0, 0, 0
     tp_asso = 0
