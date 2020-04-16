@@ -19,3 +19,9 @@ Overall recall is: 91.4%
 # TODO Leo: ground truth 3
 # TODO Leo: adjust association
 # TODO Yixin: adapt weight score
+
+
+# TODO: cps-test-13, person A pickup product, then give to person B, whose receipt?
+# TODO: cps-test-17, 4 people in store, person A pickup a product which is closer to person B's head
+# TODO: cps-test-20, pickup N items at the same time
+# TODO: cpst-test-23, put back to wrong place
