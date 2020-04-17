@@ -28,7 +28,15 @@ weight socre productB 610g 30%
 location productA 100%
 
 
-# TODO: cps-test-13, person A pickup product, then give to person B, whose receipt? assume person A
-# TODO: cps-test-17, 4 people in store, person A pickup a product which is closer to person B's head
-# TODO: cps-test-20, pickup N items at the same time
-# TODO: cps-test-23, put back to wrong place
+# TODO: cps-test-13, 3 people, taken many items. person A pickup product, then give to person B, whose receipt? assume person A
+# TODO: cps-test-14, 2 people, person A pickup product, then put back, at this time personB's head is closer to the put back position
+# TODO: cps-test-15, 2 people, they tend to touch things and put back quickly; they also take items at same time for the same position
+# TODO: cps-test-16, 4 people, taken many items
+# TODO: cps-test-17, 4 people, taken many items, more complex than test-16. Very close to each other, even the head is very close. Putback items to wrong places. Touch items at wrong places.
+# TODO: cps-test-18, 4 people, taken many items, more complex than test-16. Only use head may be a problem.
+# TODO: cps-test-19, 1 person, for item at wrong place caused by test-17, pick it up, then put back to another wrong place?
+# TODO: cps-test-20, 1 person, pickup N items at the same time
+# TODO: cps-test-21, 1 person, simple.
+# TODO: cps-test-22, 1 person, simple.
+# TODO: cps-test-23, put back to wrong place N times. Complicated.
+# TODO: cps-test-24, 1 person, hold the plate first for a while, then pickup the product.
