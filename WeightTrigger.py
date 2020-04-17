@@ -126,6 +126,8 @@ class WeightTrigger:
         moving_weight_shelf_mean = []
         moving_weight_shelf_std = []
         for gondola_id in range(num_gondola):
+            if (self.agg_shelf_data[gondola_id] is None):
+                continue
             moving_weight_shelf_mean.append(np.mean(self.rolling_window(self.agg_shelf_data[gondola_id], window_size), -1))
             moving_weight_shelf_std.append(np.std(self.rolling_window(self.agg_shelf_data[gondola_id], window_size), -1))
             moving_weight_plate_mean.append(np.mean(self.rolling_window(self.agg_plate_data[gondola_id], window_size), -1))

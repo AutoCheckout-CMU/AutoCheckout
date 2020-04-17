@@ -46,17 +46,23 @@ class BookKeeper():
                 gondolaID = gondola['id']
                 shelfID = shelf['shelf_index']
                 plateID = plate['plate_index']
+                if item['planogram_product_id']:
+                    productID = item['planogram_product_id']['id']
+                    globalCoordinates = item['global_coordinates']['transform']['translation']
+                    if 'x' not in globalCoordinates:
+                        globalCoordinates['x'] = 0
+                    if 'y' not in globalCoordinates:
+                        globalCoordinates['y'] = 0
+                    if 'z' not in globalCoordinates:
+                        globalCoordinates['z'] = 0
+                    if productID != '':
+                        planogram[gondolaID-1][shelfID-1][plateID-1] = productID
+                        if productID not in self._positionsPerProduct:
+                            self._positionsPerProduct[productID]  = []
+                        self._positionsPerProduct[productID].append((gondolaID, shelfID, plateID))
 
-                productID = item['planogram_product_id']['id']
-                globalCoordinates = item['global_coordinates']['transform']['translation']
-                if productID != '':
-                    planogram[gondolaID-1][shelfID-1][plateID-1] = productID
-                    if productID not in self._positionsPerProduct:
-                        self._positionsPerProduct[productID]  = []
-                    self._positionsPerProduct[productID].append((gondolaID, shelfID, plateID))
-
-                    # TODO: gondola 5 has rotation
-                    self._coordinatesPerProduct[productID] = globalCoordinates
+                        # TODO: gondola 5 has rotation
+                        self._coordinatesPerProduct[productID] = globalCoordinates
         
         return  planogram
 

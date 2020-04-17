@@ -75,10 +75,10 @@ class Cashier():
             # weight_plate_std: [gondola, shelf, plate, timestamp]
             # timestamps: [gondola, timestamp]
             timestamps_count = len(timestamps[i])
-            assert (timestamps_count == weight_shelf_mean[i].shape[1])
-            assert (timestamps_count == weight_shelf_std[i].shape[1])
-            assert (timestamps_count == weight_plate_mean[i].shape[2])
-            assert (timestamps_count == weight_plate_std[i].shape[2])
+            # assert (timestamps_count == weight_shelf_mean[i].shape[1])
+            # assert (timestamps_count == weight_shelf_std[i].shape[1])
+            # assert (timestamps_count == weight_plate_mean[i].shape[2])
+            # assert (timestamps_count == weight_plate_std[i].shape[2])
             
         events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, timestamps)
 
@@ -275,8 +275,8 @@ class Cashier():
 
 
 myCashier = Cashier()
-receipts = myCashier.process('cps-test-2')
-testcase = 'test case id'
-user = 'test user'
+receipts = myCashier.process('ALL-SIMPLE-CHIP-1')
+testcase = 'ALL-SIMPLE-CHIP-1'
+user = '5ea023be-b530-4816-8eda-5340cfabe9b0'
 myCashier.output_json(testcase, user, receipts, path="output.json")
 
