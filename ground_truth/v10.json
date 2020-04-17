@@ -1591,6 +1591,14 @@
                   "price": 1,
                   "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/GUEST_52f02b72-4a72-4085-8590-5cfd00004f3e_128x.jpg?v=1565210311",
                   "weight": 81.02999877929688
+                },
+                {
+                  "barcodeType": "UPC",
+                  "id": "888109010102",
+                  "name": "Hostess Twinkies",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/GUEST_52f02b72-4a72-4085-8590-5cfd00004f3e_128x.jpg?v=1565210311",
+                  "weight": 81.02999877929688
                 }
               ],
               "time": "10:03 + 2019-11-07_02-41-19",

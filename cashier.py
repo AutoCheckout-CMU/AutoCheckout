@@ -26,20 +26,20 @@ class CustomerReceipt():
         self.customerID = customerID
         self.purchaseList = {}
 
-    def purchase(self, product):
+    def purchase(self, product, num_product):
         productID = product.barcode
         if productID in self.purchaseList:
             product, quantity = self.purchaseList[productID]
-            self.purchaseList[productID] = (product, quantity+1)
+            self.purchaseList[productID] = (product, quantity+num_product)
         else:
-            self.purchaseList[productID] = (product, 1)
+            self.purchaseList[productID] = (product, num_product)
 
-    def putback(self, product):
+    def putback(self, product, num_product):
         productID = product.barcode
         if productID in self.purchaseList:
             product, quantity = self.purchaseList[productID]
-            if quantity > 1:
-                self.purchaseList[productID] = (product, quantity-1)
+            if quantity > num_product:
+                self.purchaseList[productID] = (product, quantity-num_product)
             else:
                 del self.purchaseList[productID]
 
@@ -219,13 +219,16 @@ class Cashier():
             else:
                 customer_receipt = receipts[id_result]
             
+            # Predict quantity from delta weight
+            pred_quantity = max(int(round(abs(event.deltaWeight / product.weight))), 1)
+            print("Predicted Quantity for ",  product.name, " is: ", event.deltaWeight / product.weight)
             if isPutbackEvent:
                 if DEBUG:
-                    customer_receipt.purchase(product) # In the evaluation code, putback is still an event, so we accumulate for debug purpose
+                    customer_receipt.purchase(product, pred_quantity) # In the evaluation code, putback is still an event, so we accumulate for debug purpose
                 else:
-                    customer_receipt.putback(product)
+                    customer_receipt.putback(product, pred_quantity)
             else:
-                customer_receipt.purchase(product)
+                customer_receipt.purchase(product, pred_quantity)
 
             # probWeight = computeWeightProbability(event['delta_weight'], weight_plate_mean, weight_plate_std)
 
