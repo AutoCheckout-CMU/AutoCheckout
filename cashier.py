@@ -247,7 +247,36 @@ class Cashier():
                     product, quantity = entry
                     print("*Name: "+product.name + ", Quantities: " + str(quantity))
                 num_receipt += 1
+        
         return receipts
+    
+    def output_json(self, testcase, user, receipts, path):
+        import json
+        print ('=======================')
+        output = {}
+        output['testcase'] = testcase
+        output['user'] = user
+        receipts_json = []
+        for id_result in receipts:
+            receipt = receipts[id_result]
+            receipt_json = {}
+            receipt_json['target_id'] = id_result
+            products = []
+            for purchase in receipt.purchaseList:
+                product = {}
+                product['barcode'] = purchase
+                product['quantity'] = 1
+                products.append(product)
+            receipt_json['receipts'] = products
+            receipts_json.append(receipt_json)
+        output['receipts'] = receipts_json
+        with open('output.json', 'w') as outfile:
+            json.dump(output, outfile)
 
-# myCashier = Cashier()
-# myCashier.process('cps-test-2')
+
+myCashier = Cashier()
+receipts = myCashier.process('cps-test-2')
+testcase = 'test case id'
+user = 'test user'
+myCashier.output_json(testcase, user, receipts, path="output.json")
+
