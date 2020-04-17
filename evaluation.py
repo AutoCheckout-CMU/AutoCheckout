@@ -14,22 +14,21 @@ Metrics:
 Metrics:
     1. Accuracy: num_correct_association/num_correct_products
 """
-def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v10 (test-12 tbd).json'):
+def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v10.json'):
     # Load JSON groundtruth
     with open(gt_path) as f:
         gt_data = json.load(f)
 
     gt_list = gt_data['lists']
     
-    # Metrics 
+    # Metrics #1
     tp, fp, tn, fn = 0, 0, 0, 0
     tp_asso = 0
     overall_num_preds, overall_products = 0, 0
     for i in range(len(dbs)):
-        print("Evaluating databse: ", dbs[i])
+        print("Evaluating database: ", dbs[i])
         ########## Generate Prediction ##########
-        predicted_products = {}
-        # Dictionary of all predicted products Key: ProductID Value: Quantity
+        predicted_products = {} # Dictionary of all predicted products Key: ProductID Value: Quantity
         dbName = dbs[i]
         myCashier = Cashier()
         receipts = myCashier.process(dbName)
@@ -65,6 +64,7 @@ def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v10 (test-12 t
             for product in products:
                 num_products += 1
                 gt_productID = product['id']
+                ## Product
                 # Listed in our predicted receipts
                 if (gt_productID in predicted_products and predicted_products[gt_productID]['quantity'] > 0):
                     # print("GT Identity: ", gt_customerID, "Predicted: ", predicted_products[gt_productID]['customerID'])
@@ -97,5 +97,6 @@ def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v10 (test-12 t
 
 if __name__ == "__main__":
     dbs=['cps-test-01', 'cps-test-2'] + ['cps-test-'+str(i) for i in range(4, 13)]
-    gt_path='ground_truth/v10 (test-12 tbd).json' # list of ground truth W.R.T the previous databses
+    gt_path='ground_truth/v10.json' # list of ground truth W.R.T the previous databases
+    # dbs = ['cps-test-10', 'cps-test-11', 'cps-test-12']
     evaluate_intenvory(dbs, gt_path)

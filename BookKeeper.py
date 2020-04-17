@@ -171,7 +171,8 @@ class BookKeeper():
         # Sort the all targets entry in a timely order
         targetsCursor.sort([('timestamp', 1)])
         targets = {}
-        for targetDoc in targetsCursor:
+        num_timestamps = targetsCursor.count()
+        for i, targetDoc in enumerate(targetsCursor):
             if 'targets' not in targetDoc['document']['targets']:
                 continue
             target_list = targetDoc['document']['targets']['targets']
@@ -180,16 +181,19 @@ class BookKeeper():
                 valid_entrance = target['target_state'] == 'TARGETSTATE_VALID_ENTRANCE'
                 x, y, z = target['head']['point']['x'], target['head']['point']['y'], target['head']['point']['z']
                 score = target['head']['score']
-                coordinate = Coordinates(x, y, z)
-
+                coordinate = Coordinates(x*0.0254, y*0.0254, z*0.0254)
                 if target_id not in targets:
                     # Create new target during this period
                     targets[target_id] = Target(target_id, coordinate, score, valid_entrance)
                 else:
                     # Update existing target
                     targets[target_id].update(target_id, coordinate, score, valid_entrance)
+            # print(i, num_timestamps, targetDoc['timestamp'])
+            # print(targets.items())
+            if (i>num_timestamps/2):
+                break
         if VERBOSE:
-            print("Capture {} targets in this event".format(len(targets)))
+            print("Capture {} targets in this event".format(len(targets)), targets.keys())
         return targets
 
     def _findOptimalPlateForEvent(self, event):
@@ -301,7 +305,7 @@ class Coordinates:
         return str(self)
 
     def __str__(self):
-        return 'Coordinates(%d, %d, %d)' % (self.x, self.y, self.z)
+        return 'Coordinates(%f, %f, %f)' % (self.x, self.y, self.z)
 
 # class Frame:
 

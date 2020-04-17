@@ -16,7 +16,10 @@ def associate_product_naive(product_loc, targets):
     min_dist = float('inf')
     for id, target in targets.items():
         distance = calculate_distance3D(target.head, product_loc)
+        # print("Distance for target: ", id, "is: ", str(distance))
         if (distance < min_dist):
             result_id = id
             result_target = target
+            min_dist = distance
+    # print("Result ID: ", result_id)
     return result_id, result_target
