@@ -1598,6 +1598,95 @@
               "target_id": "-8523249213675307221"
             },
             "putback": 0
+          },
+          {
+            "eventID": 8,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  11,
+                  12
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "613008744090",
+                  "name": "AZ MUCHO MANGO",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/00613008744090-zmfxACyWHj2BJg-0_s500_1f23965f-e045-4ab0-8de4-e2319b033320.jpg?v=1566938796",
+                  "weight": 1.000000
+                }
+              ],
+              "time": "10:03 + 2019-11-07_02-51-29",
+              "todo": null,
+              "target_id": "-4812288824232508156"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 9,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  5,
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "083791126074",
+                  "name": "Gator - Tators Potato Chips",
+                  "price": 1,
+                  "thumbnail": "=https://cdn.shopify.com/s/files/1/0048/5684/0238/products/81eqauPd9qL._SL1500_128x.jpg?v=1566938963",
+                  "weight": 1.000000
+                },
+                {
+                  "barcodeType": "UPC",
+                  "id": "083791126074",
+                  "name": "Gator - Tators Potato Chips",
+                  "price": 1,
+                  "thumbnail": "=https://cdn.shopify.com/s/files/1/0048/5684/0238/products/81eqauPd9qL._SL1500_128x.jpg?v=1566938963",
+                  "weight": 1.000000
+                }
+              ],
+              "time": "10:03 + 2019-11-07_02-41-19",
+              "todo": null,
+              "target_id": "-8523249213675307221"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 10,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  3,
+                  4
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "084114033000",
+                  "name": "Kettle Brand Potato Chips, Sea Salt",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/71XWP1fejfL._SY355_128x.jpg?v=1566938887",
+                  "weight": 1.000000
+                }
+              ],
+              "time": "10:03 + 2019-11-07_02-41-19",
+              "todo": null,
+              "target_id": "-4812288824232508156"
+            },
+            "putback": 0
           }
         ]
       }
