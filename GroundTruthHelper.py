@@ -24,6 +24,7 @@ bk = BookKeeper.BookKeeper(dbname='TEAM-PEI-JD-1')
 
 if plate_id is not None:
     product_id = bk.getProductIDsFromPosition(gondola_id, shelf_id, plate_id)
+    # product_id = '071142643370'
     productExtended = bk.getProductByID(product_id)
     objProduct = Product(
                     productExtended.barcode,

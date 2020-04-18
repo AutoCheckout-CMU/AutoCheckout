@@ -2043,10 +2043,210 @@
                 "shelf": 5
               },
               "products": [
-                
+                {
+                  "barcodeType": "UPC",
+                  "id": "044000031138",
+                  "name": "Ritz (Small)",
+                  "price": 0.0,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Ritz_8_Fresh_Stacks.png?v=1570839737",
+                  "weight": 429.0
+                }
               ],
               "time": "0:25 + 2020-04-18_00-04-07",
-              "todo": "target should be PEI",
+              "todo": null,
+              "note": "Pei, need to rely on weight, planogram is wrong",
+              "target_id": "8150190386876727291"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  7,
+                  8
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "044000031138",
+                  "name": "Ritz (Small)",
+                  "price": 0.0,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Ritz_8_Fresh_Stacks.png?v=1570839737",
+                  "weight": 429.0
+                }
+              ],
+              "time": "0:33 + 2020-04-18_00-04-07",
+              "todo": null,
+              "note": "Pei, need to rely on weight, planogram is wrong",
+              "target_id": "8150190386876727291"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  4
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071142643370",
+                  "name": "ARRWHD MTN WTR SPRT BTL",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/45002084-1_a81951d9-5b43-45b5-acce-076f94e751c0_128x.jpg?v=1565210214",
+                  "weight": 736.0
+                }
+              ],
+              "time": "0:37 + 2020-04-18_00-04-07",
+              "todo": null,
+              "note": "Pei, need to rely on weight, planogram is wrong",
+              "target_id": "8150190386876727291"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  12
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "UNKOWN",
+                  "name": "UNKNOWN",
+                  "price": 0,
+                  "thumbnail": null,
+                  "weight": 0
+                }
+              ],
+              "time": "0:43 + 2020-04-18_00-04-07",
+              "todo": null,
+              "note": "Pei, need to rely on weight, planogram is wrong. Cannot find this item in db",
+              "target_id": "8150190386876727291"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 4,
+                "plates": [
+                  3
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041789001215",
+                  "name": "Maruchan Instant Lunch Chicken Flavor",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Screen_Shot_2020-02-18_at_1.40.09_PM_128x.png?v=1582062122",
+                  "weight": 79.5999984741211
+                }
+              ],
+              "time": "0:45 + 2020-04-18_00-04-07",
+              "todo": null,
+              "note": "Pei",
+              "target_id": "8150190386876727291"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 6,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "613008744120",
+                  "name": "AZ WATERMELON",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/29672883-1_8677c718-ae1a-47cf-bf13-5a1d847f2a20_128x.jpg?v=1565210218",
+                  "weight": 567.0
+                }
+              ],
+              "time": "0:26 + 2020-04-18_00-04-07",
+              "todo": null,
+              "note": "JD",
+              "target_id": "8600172907562326977"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 7,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2,
+                  3
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907916342",
+                  "name": "El Sabroso Hot Spicy Cracklins",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/102001-1_3091e392-ec45-481c-87f3-d5fe5b4a1de3_128x.png?v=1565210266",
+                  "weight": 52.65999984741211
+                }
+              ],
+              "time": "0:37 + 2020-04-18_00-04-07",
+              "todo": null,
+              "note": "JD",
+              "target_id": "8600172907562326977"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 8,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  9
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "0:45 + 2020-04-18_00-04-07",
+              "todo": null,
+              "note": "JD",
               "target_id": "8600172907562326977"
             },
             "putback": 0

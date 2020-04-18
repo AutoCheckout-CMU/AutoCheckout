@@ -32,7 +32,7 @@ location productA 100%
 # TODO: TEAM-5-1, 2 people, each take one product at the same time, at the same place, with same same barcode.
 # TODO: TEAM-8-1, 2 people, person A take 1 bottle water and put it back to a wrong place, then person B bought that mis-placed water.
 # TODO: TEAM-PEI-1, 1 person, person A buy 1 item, then another, simple.
-# TODO: TEAM-PEI-JD-1, 2 people, take different products at the same time, simple.
+# TODO: TEAM-PEI-JD-1, 2 people, take different products at the same time, simple. Planogram is wrong for gondola 3!!!! Need to rely on weight.
 
 # TODO: cps-test-13, 3 people, taken many items. person A pickup product, then give to person B, whose receipt? assume person A
 # TODO: cps-test-14, 2 people. Touched many items. Person A pickup product, then put back, at this time personB's head is closer to the put back position.
@@ -52,3 +52,5 @@ location productA 100%
 # assert (timestamps_count == weight_shelf_std[i].shape[1])
 # assert (timestamps_count == weight_plate_mean[i].shape[2])
 # assert (timestamps_count == weight_plate_std[i].shape[2])
+
+# TODO: in db['products'], thumbnail/price/weight can be null
