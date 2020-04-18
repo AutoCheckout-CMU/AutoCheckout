@@ -221,7 +221,7 @@ class Cashier():
             
             # Predict quantity from delta weight
             pred_quantity = max(int(round(abs(event.deltaWeight / product.weight))), 1)
-            print("Predicted Quantity for ",  product.name, " is: ", event.deltaWeight / product.weight)
+            print("Predicted Quantity for ",  product.name, " is: ", event.deltaWeight / product.weight, product.thumbnail)
             if isPutbackEvent:
                 if DEBUG:
                     customer_receipt.purchase(product, pred_quantity) # In the evaluation code, putback is still an event, so we accumulate for debug purpose
@@ -245,16 +245,16 @@ class Cashier():
                 print("Purchase List: ")
                 for _, entry in customer_receipt.purchaseList.items():
                     product, quantity = entry
-                    print("*Name: "+product.name + ", Quantities: " + str(quantity))
+                    print("*Name: "+product.name + ", Quantities: " + str(quantity), product.thumbnail)
                 num_receipt += 1
         
         return receipts
     
-    def output_json(self, testcase, user, receipts, path):
+    def output_json(self, db_id, user, receipts, path):
         import json
         print ('=======================')
         output = {}
-        output['testcase'] = testcase
+        output['testcase'] = db_id
         output['user'] = user
         receipts_json = []
         for id_result in receipts:
@@ -274,9 +274,11 @@ class Cashier():
             json.dump(output, outfile)
 
 
-myCashier = Cashier()
-receipts = myCashier.process('ALL-SIMPLE-CHIP-1')
-testcase = 'ALL-SIMPLE-CHIP-1'
-user = '5ea023be-b530-4816-8eda-5340cfabe9b0'
-myCashier.output_json(testcase, user, receipts, path="output.json")
+# myCashier = Cashier()
+# db_name = 'cps-test-01'
+# #db_name = 'TEAM-PEI-JD-1'
+# db_id = '5aa089fd-1c62-46ce-8c02-3cc24f05e5ac'
+# receipts = myCashier.process(db_name)
+# user = '5ea023be-b530-4816-8eda-5340cfabe9b0'
+# myCashier.output_json(db_id, user, receipts, path="output.json")
 
