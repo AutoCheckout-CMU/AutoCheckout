@@ -1,0 +1,68 @@
+[
+    {
+        "archives": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-5-DAY-1-1/TEAM-5-DAY-1-1.archive"
+        ],
+        "name": "TEAM-1-DAY-1-3",
+        "uuid": "d8d99074-d6b4-4b27-a594-a276611e895b",
+        "version": 1,
+        "videos": [
+            "path/to/video1.mp4"
+        ]
+    },
+    {
+        "archives": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/ALL-SIMPLE-CHIP-1/ALL-SIMPLE-CHIP-1.archive"
+        ],
+        "name": "ALL-SIMPLE-CHIP-1",
+        "uuid": "b993ce28-9bfb-44bb-889c-4a8a8d6ac1a7",
+        "version": 1,
+        "videos": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/ALL-SIMPLE-CHIP-1/Videos.zip"
+        ]
+    },
+    {
+        "archives": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-PEI-1/TEAM-PEI-1.archive"
+        ],
+        "name": "TEAM-PEI-1",
+        "uuid": "5d07eef9-1f15-499a-91f9-e502917af9d3",
+        "version": 1,
+        "videos": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-PEI-1/Video.zip"
+        ]
+    },
+    {
+        "archives": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-PEI-JD-1/TEAM-PEI-JD-1.archive"
+        ],
+        "name": "TEAM-PEI-JD-1",
+        "uuid": "5aa089fd-1c62-46ce-8c02-3cc24f05e5ac",
+        "version": 1,
+        "videos": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-PEI-JD-1/Videos.zip"
+        ]
+    },
+    {
+        "archives": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-8-1/TEAM-8-1.archive"
+        ],
+        "name": "TEAM-8-1",
+        "uuid": "ed70464f-5bb6-49d4-93a5-f8be7356761c",
+        "version": 1,
+        "videos": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-8-1/Videos.zip"
+        ]
+    },
+    {
+        "archives": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-5-1/TEAM-5-1.archive"
+        ],
+        "name": "TEAM-5-1",
+        "uuid": "92e6ba20-78ab-4616-8a76-fd9035db566c",
+        "version": 1,
+        "videos": [
+            "https://storage.cloud.google.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/TEAM-5-1/Videos.zip"
+        ]
+    }
+]

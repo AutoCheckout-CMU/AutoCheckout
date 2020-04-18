@@ -75,10 +75,10 @@ class Cashier():
             # weight_plate_std: [gondola, shelf, plate, timestamp]
             # timestamps: [gondola, timestamp]
             timestamps_count = len(timestamps[i])
-            assert (timestamps_count == weight_shelf_mean[i].shape[1])
-            assert (timestamps_count == weight_shelf_std[i].shape[1])
-            assert (timestamps_count == weight_plate_mean[i].shape[2])
-            assert (timestamps_count == weight_plate_std[i].shape[2])
+            # assert (timestamps_count == weight_shelf_mean[i].shape[1])
+            # assert (timestamps_count == weight_shelf_std[i].shape[1])
+            # assert (timestamps_count == weight_plate_mean[i].shape[2])
+            # assert (timestamps_count == weight_plate_std[i].shape[2])
             
         events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, timestamps)
 
@@ -221,7 +221,7 @@ class Cashier():
             
             # Predict quantity from delta weight
             pred_quantity = max(int(round(abs(event.deltaWeight / product.weight))), 1)
-            print("Predicted Quantity for ",  product.name, " is: ", event.deltaWeight / product.weight)
+            print("Predicted Quantity for ",  product.name, " is: ", event.deltaWeight / product.weight, product.thumbnail)
             if isPutbackEvent:
                 if DEBUG:
                     customer_receipt.purchase(product, pred_quantity) # In the evaluation code, putback is still an event, so we accumulate for debug purpose
@@ -245,9 +245,40 @@ class Cashier():
                 print("Purchase List: ")
                 for _, entry in customer_receipt.purchaseList.items():
                     product, quantity = entry
-                    print("*Name: "+product.name + ", Quantities: " + str(quantity))
+                    print("*Name: "+product.name + ", Quantities: " + str(quantity), product.thumbnail)
                 num_receipt += 1
+        
         return receipts
+    
+    def output_json(self, db_id, user, receipts, path):
+        import json
+        print ('=======================')
+        output = {}
+        output['testcase'] = db_id
+        output['user'] = user
+        receipts_json = []
+        for id_result in receipts:
+            receipt = receipts[id_result]
+            receipt_json = {}
+            receipt_json['target_id'] = id_result
+            products = []
+            for purchase in receipt.purchaseList:
+                product = {}
+                product['barcode'] = purchase
+                product['quantity'] = 1
+                products.append(product)
+            receipt_json['receipts'] = products
+            receipts_json.append(receipt_json)
+        output['receipts'] = receipts_json
+        with open('output.json', 'w') as outfile:
+            json.dump(output, outfile)
+
 
 # myCashier = Cashier()
-# myCashier.process('cps-test-2')
+# db_name = 'cps-test-01'
+# #db_name = 'TEAM-PEI-JD-1'
+# db_id = '5aa089fd-1c62-46ce-8c02-3cc24f05e5ac'
+# receipts = myCashier.process(db_name)
+# user = '5ea023be-b530-4816-8eda-5340cfabe9b0'
+# myCashier.output_json(db_id, user, receipts, path="output.json")
+
