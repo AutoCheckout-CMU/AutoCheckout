@@ -240,7 +240,7 @@ class BookKeeper():
             gondolaID = IDs['gondola_id']['id']
             shelfID = IDs['shelf_index']
             shelfMetaIndexKey = str(gondolaID) + '_' + str(shelfID)
-            self._shelvesDict[shelfMetaIndexKey] = shelfMetaIndexKey
+            self._shelvesDict[shelfMetaIndexKey] = shelfMeta
 
         for plateMeta in GT.platesMeta:
             IDs = plateMeta['id']
