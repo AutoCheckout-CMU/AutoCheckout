@@ -1892,6 +1892,166 @@
             "putback": 0
           }
         ]
+      },
+      {
+        "dataset": "ALL-SIMPLE-CHIP-1",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  6,
+                  7
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "084114033000",
+                  "name": "Kettle Brand Potato Chips, Sea Salt",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/71XWP1fejfL._SY355_579efbca-be0f-4676-bdda-f6e589919c20_128x.jpg?v=1565210321",
+                  "weight": 62.0
+                }
+              ],
+              "time": "0:04 + 2020-04-17_23-23-32",
+              "todo": null,
+              "target_id": "8921199617302490765"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2,
+                  3
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "084114033000",
+                  "name": "Kettle Brand Potato Chips, Sea Salt",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/71XWP1fejfL._SY355_579efbca-be0f-4676-bdda-f6e589919c20_128x.jpg?v=1565210321",
+                  "weight": 62.0
+                }
+              ],
+              "time": "0:08 + 2020-04-17_23-23-32",
+              "todo": null,
+              "target_id": "8921199617302490765"
+            },
+            "putback": 1
+          }
+        ]
+      },
+      {
+        "dataset": "TEAM-PEI-1",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 4,
+                "plates": [
+                  1,
+                  2,
+                  3
+                ],
+                "shelf": 1
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "012000181139",
+                  "name": "bubly Sparkling Water, Raspberry, 12 Fl oz",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Screen_Shot_2020-02-18_at_3.37.53_PM_128x.png?v=1582069138",
+                  "weight": 370.0
+                }
+              ],
+              "time": "0:06 + 2020-04-17_23-51-41",
+              "todo": null,
+              "target_id": "139228040531277453"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071063437089",
+                  "name": "Taco Bell Fire",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/81t5dK-GjHL._SL1500_98d91fb6-22ee-4a0d-b02b-f3484cb2a674_128x.jpg?v=1565210388",
+                  "weight": 105.52999877929688
+                }
+              ],
+              "time": "0:27 + 2020-04-17_23-51-41",
+              "todo": null,
+              "target_id": "139228040531277453"
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
+        "dataset": "TEAM-8-1",
+        "range" : null,
+        "events": []
+      },
+      {
+        "dataset": "TEAM-5-1",
+        "range" : null,
+        "events": []
+      },
+      {
+        "dataset": "TEAM-PEI-JD-1",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  7,
+                  8
+                ],
+                "shelf": 5
+              },
+              "products": [
+                
+              ],
+              "time": "0:25 + 2020-04-18_00-04-07",
+              "todo": "target should be PEI",
+              "target_id": "8600172907562326977"
+            },
+            "putback": 0
+          }
+        ]
       }
     ]
   }
