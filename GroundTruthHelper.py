@@ -18,7 +18,7 @@ class Product(Serializable):
 # print all products from a certain shelf
 gondola_id = 4
 shelf_id = 6
-plate_id = None
+plate_id = 4
 
 bk = BookKeeper.BookKeeper(dbname='TEAM-PEI-JD-1')
 
