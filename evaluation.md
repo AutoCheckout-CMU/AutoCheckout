@@ -16,6 +16,24 @@ Overall association accuracy is: 97.8%
 Overall precision is: 84.9%
 Overall recall is: 91.8%
 
+DEBUG = 1 (include putback event)
+================== Evaluation Summary ==================
+Databases:  ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+Ground truth version:  ground_truth/v11.json
+Overall products detection rate is: 115.8%
+Overall association accuracy is: 100.0%
+Overall precision is: 54.5%
+Overall recall is: 63.2%
+
+DEBUG = 0 (countereract putback event)
+================== Evaluation Summary ==================
+Databases:  ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+Ground truth version:  ground_truth/v11.json
+Overall products detection rate is: 155.6%
+Overall association accuracy is: 100.0%
+Overall precision is: 50.0%
+Overall recall is: 77.8%
+
 # TODO Yixin: rotation?
 # TODO Yixin: adapt weight score!!!
 
