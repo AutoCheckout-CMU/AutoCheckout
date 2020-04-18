@@ -16,7 +16,7 @@ class BookKeeper():
         self.planogramDB = self.db['planogram']
         self.productsDB = self.db['products']
         self.plateDB = self.db['plate_data']
-        self._targetsDB = self.db['targets']
+        self._targetsDB = self.db['full_targets']
         self._frameDB = self.db['frame_message']
 
         self._planogram = None
