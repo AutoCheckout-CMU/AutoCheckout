@@ -1,20 +1,20 @@
 DEBUG = 1 (include putback event)
 ================== Evaluation Summary ==================
-Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12']
-Ground truth version:  ground_truth/v10.json
-Overall products detection rate is: 96.8%
-Overall association accuracy is: 96.6%
-Overall precision is: 98.3%
-Overall recall is: 95.2%
+Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+Ground truth version:  ground_truth/v11.json
+Overall products detection rate is: 101.2%
+Overall association accuracy is: 97.2%
+Overall precision is: 86.6%
+Overall recall is: 87.7%
 
 DEBUG = 0 (countereract putback event)
 ================== Evaluation Summary ==================
-Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12']
-Ground truth version:  ground_truth/v10.json
-Overall products detection rate is: 97.5%
-Overall association accuracy is: 97.4%
-Overall precision is: 97.4%
-Overall recall is: 95.0%
+Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+Ground truth version:  ground_truth/v11.json
+Overall products detection rate is: 108.2%
+Overall association accuracy is: 97.8%
+Overall precision is: 84.9%
+Overall recall is: 91.8%
 
 # TODO Yixin: rotation?
 # TODO Yixin: adapt weight score!!!
@@ -29,7 +29,7 @@ location productA 100%
 
 # DRY RUN
 # TODO: ALL-SIMPLE-CHIP-1, 1 person, take one item and put it at another place, not purchasing anything else.
-# TODO: TEAM-5-1, 2 people, each take one product at the same time, at the same place, with same same barcode.
+# TODO: TEAM-5-1, 2 people, each take one product at the same time, at the same place, with same same barcode. The db data only lasts for 4 seconds ( 2020-04-18T00:29:37 to 2020-04-18T00:29:41), while the video lasts for 1 min 30 seconds
 # TODO: TEAM-8-1, 2 people, person A take 1 bottle water and put it back to a wrong place, then person B bought that mis-placed water.
 # TODO: TEAM-PEI-1, 1 person, person A buy 1 item, then another, simple.
 # TODO: TEAM-PEI-JD-1, 2 people, take different products at the same time, simple. Planogram is wrong for gondola 3!!!! Need to rely on weight.

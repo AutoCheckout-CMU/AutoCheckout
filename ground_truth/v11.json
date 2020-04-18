@@ -2252,6 +2252,105 @@
             "putback": 0
           }
         ]
+      },
+      {
+        "dataset": "TEAM-5-1",
+        "range" : null,
+        "note": "The db data only lasts for 4 seconds ( 2020-04-18T00:29:37 to 2020-04-18T00:29:41), while the video lasts for 1 min 30 seconds",
+        "events": [
+         
+        ]
+      },
+      {
+        "dataset": "TEAM-8-1",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  8
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071142643370",
+                  "name": "ARRWHD MTN WTR SPRT BTL",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/45002084-1_a81951d9-5b43-45b5-acce-076f94e751c0_128x.jpg?v=1565210214",
+                  "weight": 736.0
+                }
+              ],
+              "time": "0:06 + 2020-04-18_00-15-14",
+              "todo": null,
+              "note": "Pei",
+              "target_id": "7565865654100789649"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1,
+                  2,
+                  3
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071142643370",
+                  "name": "ARRWHD MTN WTR SPRT BTL",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/45002084-1_a81951d9-5b43-45b5-acce-076f94e751c0_128x.jpg?v=1565210214",
+                  "weight": 736.0
+                }
+              ],
+              "time": "0:11 + 2020-04-18_00-15-14",
+              "todo": null,
+              "note": "Pei",
+              "target_id": "7565865654100789649"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1,
+                  2,
+                  3
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071142643370",
+                  "name": "ARRWHD MTN WTR SPRT BTL",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/45002084-1_a81951d9-5b43-45b5-acce-076f94e751c0_128x.jpg?v=1565210214",
+                  "weight": 736.0
+                }
+              ],
+              "time": "0:18 + 2020-04-18_00-15-14",
+              "todo": null,
+              "note": "JD",
+              "target_id": "5783551732829006402"
+            },
+            "putback": 0
+          }
+        ]
       }
     ]
   }
