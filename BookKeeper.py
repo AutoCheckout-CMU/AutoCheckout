@@ -16,7 +16,9 @@ class BookKeeper():
         self.planogramDB = self.db['planogram']
         self.productsDB = self.db['products']
         self.plateDB = self.db['plate_data']
-        self._targetsDB = self.db['targets']
+        self._targetsDB = self.db['full_targets']
+        if self._targetsDB.count() == 0:
+            self._targetsDB = self.db['targets']
         self._frameDB = self.db['frame_message']
 
         self._planogram = None
@@ -46,17 +48,23 @@ class BookKeeper():
                 gondolaID = gondola['id']
                 shelfID = shelf['shelf_index']
                 plateID = plate['plate_index']
+                if item['planogram_product_id']:
+                    productID = item['planogram_product_id']['id']
+                    globalCoordinates = item['global_coordinates']['transform']['translation']
+                    if 'x' not in globalCoordinates:
+                        globalCoordinates['x'] = 0
+                    if 'y' not in globalCoordinates:
+                        globalCoordinates['y'] = 0
+                    if 'z' not in globalCoordinates:
+                        globalCoordinates['z'] = 0
+                    if productID != '':
+                        planogram[gondolaID-1][shelfID-1][plateID-1] = productID
+                        if productID not in self._positionsPerProduct:
+                            self._positionsPerProduct[productID]  = []
+                        self._positionsPerProduct[productID].append((gondolaID, shelfID, plateID))
 
-                productID = item['planogram_product_id']['id']
-                globalCoordinates = item['global_coordinates']['transform']['translation']
-                if productID != '':
-                    planogram[gondolaID-1][shelfID-1][plateID-1] = productID
-                    if productID not in self._positionsPerProduct:
-                        self._positionsPerProduct[productID]  = []
-                    self._positionsPerProduct[productID].append((gondolaID, shelfID, plateID))
-
-                    # TODO: gondola 5 has rotation
-                    self._coordinatesPerProduct[productID] = globalCoordinates
+                        # TODO: gondola 5 has rotation
+                        self._coordinatesPerProduct[productID] = globalCoordinates
         
         return  planogram
 
@@ -232,7 +240,7 @@ class BookKeeper():
             gondolaID = IDs['gondola_id']['id']
             shelfID = IDs['shelf_index']
             shelfMetaIndexKey = str(gondolaID) + '_' + str(shelfID)
-            self._shelvesDict[shelfMetaIndexKey] = shelfMetaIndexKey
+            self._shelvesDict[shelfMetaIndexKey] = shelfMeta
 
         for plateMeta in GT.platesMeta:
             IDs = plateMeta['id']
