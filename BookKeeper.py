@@ -9,6 +9,8 @@ import io
 from PIL import Image, ImageDraw
 from config import *
 
+INCH_TO_METER = 0.0254
+
 class BookKeeper():
     def __init__(self, dbname):
         _mongoClient = MongoClient('mongodb://localhost:27017')
@@ -201,15 +203,30 @@ class BookKeeper():
             for target in target_list:
                 target_id = target['target_id']['id']
                 valid_entrance = target['target_state'] == 'TARGETSTATE_VALID_ENTRANCE'
+                # Head
                 x, y, z = target['head']['point']['x'], target['head']['point']['y'], target['head']['point']['z']
                 score = target['head']['score']
-                coordinate = Coordinates(x*0.0254, y*0.0254, z*0.0254)
+                coordinate = Coordinates(x*INCH_TO_METER, y*INCH_TO_METER, z*INCH_TO_METER)
+                head = {'position': coordinate, 'score': score}
+                left_hand, right_hand = None, None
+                if CE_ASSOCIATION and 'l_wrist' in target and 'r_wrist' in target:
+                    # Left hand
+                    lh_x, lh_y, lh_z = target['l_wrist']['point']['x'], target['l_wrist']['point']['y'], target['l_wrist']['point']['z']
+                    lh_score = target['l_wrist']['score']
+                    lh_coordinate = Coordinates(lh_x*INCH_TO_METER, lh_y*INCH_TO_METER, lh_z*INCH_TO_METER)
+                    left_hand = {'position': lh_coordinate, 'score': lh_score}
+                    # Right
+                    rh_x, rh_y, rh_z = target['r_wrist']['point']['x'], target['r_wrist']['point']['y'], target['r_wrist']['point']['z']
+                    rh_score = target['r_wrist']['score']
+                    rh_coordinate = Coordinates(rh_x*INCH_TO_METER, rh_y*INCH_TO_METER, rh_z*INCH_TO_METER)
+                    right_hand = {'position': rh_coordinate, 'score': rh_score}
+
                 if target_id not in targets:
                     # Create new target during this period
-                    targets[target_id] = Target(target_id, coordinate, score, valid_entrance)
+                    targets[target_id] = Target(target_id, head, left_hand, right_hand, valid_entrance)
                 else:
                     # Update existing target
-                    targets[target_id].update(target_id, coordinate, score, valid_entrance)
+                    targets[target_id].update(target_id, head, left_hand, right_hand, valid_entrance)
             # print(i, num_timestamps, targetDoc['timestamp'])
             # print(targets.items())
             if (i>num_timestamps/2):
@@ -351,17 +368,29 @@ Attributes:
     self.valid_entrance: BOOL. Whether this target is a valid entrance at the store.
 """
 class Target:
-    def __init__(self, id, Coordinates, score, valid_entrance=True):
-        self.head = Coordinates
+    def __init__(self, id, head, left_hand=None, right_hand=None, valid_entrance=True):
+        self.head = head
         self.id = id
-        self.score = score
         self.valid_entrance = valid_entrance
+
+        self.left_hand = None
+        self.right_hand = None
+        if left_hand:
+            self.left_hand = left_hand
+        if right_hand:
+            self.right_hand = right_hand
     
-    def update(self, id, Coordinates, score, valid_entrance=True):
-        self.head = Coordinates
+    def update(self, id, head, left_hand=None, right_hand=None, valid_entrance=True):
+        self.head = head
         self.id = id
-        self.score = score
         self.valid_entrance = valid_entrance
+
+        self.left_hand = None
+        self.right_hand = None
+        if left_hand:
+            self.left_hand = left_hand
+        if right_hand:
+            self.right_hand = right_hand
     
     def __str__(self):
         return 'Target(ID: {})'.format(str(self.id))

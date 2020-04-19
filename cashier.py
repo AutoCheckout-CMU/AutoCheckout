@@ -133,7 +133,10 @@ class Cashier():
             if (len(targets)==0):
                 continue
             
-            id_result, target_result =  associate_product_naive(absolutePos, targets)
+            if CE_ASSOCIATION:
+                id_result, target_result =  associate_product_ce(absolutePos, targets)
+            else:
+                id_result, target_result =  associate_product_naive(absolutePos, targets)
             # print(id_result, target_result)
 
             # # Use the trigger end time to capture the frame
