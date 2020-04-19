@@ -2,42 +2,39 @@ DEBUG = 1 (include putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
 Ground truth version:  ground_truth/v11.json
-Overall products detection rate is: 101.2%
-Overall association accuracy is: 97.2%
-Overall precision is: 86.6%
-Overall recall is: 87.7%
+Overall products detection rate is: 88.9%
+Overall association accuracy is: 98.4%
+Overall precision is: 88.9%
+
 
 DEBUG = 0 (countereract putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
 Ground truth version:  ground_truth/v11.json
-Overall products detection rate is: 108.2%
-Overall association accuracy is: 97.8%
-Overall precision is: 84.9%
-Overall recall is: 91.8%
+Overall products detection rate is: 98.0%
+Overall association accuracy is: 97.6%
+Overall precision is: 87.5%
+Overall recall is: 85.7%
 
 DEBUG = 1 (include putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
 Ground truth version:  ground_truth/v11.json
-Overall products detection rate is: 115.8%
+Overall products detection rate is: 63.2%
 Overall association accuracy is: 100.0%
-Overall precision is: 54.5%
-Overall recall is: 63.2%
+Overall precision is: 41.7%
+Overall recall is: 26.3%
 
 DEBUG = 0 (countereract putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
 Ground truth version:  ground_truth/v11.json
-Overall products detection rate is: 155.6%
+Overall products detection rate is: 100.0%
 Overall association accuracy is: 100.0%
-Overall precision is: 50.0%
-Overall recall is: 77.8%
+Overall precision is: 44.4%
+Overall recall is: 44.4%
 
-# TODO Yixin: rotation?
-# TODO Yixin: adapt weight score!!!
 
-# TODO Leo: 3D/2D?
 
 # TODO Mengmeng: fusion total score
 event 560g delta
@@ -70,5 +67,3 @@ location productA 100%
 # assert (timestamps_count == weight_shelf_std[i].shape[1])
 # assert (timestamps_count == weight_plate_mean[i].shape[2])
 # assert (timestamps_count == weight_plate_std[i].shape[2])
-
-# TODO: in db['products'], thumbnail/price/weight can be null

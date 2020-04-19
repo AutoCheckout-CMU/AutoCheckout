@@ -9,6 +9,7 @@ from WeightTrigger import WeightTrigger as WT
 import BookKeeper as BK
 import math_utils
 import math
+from ScoreCalculate import *
 
 from utils import *
 from config import *
@@ -50,7 +51,7 @@ class Cashier():
     def __init__(self):
         pass
     
-    def process(self, dbName='cps-test-01'):
+    def process(self, dbName):
         myBK = BK.BookKeeper(dbName)
 
         weightTrigger = WT(myBK)
@@ -102,6 +103,8 @@ class Cashier():
                 print (event)
                 print('=======')
 
+            scoreCalculator = ScoreCalculator(myBK, event)
+
             # a trivial implementation
             # get all products on this shelf
 
@@ -110,89 +113,20 @@ class Cashier():
             if event.deltaWeight > 0:
                 isPutbackEvent = True
             
-            plateIDs = event.plateIDs
 
-            # print(plateIDs)
-            # a trivial mean plate number
-            possibleProductIDs = myBK.getProductIDsFromPosition(event.gondolaID, event.shelfID)
-            # print(possibleProductIDs)
+            # ProductScore
+            topProductScore = scoreCalculator.getTopK(1)[0]
+            # for score in scoreCalculator.getTopK(5):
+            #     print(score)
+            topProductExtended = myBK.getProductByID(topProductScore.barcode)
 
-            products = {}
-
-            arrangementProbabilityPerProduct = {}
-            weightProbabilityPerProduct = {}
-
-            totalProbabilityPerProduct = {}
-            
-            for productID in possibleProductIDs:
-                if productID not in arrangementProbabilityPerProduct:
-                    products[productID] = myBK.getProductByID(productID)
-
-                    arrangementProbabilityPerProduct[productID] = 0
-                    weightProbabilityPerProduct[productID] = 0
-                    totalProbabilityPerProduct[productID] = 0
-
-                    
-
-            # arrangement probability (with different weight sensed on different plate)
-            plateProb = 0
-            probPerPlate = []
-            overallDelta = sum(plateIDs)
-            # a potential bug: what if there are both negatives and positives and their sum is zero?
-            if (overallDelta == 0):
-                plateProb = 1/len(plateIDs)
-                for i in range(0, len(plateIDs)):
-                    probPerPlate.append(plateProb)
-            else:
-                # plateProb = 1/sum(plateIDs)
-                # for plate in plateIDs:
-                #     if plate == 0:
-                #         probPerPlate.append(0)
-                #     else:
-                #         probPerPlate.append(plateProb)
-
-                for plate in plateIDs:
-                    probPerPlate.append(plate/overallDelta)
-            for i in range(0, len(possibleProductIDs)):
-                productID = possibleProductIDs[i]
-                positions = myBK.getProductPositions(productID)
-                for position in positions:
-                    arrangementProbabilityPerProduct[productID] += probPerPlate[position.plate-1]
-
-            # print(arrangementProbabilityPerProduct)
-
-            # weight probability & total & find the most possible
-            mostPossible = ()
-            mostPossibleIsInitialized = False
-
-            for productID in products:
-                product = products[productID]
-                weight = product.weight
-
-                # When productW=deltaW, e^(-|productW - deltaW|)=1.0
-                
-                weightProb = (math.e)**(-abs(weight-abs(event.deltaWeight)))
-                # print("======weight")
-                # print(weightProb)
-                weightProbabilityPerProduct[productID] = weightProb
-                totalProb = weightProb + arrangementProbabilityPerProduct[productID]
-                # print("======total")
-                # print(totalProb)
-                totalProbabilityPerProduct[productID] = totalProb
-                if mostPossibleIsInitialized == False:
-                    mostPossible = (product, totalProb)
-                    mostPossibleIsInitialized = True
-                else:
-                    if mostPossible[1] <= totalProb:
-                        mostPossible = (product, totalProb)
-            
-            active_products.append(mostPossible)
+            active_products.append((topProductExtended, topProductScore.getTotalScore()))
 
             ################################ Naive Association ################################
             product, _ = active_products[-1] 
             productID = product.barcode
-            absolutePos = myBK.getProductCoordinates(productID)
-            
+            # absolutePos = myBK.getProductCoordinates(productID)
+            absolutePos = event.getEventCoordinates(myBK)
             targets = myBK.getTargetsForEvent(event)
 
             # No target for the event found at all

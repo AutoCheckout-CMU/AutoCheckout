@@ -10,8 +10,8 @@ class PickUpEvent():
     deltaWeight: np.float
     gondolaID: int
     shelfID: int
-    plateIDs: list
-    def __init__(self, triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondolaID, shelfID, plateIDs):
+    deltaWeights: list
+    def __init__(self, triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights):
         self.triggerBegin = triggerBegin
         self.triggerEnd = triggerEnd
         self.nBegin = nBegin
@@ -19,12 +19,23 @@ class PickUpEvent():
         self.deltaWeight = deltaWeight
         self.gondolaID = gondolaID
         self.shelfID = shelfID
-        self.plateIDs = plateIDs
+        self.deltaWeights = deltaWeights
+
+    def getEventCoordinates(self, bk):
+        greatestDelta = 0
+        plateIDWithGreatestDelta = 1
+        for i in range(len(self.deltaWeights)):
+            deltaWeightAbs = abs(self.deltaWeights[i])
+            if deltaWeightAbs > greatestDelta:
+                greatestDelta = deltaWeightAbs
+                plateIDWithGreatestDelta = i+1
+        coordinates = bk.get3DCoordinatesForPlate(self.gondolaID, self.shelfID, plateIDWithGreatestDelta)
+        return coordinates
 
     def __str__(self):
         return "[{},{}] deltaWeight: {}, position: {}, {}, {}".format(
             datetime.fromtimestamp(self.triggerBegin), datetime.fromtimestamp(self.triggerEnd),
-            self.deltaWeight, self.gondolaID, self.shelfID, self.plateIDs)
+            self.deltaWeight, self.gondolaID, self.shelfID, self.deltaWeights)
 
 class WeightTrigger:
 
