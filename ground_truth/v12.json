@@ -2354,10 +2354,58 @@
       },
       {
         "dataset": "cps-test-21",
-        "range" : "11_07_2019_03:08:13 - 11_07_2019_03:08:36",
+        "range" : null,
         "events": [
           {
             "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "835144008687",
+                  "name": "Choco-nut Trail Mix",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/choco_nut_128x.jpg?v=1566938943",
+                  "weight": 269.0
+                }
+              ],
+              "time": "11_07_2019_03:08:19",
+              "todo": null,
+              "note": "white shirt, Carlos?",
+              "target_id": "1627226157084405922"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  8
+                ],
+                "shelf": 3
+              },
+              "products": [
+
+              ],
+              "time": "11_07_2019_03:08:24",
+              "todo": null,
+              "note": "white shirt, Carlos?",
+              "target_id": "1627226157084405922"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 3,
             "observation": {
               "position": {
                 "gondola": 2,
@@ -2377,12 +2425,19 @@
                   "weight" : 61.599998
                 }
               ],
-              "time": "6:57 + 2019-11-07_03-01-17",
+              "time": "11_07_2019_03:08:29",
               "todo": null,
-              "target_id": ""
+              "note": "white shirt, Carlos?",
+              "target_id": "1627226157084405922"
             },
             "putback": 0
-          },
+          }
+        ]
+      },
+      {
+        "dataset": "cps-test-22",
+        "range" : "11_07_2019_03:08:54 - 11_07_2019_03:09:17",
+        "events": [
           {
             "eventID": 2,
             "observation": {
@@ -2409,13 +2464,7 @@
               "target_id": ""
             },
             "putback": 0
-          }
-        ]
-      },
-      {
-        "dataset": "cps-test-22",
-        "range" : "11_07_2019_03:08:54 - 11_07_2019_03:09:17",
-        "events": [
+          },
           {
             "eventID": 1,
             "observation": {
