@@ -22,7 +22,9 @@ class PickUpEvent():
         self.plateIDs = plateIDs
 
     def __str__(self):
-        return "deltaWeight: {}, position: {}, {}, {}".format(self.deltaWeight, self.gondolaID, self.shelfID, self.plateIDs)
+        return "[{},{}] deltaWeight: {}, position: {}, {}, {}".format(
+            datetime.fromtimestamp(self.triggerBegin), datetime.fromtimestamp(self.triggerEnd),
+            self.deltaWeight, self.gondolaID, self.shelfID, self.plateIDs)
 
 class WeightTrigger:
 
