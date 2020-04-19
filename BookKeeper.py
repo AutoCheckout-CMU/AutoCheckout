@@ -211,15 +211,21 @@ class BookKeeper():
                 left_hand, right_hand = None, None
                 if CE_ASSOCIATION and 'l_wrist' in target and 'r_wrist' in target:
                     # Left hand
-                    lh_x, lh_y, lh_z = target['l_wrist']['point']['x'], target['l_wrist']['point']['y'], target['l_wrist']['point']['z']
-                    lh_score = target['l_wrist']['score']
-                    lh_coordinate = Coordinates(lh_x*INCH_TO_METER, lh_y*INCH_TO_METER, lh_z*INCH_TO_METER)
-                    left_hand = {'position': lh_coordinate, 'score': lh_score}
+                    if (len(target['l_wrist']['point']) != 0):
+                        lh_x, lh_y, lh_z = target['l_wrist']['point']['x'], target['l_wrist']['point']['y'], target['l_wrist']['point']['z']
+                        lh_score = target['l_wrist']['score']
+                        lh_coordinate = Coordinates(lh_x*INCH_TO_METER, lh_y*INCH_TO_METER, lh_z*INCH_TO_METER)
+                        left_hand = {'position': lh_coordinate, 'score': lh_score}
+                    else:
+                        left_hand = None
                     # Right
-                    rh_x, rh_y, rh_z = target['r_wrist']['point']['x'], target['r_wrist']['point']['y'], target['r_wrist']['point']['z']
-                    rh_score = target['r_wrist']['score']
-                    rh_coordinate = Coordinates(rh_x*INCH_TO_METER, rh_y*INCH_TO_METER, rh_z*INCH_TO_METER)
-                    right_hand = {'position': rh_coordinate, 'score': rh_score}
+                    if (len(target['r_wrist']['point']) != 0):
+                        rh_x, rh_y, rh_z = target['r_wrist']['point']['x'], target['r_wrist']['point']['y'], target['r_wrist']['point']['z']
+                        rh_score = target['r_wrist']['score']
+                        rh_coordinate = Coordinates(rh_x*INCH_TO_METER, rh_y*INCH_TO_METER, rh_z*INCH_TO_METER)
+                        right_hand = {'position': rh_coordinate, 'score': rh_score}
+                    else:
+                        right_hand = None
 
                 if target_id not in targets:
                     # Create new target during this period
