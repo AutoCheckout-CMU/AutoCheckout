@@ -5,6 +5,7 @@ Ground truth version:  ground_truth/v11.json
 Overall products detection rate is: 88.9%
 Overall association accuracy is: 98.4%
 Overall precision is: 88.9%
+Overall recall is: 79.0%
 
 
 DEBUG = 0 (countereract putback event)
