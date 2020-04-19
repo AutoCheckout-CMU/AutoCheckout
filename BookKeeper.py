@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw
 from config import *
 
 class BookKeeper():
-    def __init__(self, dbname='cps-test-01'):
+    def __init__(self, dbname):
         _mongoClient = MongoClient('mongodb://localhost:27017')
         self.db = _mongoClient[dbname]
         self.planogramDB = self.db['planogram']
@@ -31,9 +31,13 @@ class BookKeeper():
         self._shelvesDict = {}
         self._platesDict = {}
         
-        self. _planogram = self.__loadPlanogram()
-        self._products = self.__loadProducts()
+        self.productIDsFromPlanogramTable = set()
+        self.productIDsFromProductsTable = set()
 
+        self. _planogram = self.__loadPlanogram()
+        self.__buildAllProductsCache()
+        self._buildDictsFromStoreMeta()
+        
 
     def __loadPlanogram(self):
         num_gondola = 5
@@ -42,41 +46,47 @@ class BookKeeper():
         planogram = np.empty((num_gondola, num_shelf, num_plate), dtype=object)
 
         for item in self.planogramDB.find():
+            
+            if 'id' not in item['planogram_product_id']:
+                continue
+            productID = item['planogram_product_id']['id']
+            if productID == '':
+                continue
+            productItem = self.productsDB.find_one({
+                'product_id.id': productID,
+            })
+            product = codec.Product.from_dict(productItem)
+            if product.weight == 0.0:
+                continue
+
             for plate in item['plate_ids']:
                 shelf = plate['shelf_id']
                 gondola = shelf['gondola_id']
                 gondolaID = gondola['id']
                 shelfID = shelf['shelf_index']
                 plateID = plate['plate_index']
-                if item['planogram_product_id']:
-                    productID = item['planogram_product_id']['id']
-                    globalCoordinates = item['global_coordinates']['transform']['translation']
-                    if 'x' not in globalCoordinates:
-                        globalCoordinates['x'] = 0
-                    if 'y' not in globalCoordinates:
-                        globalCoordinates['y'] = 0
-                    if 'z' not in globalCoordinates:
-                        globalCoordinates['z'] = 0
-                    if productID != '':
-                        planogram[gondolaID-1][shelfID-1][plateID-1] = productID
-                        if productID not in self._positionsPerProduct:
-                            self._positionsPerProduct[productID]  = []
-                        self._positionsPerProduct[productID].append((gondolaID, shelfID, plateID))
-
-                        # TODO: gondola 5 has rotation
-                        self._coordinatesPerProduct[productID] = globalCoordinates
+                globalCoordinates = item['global_coordinates']['transform']['translation']
+                if 'x' not in globalCoordinates:
+                    globalCoordinates['x'] = 0
+                if 'y' not in globalCoordinates:
+                    globalCoordinates['y'] = 0
+                if 'z' not in globalCoordinates:
+                    globalCoordinates['z'] = 0
+                planogram[gondolaID-1][shelfID-1][plateID-1] = productID
+                self.productIDsFromPlanogramTable.add(productID)
+                if productID not in self._positionsPerProduct:
+                    self._positionsPerProduct[productID]  = []
+                self._positionsPerProduct[productID].append((gondolaID, shelfID, plateID))
+                self._coordinatesPerProduct[productID] = globalCoordinates
         
-        return  planogram
-
-    def __loadProducts(self):
-        return None
+        return planogram
 
 
-    def getProductByID(self, productID):
-        if productID in self._productsCache:
-            return self._productsCache[productID]
-        else:
-            product = codec.Product.from_dict(self.productsDB.find_one({'product_id.id': productID}))
+    def __buildAllProductsCache(self):
+        for item in self.productsDB.find():
+            product = codec.Product.from_dict(item)
+            if product.weight == 0.0:
+                continue
 
             productExtended = ProductExtended()
             productExtended.barcode_type = product.product_id.barcode_type
@@ -86,9 +96,13 @@ class BookKeeper():
             productExtended.price = product.price
             productExtended.weight = product.weight
             productExtended.positions = self.getProductPositions(productExtended.barcode)
-            # print(productExtended.positions)
-            self._productsCache[productID] = productExtended
-            return productExtended
+            self._productsCache[productExtended.barcode] = productExtended
+            self.productIDsFromProductsTable.add(productExtended.barcode)
+
+    def getProductByID(self, productID):
+        if productID in self._productsCache:
+            return self._productsCache[productID]
+        return None
 
     def getFramesForEvent(self, event):
         timeBegin = event.triggerBegin
@@ -207,9 +221,7 @@ class BookKeeper():
     def _findOptimalPlateForEvent(self, event):
         return 1
 
-    def _get3DCoordinatesForPlate(self, gondola, shelf, plate):
-        if self._gondolasDict == None:
-            self._buildDictsFromStoreMeta()
+    def get3DCoordinatesForPlate(self, gondola, shelf, plate):
         gondolaMetaKey = str(gondola)
         shelfMetaKey = str(gondola) + '_' + str(shelf)
         plateMetaKey = str(gondola) + '_' + str(shelf) + '_' + str(plate)
@@ -219,12 +231,23 @@ class BookKeeper():
         gondolaTranslation = self._getTranslation(self._gondolasDict[gondolaMetaKey])
         absolute3D.translateBy(gondolaTranslation['x'], gondolaTranslation['y'], gondolaTranslation['z'])
 
-        shelfTranslation = self._getTranslation(self._shelvesDict[shelfMetaKey])
-        absolute3D.translateBy(shelfTranslation['x'], shelfTranslation['y'], shelfTranslation['z'])
+        if gondola == 5:
+            # rotate by 90 degrees
+            shelfTranslation = self._getTranslation(self._shelvesDict[shelfMetaKey])
+            absolute3D.translateBy(-shelfTranslation['y'], shelfTranslation['x'], shelfTranslation['z'])
 
-        plateTranslation = self._getTranslation(self._platesDict[plateMetaKey])
-        absolute3D.translateBy(plateTranslation['x'], plateTranslation['y'], plateTranslation['z'])
+            plateTranslation = self._getTranslation(self._platesDict[plateMetaKey])
+            absolute3D.translateBy(-plateTranslation['y'], plateTranslation['x'], plateTranslation['z'])
 
+        else:
+            shelfTranslation = self._getTranslation(self._shelvesDict[shelfMetaKey])
+            absolute3D.translateBy(shelfTranslation['x'], shelfTranslation['y'], shelfTranslation['z'])
+
+            plateTranslation = self._getTranslation(self._platesDict[plateMetaKey])
+            absolute3D.translateBy(plateTranslation['x'], plateTranslation['y'], plateTranslation['z'])
+        
+        
+            
         return absolute3D
 
     def _getTranslation(self, meta):

@@ -35,7 +35,7 @@ Metrics:
 Metrics:
     1. Accuracy: num_correct_association/num_correct_products
 """
-def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v10.json'):
+def evaluate_intenvory(dbs, gt_path):
     # Load JSON groundtruth
     with open(gt_path) as f:
         gt_data = json.load(f)
@@ -122,6 +122,6 @@ def evaluate_intenvory(dbs=['cps-test-01'], gt_path='ground_truth/v10.json'):
 
 if __name__ == "__main__":
     dbs=['cps-test-01', 'cps-test-2'] + ['cps-test-'+str(i) for i in range(4, 13)]+ ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+    # dbs=['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
     gt_path='ground_truth/v11.json' # list of ground truth W.R.T the previous databases
-    # dbs = ['cps-test-10', 'cps-test-11', 'cps-test-12']
     evaluate_intenvory(dbs, gt_path)
