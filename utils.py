@@ -40,9 +40,10 @@ def associate_product_ce(product_loc, targets):
     for id, target in targets.items():
         ce_distance = 0
         total_score = 0
-        head, hscore = target.head['position'], target.head['score']
-        ce_distance += calculate_distance3D(head, product_loc)*hscore
-        total_score += hscore
+        if target.head is not None:
+            head, hscore = target.head['position'], target.head['score']
+            ce_distance += calculate_distance3D(head, product_loc)*hscore
+            total_score += hscore
         if target.left_hand is not None:
             left_hand, lscore = target.left_hand['position'], target.left_hand['score']
             ce_distance += calculate_distance3D(left_hand, product_loc)*lscore

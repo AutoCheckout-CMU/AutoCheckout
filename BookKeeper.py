@@ -194,6 +194,7 @@ class BookKeeper():
                 '$lt': timeEnd
             }
         })
+        # print("Duration: ", timeBegin, timeEnd)
         # Sort the all targets entry in a timely order
         targetsCursor.sort([('timestamp', 1)])
         targets = {}
@@ -206,10 +207,13 @@ class BookKeeper():
                 target_id = target['target_id']['id']
                 valid_entrance = target['target_state'] == 'TARGETSTATE_VALID_ENTRANCE'
                 # Head
-                x, y, z = target['head']['point']['x'], target['head']['point']['y'], target['head']['point']['z']
-                score = target['head']['score']
-                coordinate = Coordinates(x*INCH_TO_METER, y*INCH_TO_METER, z*INCH_TO_METER)
-                head = {'position': coordinate, 'score': score}
+                head = None
+                if 'head' in target:
+                    if (len(target['head']['point']) != 0):
+                        x, y, z = target['head']['point']['x'], target['head']['point']['y'], target['head']['point']['z']
+                        score = target['head']['score']
+                        coordinate = Coordinates(x*INCH_TO_METER, y*INCH_TO_METER, z*INCH_TO_METER)
+                        head = {'position': coordinate, 'score': score}
                 left_hand, right_hand = None, None
                 if CE_ASSOCIATION and 'l_wrist' in target and 'r_wrist' in target:
                     # Left hand
@@ -237,8 +241,10 @@ class BookKeeper():
                     targets[target_id].update(target_id, head, left_hand, right_hand, valid_entrance)
             # print(i, num_timestamps, targetDoc['timestamp'])
             # print(targets.items())
+            # print("timestamp: ", targetDoc['date_time'])
             if (i>num_timestamps/2):
                 break
+        # print("Event timestamp: ", targetDoc['timestamp'], head)
         if VERBOSE:
             print("Targets: Capture {} targets in this event".format(len(targets)), targets.keys())
         return targets

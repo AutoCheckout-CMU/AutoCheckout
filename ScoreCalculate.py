@@ -4,7 +4,7 @@ import math_utils
 
 sigmaForEventWeight = 10.0 #gram
 sigmaForProductWeight = 10.0 #gram
-arrangementContribution = 0.6
+arrangementContribution = 1
 weightContribution = 1 - arrangementContribution
 
 
