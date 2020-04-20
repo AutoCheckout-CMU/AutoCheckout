@@ -2,10 +2,10 @@ from BookKeeper import BookKeeper
 from WeightTrigger import PickUpEvent
 import math_utils
 
-sigmaForEventWeight = 5.0 #gram
-sigmaForProductWeight = 5.0 #gram
-arrangementContribution = 1.0
-weightContribution = 0.0
+sigmaForEventWeight = 10.0 #gram
+sigmaForProductWeight = 10.0 #gram
+arrangementContribution = 0.6
+weightContribution = 1 - arrangementContribution
 
 
 class ProductScore:
