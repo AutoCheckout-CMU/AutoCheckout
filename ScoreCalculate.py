@@ -2,10 +2,10 @@ from BookKeeper import BookKeeper
 from WeightTrigger import PickUpEvent
 import math_utils
 
-sigmaForEventWeight = 5.0 #gram
-sigmaForProductWeight = 5.0 #gram
-arrangementContribution = 1.0
-weightContribution = 0.0
+sigmaForEventWeight = 10.0 #gram
+sigmaForProductWeight = 10.0 #gram
+arrangementContribution = 0.6
+weightContribution = 1 - arrangementContribution
 
 
 class ProductScore:
@@ -14,10 +14,11 @@ class ProductScore:
     barcode: str
     bk: BookKeeper
 
-    def __init__(self, barcode):
+    def __init__(self, barcode, bk):
         self.barcode = barcode
         self.arrangementScore = 0.
         self.weightScore = 0.
+        self.bk = bk
     
     def getTotalScore(self):
         return arrangementContribution*self.arrangementScore+weightContribution*self.weightScore
@@ -26,11 +27,13 @@ class ProductScore:
         return str(self)
 
     def __str__(self):
-        return "[%s] arrangementScore=%f weightScore=%f totalScore=%f" % (
+        productExtended = self.bk.getProductByID(self.barcode)
+        return "[%s] arrangementScore=%f weightScore=%f totalScore=%f, weight=%f" % (
             self.barcode, 
             self.arrangementScore, 
             self.weightScore, 
-            self.getTotalScore()
+            self.getTotalScore(),
+            productExtended.weight
         )
 
 class ScoreCalculator:
@@ -51,7 +54,7 @@ class ScoreCalculator:
         self.__productScoreDict = {}
         self.__event = event
         for productID in self.__bk.productIDsFromProductsTable:
-            productScore = ProductScore(productID)
+            productScore = ProductScore(productID, bk)
             self.__productScoreRank.append(productScore)
             self.__productScoreDict[productID] = productScore
 
@@ -85,6 +88,8 @@ class ScoreCalculator:
         for productID in productIDsOnTheShelf:
             positions = self.__bk.getProductPositions(productID)
             for position in positions:
+                if position.gondola != self.__event.gondolaID or position.shelf != self.__event.shelfID:
+                    continue
                 self.__productScoreDict[productID].arrangementScore += probPerPlate[position.plate-1]
 
 

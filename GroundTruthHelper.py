@@ -17,26 +17,23 @@ class Product(Serializable):
 
 # print all products from a certain shelf
 gondola_id = 4
-shelf_id = 6
+shelf_id = 4
 plate_id = 4
 
 bk = BookKeeper.BookKeeper(dbname='TEAM-PEI-JD-1')
 
-if plate_id is not None:
-    product_id = bk.getProductIDsFromPosition(gondola_id, shelf_id, plate_id)
-    # product_id = '071142643370'
+if plate_id is None:
+    product_ids = bk.getProductIDsFromPosition(gondola_id, shelf_id)
+else:
+    product_ids = bk.getProductIDsFromPosition(gondola_id, shelf_id, plate_id)
+for product_id in product_ids:
     productExtended = bk.getProductByID(product_id)
     objProduct = Product(
-                    productExtended.barcode,
-                    productExtended.barcode_type,
-                    productExtended.name,
-                    productExtended.thumbnail,
-                    productExtended.price,
-                    productExtended.weight
-                )
+            productExtended.barcode,
+            productExtended.barcode_type,
+            productExtended.name,
+            productExtended.thumbnail,
+            productExtended.price,
+            productExtended.weight
+        )
     print (objProduct.toJSON())
-else:
-    product_ids = bk.getProductIDsFromPosition(gondola_id, shelf_id)
-    for product_id in product_ids:
-        product = bk.getProductByID(product_id)
-        print (product)

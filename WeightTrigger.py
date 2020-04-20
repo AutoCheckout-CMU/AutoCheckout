@@ -1,6 +1,7 @@
 import numpy as np
 from cpsdriver.codec import DocObjectCodec
 from datetime import datetime
+from BookKeeper import Position
 
 class PickUpEvent():
     triggerBegin: datetime
@@ -21,7 +22,8 @@ class PickUpEvent():
         self.shelfID = shelfID
         self.deltaWeights = deltaWeights
 
-    def getEventCoordinates(self, bk):
+    # for one event, return its most possible gondola/shelf/plate
+    def getEventMostPossiblePosition(self, bk):
         greatestDelta = 0
         plateIDWithGreatestDelta = 1
         for i in range(len(self.deltaWeights)):
@@ -29,7 +31,24 @@ class PickUpEvent():
             if deltaWeightAbs > greatestDelta:
                 greatestDelta = deltaWeightAbs
                 plateIDWithGreatestDelta = i+1
-        coordinates = bk.get3DCoordinatesForPlate(self.gondolaID, self.shelfID, plateIDWithGreatestDelta)
+        return Position(self.gondolaID, self.shelfID, plateIDWithGreatestDelta)
+    
+    # for one event, return its all possible (gondola/shelf/plate) above threshold
+    def getEventAllPositions(self, bk):
+        possiblePositions = []
+        # Magic number: A plate take into account only when plate's deltaWeight is more than 20% of shelf's deltaWeight
+        threshold = 0.2 
+        thresholdWeight = threshold * abs(self.deltaWeight)
+        for i in range(len(self.deltaWeights)):
+            deltaWeightAbs = abs(self.deltaWeights[i])
+            if deltaWeightAbs >= thresholdWeight:
+                plateID = i+1
+                possiblePositions.append(Position(self.gondolaID, self.shelfID, plateID))
+        return possiblePositions
+
+    def getEventCoordinates(self, bk):
+        position = self.getEventMostPossiblePosition(bk)
+        coordinates = bk.get3DCoordinatesForPlate(position.gondola, position.shelf, position.plate)
         return coordinates
 
     def __str__(self):
