@@ -3542,6 +3542,144 @@
             "putback": 0
           }
         ]
+      },
+      {
+        "dataset": "BASELINE-3",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  4
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "UNKOWN",
+                  "name": "UNKOWN",
+                  "price": 1,
+                  "thumbnail": null,
+                  "weight": null
+                }
+              ],
+              "time": "00:18 + 2020-04-20_07-42-32",
+              "todo": null,
+              "target_id": "1236364328026240777"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  4
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "UNKOWN",
+                  "name": "UNKOWN",
+                  "price": 1,
+                  "thumbnail": null,
+                  "weight": null
+                }
+              ],
+              "time": "00:24 + 2020-04-20_07-42-32",
+              "todo": null,
+              "target_id": "1236364328026240777"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  5,
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907420108",
+                  "name": "El Sabroso Blazing Hot Cheetos",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/243090-1_3be6caea-96bc-4bcb-aa2d-b873a3648e94_128x.png?v=1565210263",
+                  "weight": 121.02999877929688
+                }
+              ],
+              "time": "00:29 + 2020-04-20_07-42-32",
+              "todo": null,
+              "target_id": "1236364328026240777"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  12
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "613008744090",
+                  "name": "AZ MUCHO MANGO",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/00613008744090-zmfxACyWHj2BJg-0_s500_128x.jpg?v=1566251994",
+                  "weight": 563.3300170898438
+                }
+              ],
+              "time": "00:34 + 2020-04-20_07-42-32",
+              "todo": null,
+              "target_id": "1236364328026240777"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "120130",
+                  "name": "Pepsi",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 381.0
+                }
+              ],
+              "time": "00:46 + 2020-04-20_07-42-32",
+              "todo": null,
+              "note": "Pepsi doesn't have a thumbnail, not sure barcode 120130 is correct",
+              "target_id": "1236364328026240777"
+            },
+            "putback": 0
+          }
+        ]
       }
     ]
   }
