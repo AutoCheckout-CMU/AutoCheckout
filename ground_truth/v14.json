@@ -3383,18 +3383,18 @@
               "position": {
                 "gondola": 3,
                 "plates": [
-                  9
+                  12
                 ],
                 "shelf": 5
               },
               "products": [
                 {
                   "barcodeType": "UPC",
-                  "id": "UNKOWN",
-                  "name": "UNKOWN",
+                  "id": "038000138416",
+                  "name": "Pringles Original",
                   "price": 1,
-                  "thumbnail": null,
-                  "weight": null
+                  "thumbnail": "",
+                  "weight": 192.0
                 }
               ],
               "time": "00:13 + 2020-04-20_07-33-37",
@@ -3560,11 +3560,11 @@
               "products": [
                 {
                   "barcodeType": "UPC",
-                  "id": "UNKOWN",
-                  "name": "UNKOWN",
+                  "id": "858369006207",
+                  "name": "Soylent Strawberry",
                   "price": 1,
-                  "thumbnail": null,
-                  "weight": null
+                  "thumbnail": "",
+                  "weight": 467.0
                 }
               ],
               "time": "00:18 + 2020-04-20_07-42-32",
