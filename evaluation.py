@@ -51,7 +51,7 @@ def evaluate_intenvory(dbs, gt_path):
     tp_asso = 0
     overall_num_preds, overall_products = 0, 0
     for i in range(len(dbs)):
-        print("Evaluating database: ", dbs[i])
+        print("\n\nEvaluating database: ", dbs[i])
         ########## Generate Prediction ##########
         predicted_products = {} # Dictionary of all predicted products Key: ProductID Value: Quantity
         dbName = dbs[i]
@@ -66,7 +66,8 @@ def evaluate_intenvory(dbs, gt_path):
                 else:
                     predicted_products[productID] = {'customerID': customerID, 'quantity': quantity}
                 num_preds += quantity
-        print("Inventory Change in {}: ".format(dbName), predicted_products, " Amount: ", num_preds)
+        if VERBOSE:
+            print("Inventory Change in {}: ".format(dbName), predicted_products, " Amount: ", num_preds)
 
         ########## Evaluate Ground truth ##########
         num_events = 0

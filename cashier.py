@@ -97,11 +97,11 @@ class Cashier():
         # KEY: customer ID, VALUE: CustomerReceipt
         receipts = {}
         print("Capture {} events in the databse {}".format(len(events), dbName))
+        print("==============================================================")
         for event in events:
             if VERBOSE:
-                print('=======')
-                print (event)
-                print('=======')
+                print ("----------------")
+                print ('Event: ', event)
 
             scoreCalculator = ScoreCalculator(myBK, event)
 
@@ -158,7 +158,10 @@ class Cashier():
             
             # Predict quantity from delta weight
             pred_quantity = max(int(round(abs(event.deltaWeight / product.weight))), 1)
-            print("Predicted Quantity for ",  product.name, " is: ", event.deltaWeight / product.weight, product.thumbnail)
+            if VERBOSE:
+                print("Predicted: [%s][putback=%d] %s, weight=%dg, count=%d, thumbnail=%s" % (product.barcode, isPutbackEvent, product.name, product.weight, pred_quantity, product.thumbnail))
+            else:
+                print("Predicted: [%s][putback=%d] %s, weight=%dg, count=%d" % (product.barcode, isPutbackEvent, product.name, product.weight, pred_quantity))
             if isPutbackEvent:
                 if DEBUG:
                     customer_receipt.purchase(product, pred_quantity) # In the evaluation code, putback is still an event, so we accumulate for debug purpose

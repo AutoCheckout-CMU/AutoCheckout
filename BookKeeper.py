@@ -238,7 +238,7 @@ class BookKeeper():
             if (i>num_timestamps/2):
                 break
         if VERBOSE:
-            print("Capture {} targets in this event".format(len(targets)), targets.keys())
+            print("Targets: Capture {} targets in this event".format(len(targets)), targets.keys())
         return targets
 
     def _findOptimalPlateForEvent(self, event):
