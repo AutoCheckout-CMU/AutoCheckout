@@ -2,6 +2,7 @@ import numpy as np
 from cpsdriver.codec import DocObjectCodec
 from datetime import datetime
 from BookKeeper import Position
+import json
 
 class PickUpEvent():
     triggerBegin: datetime
@@ -69,6 +70,7 @@ class WeightTrigger:
 
 
     def __init__(self, BK):
+        self.__bk = BK
         self.db = BK.db
         self.plate_data = BK.plateDB
         self.agg_plate_data, self.agg_shelf_data, self.timestamps = self.get_agg_weight()
@@ -110,13 +112,14 @@ class WeightTrigger:
         agg_shelf_data = [None] * number_gondolas
         timestamps = self.init_1D_array(number_gondolas)
         date_times = self.init_1D_array(number_gondolas)
-
+        test_start_time = self.__bk.getTestStartTime()
         for item in plate_data.find():
             gondola_id = item['gondola_id']
             plate_data_item = DocObjectCodec.decode(doc=item, collection='plate_data')
             
             timestamp = plate_data_item.timestamp  # seconds since epoch
-        
+            if timestamp < test_start_time:
+                continue
             np_plate = plate_data_item.data  # [time,shelf,plate]
             np_plate = np.nan_to_num(np_plate, copy=True, nan=0) # replace all NaN elements to 0
             np_plate = np_plate[:, 1:13, 1:13]  # remove first line, which is always NaN elements

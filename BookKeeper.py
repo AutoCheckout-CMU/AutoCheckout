@@ -8,12 +8,14 @@ from typing import NamedTuple
 import io
 from PIL import Image, ImageDraw
 from config import *
+import json
 
 INCH_TO_METER = 0.0254
 
 class BookKeeper():
     def __init__(self, dbname):
         _mongoClient = MongoClient('mongodb://localhost:27017')
+        self.__dbname = dbname
         self.db = _mongoClient[dbname]
         self.planogramDB = self.db['planogram']
         self.productsDB = self.db['products']
@@ -324,6 +326,11 @@ class BookKeeper():
     def getProductPositions(self, productID):
         product = self.getProductByID(productID)
         return product.positions
+
+    def getTestStartTime(self):
+        with open('TestCaseStartTime.json', 'r') as f:
+            testStartTime = json.load(f)
+        return testStartTime[self.__dbname]
 
 class Position:
     gondola: int
