@@ -1,40 +1,39 @@
 DEBUG = 1 (include putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
-Ground truth version:  ground_truth/v11.json
-Overall products detection rate is: 88.9%
-Overall association accuracy is: 98.4%
-Overall precision is: 88.9%
-Overall recall is: 79.0%
+Ground truth version:  ground_truth/v12.json
+Overall products detection rate is: 97.6%
+Overall association accuracy is: 98.6%
+Overall precision is: 87.8%
+Overall recall is: 85.7%
 
 
 DEBUG = 0 (countereract putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
-Ground truth version:  ground_truth/v11.json
-Overall products detection rate is: 98.0%
-Overall association accuracy is: 97.6%
-Overall precision is: 87.5%
-Overall recall is: 85.7%
+Ground truth version:  ground_truth/v12.json
+Overall products detection rate is: 106.0%
+Overall association accuracy is: 95.7%
+Overall precision is: 86.8%
+Overall recall is: 92.0%
 
 DEBUG = 1 (include putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
-Ground truth version:  ground_truth/v11.json
-Overall products detection rate is: 63.2%
+Ground truth version:  ground_truth/v12.json
+Overall products detection rate is: 100.0%
 Overall association accuracy is: 100.0%
-Overall precision is: 41.7%
-Overall recall is: 26.3%
+Overall precision is: 59.1%
+Overall recall is: 59.1%
 
 DEBUG = 0 (countereract putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
-Ground truth version:  ground_truth/v11.json
-Overall products detection rate is: 100.0%
-Overall association accuracy is: 100.0%
-Overall precision is: 44.4%
-Overall recall is: 44.4%
-
+Ground truth version:  ground_truth/v12.json
+Overall products detection rate is: 140.0%
+Overall association accuracy is: 87.5%
+Overall precision is: 57.1%
+Overall recall is: 80.0%
 
 
 # TODO Mengmeng: fusion total score

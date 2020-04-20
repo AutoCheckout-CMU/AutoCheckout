@@ -2431,10 +2431,10 @@
       },
       {
         "dataset": "cps-test-22",
-        "range" : "11_07_2019_03:08:54 - 11_07_2019_03:09:17",
+        "range" : null,
         "events": [
           {
-            "eventID": 2,
+            "eventID": 1,
             "observation": {
               "position": {
                 "gondola": 3,
@@ -2456,39 +2456,38 @@
               ],
               "time": "7:17 + 2019-11-07_03-01-27",
               "todo": null,
-              "target_id": ""
-            },
-            "putback": 0
-          },
-          {
-            "eventID": 1,
-            "observation": {
-              "position": {
-                "gondola": 3,
-                "plates": [
-                  3,
-                  4
-                ],
-                "shelf": 3
-              },
-              "products": [
-                {
-                  "barcodeType" : "UPC",
-                  "id" : "041419420065",
-                  "name" : "Combos Pizzeria Pretzel",
-                  "thumbnail" : "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/71jUcX3ehCL._SY355_ea95107f-ebd5-4137-a077-3767c45319ce_128x.jpg?v=1566938818",
-                  "price" : 1.000000,
-                  "weight" : 185.300003
-                }
-              ],
-              "time": "7:22 + 2019-11-07_03-01-27",
-              "todo": null,
-              "target_id": ""
+              "target_id": "-8882804315632590922"
             },
             "putback": 0
           },
           {
             "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  6
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "024100315345",
+                  "name": "CHEEZ IT WHT CHDR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/00801301_ae88d668-6d3a-4bb5-8a2e-ae984231a303_128x.jpg?v=1566938968",
+                  "weight": 89.9000015258789
+                }
+              ],
+              "time": "11_07_2019_03:09:05",
+              "todo": null,
+              "target_id": "-8882804315632590922"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 3,
             "observation": {
               "position": {
                 "gondola": 2,
@@ -2510,7 +2509,7 @@
               ],
               "time": "7:28 + 2019-11-07_03-01-27",
               "todo": null,
-              "target_id": ""
+              "target_id": "-8882804315632590922"
             },
             "putback": 0
           }
@@ -2518,7 +2517,7 @@
       },
       {
         "dataset": "cps-test-23",
-        "range" : "11_07_2019_03:09:40 - 11_07_2019_03:11:06",
+        "range" : null,
         "events": [
           {
             "eventID": 1,
@@ -2542,7 +2541,7 @@
               ],
               "time": "8:12 + 2019-11-07_03-01-27",
               "todo": null,
-              "target_id": ""
+              "target_id": "7884235155779550400"
             },
             "putback": 0
           },
@@ -2569,7 +2568,7 @@
               ],
               "time": "8:17 + 2019-11-07_03-01-27",
               "todo": null,
-              "target_id": ""
+              "target_id": "7884235155779550400"
             },
             "putback": 0
           },
@@ -2596,7 +2595,7 @@
               ],
               "time": "8:22 + 2019-11-07_03-01-27",
               "todo": null,
-              "target_id": ""
+              "target_id": "7884235155779550400"
             },
             "putback": 1
           },
@@ -2622,7 +2621,7 @@
               ],
               "time": "8:27 + 2019-11-07_03-01-27",
               "todo": null,
-              "target_id": ""
+              "target_id": "7884235155779550400"
             },
             "putback": 0
           },
@@ -2649,7 +2648,7 @@
               ],
               "time": "8:28 + 2019-11-07_03-01-27",
               "todo": null,
-              "target_id": ""
+              "target_id": "7884235155779550400"
             },
             "putback": 1
           },
@@ -2675,9 +2674,270 @@
               ],
               "time": "8:29 + 2019-11-07_03-01-27",
               "todo": null,
-              "target_id": ""
+              "target_id": "7884235155779550400"
             },
             "putback": 1
+          },
+          {
+            "eventID": 7,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  4,
+                  5
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "070462098617",
+                  "name": "Sour Patch Kids Peg",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/tmg-article_tall_128x.jpg?v=1566938879",
+                  "weight": 145.0
+                }
+              ],
+              "time": "11_07_2019_03:10:23",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 8,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  5
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041420027161",
+                  "name": "TROLLI SBC ALL STAR MIX",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/41420027161_128x.jpg?v=1566938936",
+                  "weight": 135.5
+                }
+              ],
+              "time": "11_07_2019_03:10:34",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 9,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  5
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041420027161",
+                  "name": "TROLLI SBC ALL STAR MIX",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/41420027161_128x.jpg?v=1566938936",
+                  "weight": 135.5
+                }
+              ],
+              "time": "11_07_2019_03:10:35",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 10,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  7
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041420027161",
+                  "name": "TROLLI SBC ALL STAR MIX",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/41420027161_128x.jpg?v=1566938936",
+                  "weight": 135.5
+                }
+              ],
+              "time": "11_07_2019_03:10:35",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 11,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  5
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041420027161",
+                  "name": "TROLLI SBC ALL STAR MIX",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/41420027161_128x.jpg?v=1566938936",
+                  "weight": 135.5
+                }
+              ],
+              "time": "11_07_2019_03:10:35",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 12,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  6
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041420027161",
+                  "name": "TROLLI SBC ALL STAR MIX",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/41420027161_128x.jpg?v=1566938936",
+                  "weight": 135.5
+                }
+              ],
+              "time": "11_07_2019_03:10:35",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 13,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  3
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "020709012043",
+                  "name": "Gummi Worms Squiggles",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/51RjVrrWZgL._SY355_128x.jpg?v=1566938937",
+                  "weight": 155.0
+                }
+              ],
+              "time": "11_07_2019_03:10:35",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 14,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  5
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041420027161",
+                  "name": "TROLLI SBC ALL STAR MIX",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/41420027161_128x.jpg?v=1566938936",
+                  "weight": 135.5
+                }
+              ],
+              "time": "11_07_2019_03:10:35",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 15,
+            "observation": {
+              "position": {
+                "gondola": 5,
+                "plates": [
+                  8
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "020709012081",
+                  "name": "Trolli, Sour Brite Eggs Gummies With A Candy Shell",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/trolli-sour-brite-eggs-4oz-wmark_128x.jpg?v=1566938934",
+                  "weight": 114.0
+                }
+              ],
+              "time": "11_07_2019_03:10:35",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 16,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  4
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "083791126074",
+                  "name": "Gator - Tators Potato Chips",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0048/5684/0238/products/81eqauPd9qL._SL1500_128x.jpg?v=1566938963",
+                  "weight": 80.0999984741211
+                }
+              ],
+              "time": "8:29 + 2019-11-07_03-01-27",
+              "todo": null,
+              "target_id": "7884235155779550400"
+            },
+            "putback": 0
           }
         ]
       }
