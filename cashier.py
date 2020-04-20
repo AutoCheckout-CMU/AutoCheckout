@@ -54,11 +54,7 @@ class Cashier():
     
     def process(self, dbName):
         myBK = BK.BookKeeper(dbName)
-
         weightTrigger = WT(myBK)
-
-
-        # weight_mean,weight_std,timestamps,date_times = weightTrigger.get_weights_per_shelf()
 
         # weight_plate_mean,weight_plate_std,weight_shelf_mean,weight_shelf_std,timestamps,date_times = weightTrigger.get_weights()
         weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std = weightTrigger.get_moving_weight()
@@ -83,13 +79,6 @@ class Cashier():
             # assert (timestamps_count == weight_plate_std[i].shape[2])
             
         events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, timestamps)
-
-        # def computeWeightProbability(deltaW, weight_mean, weight_std, weightScaleVar=1):
-        #     p = np.zeros((len(weight_mean), 1))
-        #     for i in range(0, len(weight_mean)-1):
-        #         p[i] = math_utils.areaUnderTwoGaussians(weight_mean[i], weight_std[i], abs(deltaW), weightScaleVar)
-        #     return p
-
 
         # Non-associated purchasing products
         active_products = []
@@ -144,7 +133,7 @@ class Cashier():
                 product, putback_count = candidate_products[0]
 
                 # Put the product on the shelf will affect planogram
-                myBK.addProduct(event.getEventPosition(myBK), product)
+                myBK.addProduct(event.getEventAllPositions(myBK), product)
             else:    
                 scoreCalculator = ScoreCalculator(myBK, event)
                 topProductScore = scoreCalculator.getTopK(1)[0]

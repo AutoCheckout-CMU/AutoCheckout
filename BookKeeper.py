@@ -78,12 +78,13 @@ class BookKeeper():
         
         return planogram
 
-    def addProduct(self, position, productExtended):
-        gondolaID, shelfID, plateID = position.gondola, position.shelf, position.plate
-        self._planogram[gondolaID-1][shelfID-1][plateID-1].add(productExtended.barcode)
-        # Update product position
-        if position not in productExtended.positions:
-            productExtended.positions.add(position)
+    def addProduct(self, positions, productExtended):
+        for position in positions:
+            gondolaID, shelfID, plateID = position.gondola, position.shelf, position.plate
+            self._planogram[gondolaID-1][shelfID-1][plateID-1].add(productExtended.barcode)
+            # Update product position
+            if position not in productExtended.positions:
+                productExtended.positions.add(position)
 
     def __buildAllProductsCache(self):
         for item in self.productsDB.find():
