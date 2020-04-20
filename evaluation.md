@@ -1,3 +1,24 @@
+April 19th 2020
+New evaluation: Precision, Recall, F1 for competition purpose
+DEBUG = 0 (exact competition mode)
+================== Evaluation Summary ==================
+Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+Ground truth version:  ground_truth/v12.json
+Overall products detection rate is: 97.6%
+Overall association accuracy is: 97.3%
+Overall precision is: 89.0%
+Overall recall is: 86.9%
+
+DEBUG = 1 (with putback events)
+================== Evaluation Summary ==================
+Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+Ground truth version:  ground_truth/v12.json
+Overall precision is: 100.0%
+Overall recall is: 86.9%
+Overall F1 is: 93.0%
+
+*****************************************************************************************************************************************************************************************
+
 DEBUG = 1 (include putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
