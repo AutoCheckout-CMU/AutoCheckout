@@ -25,7 +25,8 @@ class CustomerReceipt():
     """
     def __init__(self, customerID):
         self.customerID = customerID
-        self.purchaseList = {}
+        # productID -> (product, num_product)
+        self.purchaseList = {} 
 
     def purchase(self, product, num_product):
         productID = product.barcode
@@ -103,28 +104,8 @@ class Cashier():
                 print ("----------------")
                 print ('Event: ', event)
 
-            scoreCalculator = ScoreCalculator(myBK, event)
-
-            # a trivial implementation
-            # get all products on this shelf
-
-            # TODO: omg this is weird. might need to concatenate adjacent events
-            isPutbackEvent = False
-            if event.deltaWeight > 0:
-                isPutbackEvent = True
-            
-
-            # ProductScore
-            topProductScore = scoreCalculator.getTopK(1)[0]
-            # for score in scoreCalculator.getTopK(5):
-            #     print(score)
-            topProductExtended = myBK.getProductByID(topProductScore.barcode)
-
-            active_products.append((topProductExtended, topProductScore.getTotalScore()))
-
             ################################ Naive Association ################################
-            product, _ = active_products[-1] 
-            productID = product.barcode
+            
             # absolutePos = myBK.getProductCoordinates(productID)
             absolutePos = event.getEventCoordinates(myBK)
             targets = myBK.getTargetsForEvent(event)
@@ -134,43 +115,67 @@ class Cashier():
                 continue
             
             if CE_ASSOCIATION:
-                id_result, target_result =  associate_product_ce(absolutePos, targets)
+                target_id, _ =  associate_product_ce(absolutePos, targets)
             else:
-                id_result, target_result =  associate_product_naive(absolutePos, targets)
-            # print(id_result, target_result)
+                target_id, _ =  associate_product_naive(absolutePos, targets)
 
-            # # Use the trigger end time to capture the frame
-            # timestamp = event.triggerEnd.timestamp()
-            # print("Trigger end time stamp is: ", timestamp)
-            # frames = BK.getFramesForEvent(event)
-            # print("Frame length: ", len(frames))
-            # camera_id = 4
-            # camera_frame = frames[camera_id]
+
+             ################################ Calculate score ################################
+
+            # TODO: omg this is weird. might need to concatenate adjacent events
+            isPutbackEvent = False
+            if event.deltaWeight > 0:
+                isPutbackEvent = True
+                # get all products pickedup by this target
+                customer_receipt = receipts[target_id]
+                purchase_list = customer_receipt.purchaseList #  productID -> (product, num_product)
+
+                # find most possible putback product whose weight is closest to the event weight
+                candidate_products = []
+                for item in purchase_list.values():
+                    product, num_product = item
+                    for count in range(1, num_product+1):
+                        candidate_products.append((product, count))
+                
+                if (len(candidate_products) == 0):
+                    continue
+                # item = (product, count)
+                candidate_products.sort(key=lambda item:abs(item[0].weight*item[1] - event.deltaWeight))
+                product, putback_count = candidate_products[0]
+            else:    
+                scoreCalculator = ScoreCalculator(myBK, event)
+                topProductScore = scoreCalculator.getTopK(1)[0]
+                topProductExtended = myBK.getProductByID(topProductScore.barcode)
+
+                product = topProductExtended
+            productID = product.barcode
 
             ################################ Update receipt records ################################
             # New customer, create a new receipt
-            if id_result not in receipts:
-                customer_receipt = CustomerReceipt(id_result)
-                receipts[id_result] = customer_receipt
+            if target_id not in receipts:
+                customer_receipt = CustomerReceipt(target_id)
+                receipts[target_id] = customer_receipt
             # Existing customer, update receipt
             else:
-                customer_receipt = receipts[id_result]
+                customer_receipt = receipts[target_id]
             
-            # Predict quantity from delta weight
-            pred_quantity = max(int(round(abs(event.deltaWeight / product.weight))), 1)
-            if VERBOSE:
-                print("Predicted: [%s][putback=%d] %s, weight=%dg, count=%d, thumbnail=%s" % (product.barcode, isPutbackEvent, product.name, product.weight, pred_quantity, product.thumbnail))
-            else:
-                print("Predicted: [%s][putback=%d] %s, weight=%dg, count=%d" % (product.barcode, isPutbackEvent, product.name, product.weight, pred_quantity))
             if isPutbackEvent:
+                # Putback count from previous step
+                pred_quantity = putback_count
                 if DEBUG:
                     customer_receipt.purchase(product, pred_quantity) # In the evaluation code, putback is still an event, so we accumulate for debug purpose
                 else:
                     customer_receipt.putback(product, pred_quantity)
             else:
+                # Predict quantity from delta weight
+                pred_quantity = max(int(round(abs(event.deltaWeight / product.weight))), 1)
                 customer_receipt.purchase(product, pred_quantity)
 
-            # probWeight = computeWeightProbability(event['delta_weight'], weight_plate_mean, weight_plate_std)
+            if VERBOSE:
+                print("Predicted: [%s][putback=%d] %s, weight=%dg, count=%d, thumbnail=%s" % (product.barcode, isPutbackEvent, product.name, product.weight, pred_quantity, product.thumbnail))
+            else:
+                print("Predicted: [%s][putback=%d] %s, weight=%dg, count=%d" % (product.barcode, isPutbackEvent, product.name, product.weight, pred_quantity))
+
 
         ################ Display all receipts ################
         if VERBOSE:
