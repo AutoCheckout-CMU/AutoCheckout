@@ -93,16 +93,20 @@ def evaluate_intenvory(dbs, gt_path):
                     db_gt_counts += 1
 
         # Print False Items
-        if VERBOSE:
-            for id, customer_receipt in receipts.items():
+        
+        num_receipt = 0
+        for id, customer_receipt in receipts.items():
+            if VERBOSE:
                 print("============== False Receipt {} ==============".format(num_receipt))
                 print("Customer ID: " + id)
                 print("Purchase List: ")
-                for _, entry in customer_receipt.purchaseList.items():
-                    product, quantity = entry
-                    print("*Name: "+product.name + ", Quantities: " + str(quantity), product.thumbnail)
+            for _, entry in customer_receipt.purchaseList.items():
+                product, quantity = entry
+                if quantity != 0:
+                    if VERBOSE:
+                        print("*Name: "+product.name + ", Quantities: " + str(quantity), product.thumbnail)
                     db_fp += quantity
-                num_receipt += 1
+            num_receipt += 1
         
         db_fn = db_gt_counts - db_tp
         db_pred_counts = db_tp + db_fp
