@@ -126,12 +126,15 @@ def evaluate_intenvory(dbs, gt_path):
     print("Overall precision is: {:.1f}%".format(precision))
     recall = tp*100.0 / (tp+fn)
     print("Overall recall is: {:.1f}%".format(recall))
-    f1 = 2*precision*recall/(precision+recall)
+    if (precision+recall == 0):
+        f1 = 0
+    else:
+        f1 = 2*precision*recall/(precision+recall)
     print("Overall F1 is: {:.1f}%".format(f1))
 
 if __name__ == "__main__":
-    dbs=['cps-test-01', 'cps-test-2'] + ['cps-test-'+str(i) for i in range(4, 13)]+ ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+    # dbs=['cps-test-01', 'cps-test-2'] + ['cps-test-'+str(i) for i in range(4, 13)]+ ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
     # dbs=['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
-    # dbs = ['TEAM-8-1']
-    gt_path='ground_truth/v12.json' # list of ground truth W.R.T the previous databases
+    dbs = ['BASELINE-1']
+    gt_path='ground_truth/v14.json' # list of ground truth W.R.T the previous databases
     evaluate_intenvory(dbs, gt_path)

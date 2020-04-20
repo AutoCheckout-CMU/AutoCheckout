@@ -218,13 +218,19 @@ class Cashier():
             json.dump(output, outfile)
 
 
-myCashier = Cashier()
-dbs = ['BASELINE-'+str(i) for i in range(1,13)]
-dbs.remove('BASELINE-2')
-dbs = ['BASELINE-1']
-#db_name = 'TEAM-PEI-JD-1'
-for db_name in dbs:
-    db_id = '5aa089fd-1c62-46ce-8c02-3cc24f05e5ac'
-    receipts = myCashier.process(db_name)
-    user = '5ea023be-b530-4816-8eda-5340cfabe9b0'
-    myCashier.output_json(db_id, user, receipts, path="outputs/output-{}.json".format(db_name))
+# myCashier = Cashier()
+# # dbs = ['BASELINE-'+str(i) for i in range(1,13)]
+# # dbs.remove('BASELINE-2')
+# dbs = ['BASELINE-1']
+# #db_name = 'TEAM-PEI-JD-1'
+# for db_name in dbs:
+#     db_id = '5aa089fd-1c62-46ce-8c02-3cc24f05e5ac'
+#     receipts = myCashier.process(db_name)
+
+
+
+
+
+
+#     user = '5ea023be-b530-4816-8eda-5340cfabe9b0'
+#     myCashier.output_json(db_id, user, receipts, path="outputs/output-{}.json".format(db_name))
