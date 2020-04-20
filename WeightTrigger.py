@@ -41,7 +41,7 @@ class PickUpEvent():
         thresholdWeight = threshold * abs(self.deltaWeight)
         for i in range(len(self.deltaWeights)):
             deltaWeightAbs = abs(self.deltaWeights[i])
-            if deltaWeightAbs >= threshold:
+            if deltaWeightAbs >= thresholdWeight:
                 plateID = i+1
                 possiblePositions.append(Position(self.gondolaID, self.shelfID, plateID))
         return possiblePositions

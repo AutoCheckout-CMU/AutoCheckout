@@ -3,36 +3,37 @@ DEBUG = 1 (include putback event)
 Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
 Ground truth version:  ground_truth/v12.json
 Overall products detection rate is: 97.6%
-Overall association accuracy is: 98.6%
-Overall precision is: 87.8%
-Overall recall is: 85.7%
+Overall association accuracy is: 97.3%
+Overall precision is: 89.0%
+Overall recall is: 86.9%
 
 
 DEBUG = 0 (countereract putback event)
+
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-01', 'cps-test-2', 'cps-test-4', 'cps-test-5', 'cps-test-6', 'cps-test-7', 'cps-test-8', 'cps-test-9', 'cps-test-10', 'cps-test-11', 'cps-test-12', 'cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
 Ground truth version:  ground_truth/v12.json
-Overall products detection rate is: 106.0%
-Overall association accuracy is: 95.7%
-Overall precision is: 86.8%
-Overall recall is: 92.0%
+Overall products detection rate is: 100.0%
+Overall association accuracy is: 97.8%
+Overall precision is: 90.0%
+Overall recall is: 90.0%
 
 DEBUG = 1 (include putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
 Ground truth version:  ground_truth/v12.json
 Overall products detection rate is: 100.0%
-Overall association accuracy is: 100.0%
-Overall precision is: 59.1%
-Overall recall is: 59.1%
+Overall association accuracy is: 93.8%
+Overall precision is: 72.7%
+Overall recall is: 72.7%
 
 DEBUG = 0 (countereract putback event)
 ================== Evaluation Summary ==================
 Databases:  ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
 Ground truth version:  ground_truth/v12.json
-Overall products detection rate is: 140.0%
-Overall association accuracy is: 87.5%
-Overall precision is: 57.1%
+Overall products detection rate is: 120.0%
+Overall association accuracy is: 100.0%
+Overall precision is: 66.7%
 Overall recall is: 80.0%
 
 
