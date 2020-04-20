@@ -330,6 +330,8 @@ class BookKeeper():
     def getTestStartTime(self):
         with open('TestCaseStartTime.json', 'r') as f:
             testStartTime = json.load(f)
+        if self.__dbname not in testStartTime:
+            return 0
         return testStartTime[self.__dbname]
 
 class Position:
