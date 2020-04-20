@@ -142,9 +142,17 @@ class Cashier():
                 # item = (product, count)
                 candidate_products.sort(key=lambda item:abs(item[0].weight*item[1] - event.deltaWeight))
                 product, putback_count = candidate_products[0]
+
+                # Put the product on the shelf will affect planogram
+                myBK.addProduct(event.getEventPosition(myBK), product)
             else:    
                 scoreCalculator = ScoreCalculator(myBK, event)
                 topProductScore = scoreCalculator.getTopK(1)[0]
+                if VERBOSE:
+                    print ("top 5 predicted products:")
+                    for productScore in  scoreCalculator.getTopK(5):
+                        print(productScore)
+
                 topProductExtended = myBK.getProductByID(topProductScore.barcode)
 
                 product = topProductExtended

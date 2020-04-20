@@ -25,8 +25,6 @@ class BookKeeper():
 
         self._planogram = None
         self._productsCache = {}
-        self._positionsPerProduct = {}
-        self._coordinatesPerProduct = {}
 
         # store meta
         self._gondolasDict = {}
@@ -36,8 +34,10 @@ class BookKeeper():
         self.productIDsFromPlanogramTable = set()
         self.productIDsFromProductsTable = set()
 
-        self. _planogram = self.__loadPlanogram()
         self.__buildAllProductsCache()
+        self. _planogram = self.__loadPlanogram()
+        
+        
         self._buildDictsFromStoreMeta()
         
 
@@ -60,29 +60,30 @@ class BookKeeper():
             product = codec.Product.from_dict(productItem)
             if product.weight == 0.0:
                 continue
-
+            
+            productExtended = self.getProductByID(productID)
             for plate in item['plate_ids']:
                 shelf = plate['shelf_id']
                 gondola = shelf['gondola_id']
                 gondolaID = gondola['id']
                 shelfID = shelf['shelf_index']
                 plateID = plate['plate_index']
-                globalCoordinates = item['global_coordinates']['transform']['translation']
-                if 'x' not in globalCoordinates:
-                    globalCoordinates['x'] = 0
-                if 'y' not in globalCoordinates:
-                    globalCoordinates['y'] = 0
-                if 'z' not in globalCoordinates:
-                    globalCoordinates['z'] = 0
-                planogram[gondolaID-1][shelfID-1][plateID-1] = productID
+                
+                if planogram[gondolaID-1][shelfID-1][plateID-1] is None:
+                    planogram[gondolaID-1][shelfID-1][plateID-1] = set()
+                planogram[gondolaID-1][shelfID-1][plateID-1].add(productID)
                 self.productIDsFromPlanogramTable.add(productID)
-                if productID not in self._positionsPerProduct:
-                    self._positionsPerProduct[productID]  = []
-                self._positionsPerProduct[productID].append((gondolaID, shelfID, plateID))
-                self._coordinatesPerProduct[productID] = globalCoordinates
+
+                productExtended.positions.add(Position(gondolaID, shelfID, plateID))
         
         return planogram
 
+    def addProduct(self, position, productExtended):
+        gondolaID, shelfID, plateID = position.gondola, position.shelf, position.plate
+        self._planogram[gondolaID-1][shelfID-1][plateID-1].add(productExtended.barcode)
+        # Update product position
+        if position not in productExtended.positions:
+            productExtended.positions.add(position)
 
     def __buildAllProductsCache(self):
         for item in self.productsDB.find():
@@ -97,7 +98,7 @@ class BookKeeper():
             productExtended.thumbnail = product.thumbnail
             productExtended.price = product.price
             productExtended.weight = product.weight
-            productExtended.positions = self.getProductPositions(productExtended.barcode)
+            productExtended.positions = set()
             self._productsCache[productExtended.barcode] = productExtended
             self.productIDsFromProductsTable.add(productExtended.barcode)
 
@@ -302,34 +303,20 @@ class BookKeeper():
         if len(argv) == 2:
             shelfIdx = argv[1] - 1
             # remove Nones
-            products = [product for product in self._planogram[gondolaIdx][shelfIdx] if product]
-            # deduplication
-            products = list(dict.fromkeys(products))
-            return products
+            productIDs = set()
+            for productIDSetForPlate in self._planogram[gondolaIdx][shelfIdx]:
+                if productIDSetForPlate is None:
+                    continue
+                productIDs = productIDs.union(productIDSetForPlate)
+            return productIDs
         if len(argv) == 3:
             shelfIdx = argv[1] - 1
             plateIdx = argv[2] - 1
             return self._planogram[gondolaIdx][shelfIdx][plateIdx]
 
-    def getProductPosAverage(self, productID):
-        positions = self._positionsPerProduct[productID]
-        if len(positions) <= 0:
-            return None
-        middleIndex = math.floor(len(positions) / 2)
-        midPos = positions[middleIndex]
-        return Position(midPos[0], midPos[1], midPos[2])
-
     def getProductPositions(self, productID):
-        positions = []
-        if productID not in self._positionsPerProduct:
-            return positions
-        for pos in self._positionsPerProduct[productID]:
-            positions.append(Position(pos[0], pos[1], pos[2]))
-        return positions
-
-    def getProductCoordinates(self, productID):
-        coord = self._coordinatesPerProduct[productID]
-        return Coordinates(coord['x'], coord['y'], coord['z'])
+        product = self.getProductByID(productID)
+        return product.positions
 
 class Position:
     gondola: int
@@ -345,6 +332,15 @@ class Position:
 
     def __str__(self):
         return 'Position(gondola=%d, shelf=%d, plate=%d)' % (self.gondola, self.shelf, self.plate)
+    
+    def __eq__(self, other):
+        if isinstance(other, Position):
+            return self.gondola == other.gondola and self.shelf == other.shelf and self.plate == other.plate
+        else:
+            return False
+    
+    def __hash__(self):
+      return hash((self.gondola, self.shelf, self.plate))
 
 class Coordinates: 
     def __init__(self, x, y, z):

@@ -85,6 +85,8 @@ class ScoreCalculator:
         for productID in productIDsOnTheShelf:
             positions = self.__bk.getProductPositions(productID)
             for position in positions:
+                if position.gondola != self.__event.gondolaID or position.shelf != self.__event.shelfID:
+                    continue
                 self.__productScoreDict[productID].arrangementScore += probPerPlate[position.plate-1]
 
 

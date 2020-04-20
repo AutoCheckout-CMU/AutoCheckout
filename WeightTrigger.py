@@ -1,6 +1,7 @@
 import numpy as np
 from cpsdriver.codec import DocObjectCodec
 from datetime import datetime
+from BookKeeper import Position
 
 class PickUpEvent():
     triggerBegin: datetime
@@ -21,7 +22,8 @@ class PickUpEvent():
         self.shelfID = shelfID
         self.deltaWeights = deltaWeights
 
-    def getEventCoordinates(self, bk):
+    # for one event, return its corresponding gondola/shelf/plate id
+    def getEventPosition(self, bk):
         greatestDelta = 0
         plateIDWithGreatestDelta = 1
         for i in range(len(self.deltaWeights)):
@@ -29,7 +31,11 @@ class PickUpEvent():
             if deltaWeightAbs > greatestDelta:
                 greatestDelta = deltaWeightAbs
                 plateIDWithGreatestDelta = i+1
-        coordinates = bk.get3DCoordinatesForPlate(self.gondolaID, self.shelfID, plateIDWithGreatestDelta)
+        return Position(self.gondolaID, self.shelfID, plateIDWithGreatestDelta)
+
+    def getEventCoordinates(self, bk):
+        position = self.getEventPosition(bk)
+        coordinates = bk.get3DCoordinatesForPlate(position.gondola, position.shelf, position.plate)
         return coordinates
 
     def __str__(self):
