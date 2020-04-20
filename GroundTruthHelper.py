@@ -14,13 +14,14 @@ class Product(Serializable):
         self.thumbnail = thumbnail
         self.price = price
         self.weight = weight
+        # self.positions = positions
 
 # print all products from a certain shelf
-gondola_id = 4
+gondola_id = 3
 shelf_id = 4
 plate_id = 4
 
-bk = BookKeeper.BookKeeper(dbname='TEAM-PEI-JD-1')
+bk = BookKeeper.BookKeeper(dbname='BASELINE-3')
 
 if plate_id is None:
     product_ids = bk.getProductIDsFromPosition(gondola_id, shelf_id)
@@ -37,3 +38,4 @@ for product_id in product_ids:
             productExtended.weight
         )
     print (objProduct.toJSON())
+    print (productExtended)
