@@ -52,10 +52,13 @@ def associate_product_ce(product_loc, targets):
             right_hand, rscore = target.right_hand['position'], target.right_hand['score']
             ce_distance += calculate_distance3D(right_hand, product_loc)*rscore
             total_score += rscore
-        ce_distance /= total_score
+        if total_score == 0:
+            ce_distance = float('inf')
+        else:
+            ce_distance /= total_score
         
         # print("Distance for target: ", id, "is: ", str(distance))
-        if (ce_distance < min_dist):
+        if (ce_distance <= min_dist):
             result_id = id
             result_target = target
             min_dist = ce_distance

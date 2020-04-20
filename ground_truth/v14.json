@@ -3457,6 +3457,91 @@
             "putback": 0
           }
         ]
+      },
+      {
+        "dataset": "BASELINE-2",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  4
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "012000286209",
+                  "name": "Pure Leaf Unsweetened Black Tea",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/V2_PLT_Unswt_Black_480x480_48f5f323-5bfe-46de-bb82-bdc56f490140_128x.png?v=1565210355",
+                  "weight": 592.6699829101562
+                }
+              ],
+              "time": "00:10 + 2020-04-20_07-36-24",
+              "todo": null,
+              "target_id": "13933261984050196906"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071063437553",
+                  "name": "Taco Bell Diablo",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/51EOtDZUN-L_02a20023-6270-4908-821d-277f4ad90fb8_128x.jpg?v=1565210388",
+                  "weight": 103.93000030517578
+                }
+              ],
+              "time": "00:14 + 2020-04-20_07-36-24",
+              "todo": null,
+              "target_id": "13933261984050196906"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  6
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071142643370",
+                  "name": "ARRWHD MTN WTR SPRT BTL",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/45002084-1_a81951d9-5b43-45b5-acce-076f94e751c0_128x.jpg?v=1565210214",
+                  "weight": 736.0
+                }
+              ],
+              "time": "00:20 + 2020-04-20_07-36-24",
+              "todo": null,
+              "target_id": "13933261984050196906"
+            },
+            "putback": 0
+          }
+        ]
       }
     ]
   }

@@ -135,6 +135,6 @@ def evaluate_intenvory(dbs, gt_path):
 if __name__ == "__main__":
     # dbs=['cps-test-01', 'cps-test-2'] + ['cps-test-'+str(i) for i in range(4, 13)]+ ['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
     # dbs=['cps-test-19', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
-    dbs = ['BASELINE-1']
+    dbs = ['BASELINE-1', 'BASELINE-2']
     gt_path='ground_truth/v14.json' # list of ground truth W.R.T the previous databases
     evaluate_intenvory(dbs, gt_path)
