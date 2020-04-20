@@ -88,3 +88,16 @@ location productA 100%
 # assert (timestamps_count == weight_shelf_std[i].shape[1])
 # assert (timestamps_count == weight_plate_mean[i].shape[2])
 # assert (timestamps_count == weight_plate_std[i].shape[2])
+
+# TODO BASELINE-1: 1 person. Pick 1 item at gondola 3, pick 1 item at gondola 1, pick 1 item at gondola 2.
+# TODO BASELINE-2: 1 person. Pick 1 item at gondola 3, pick 1 item at gondola 2, pick 1 item at gondola 1.
+# TODO BASELINE-3: 1 person. Pick 1 item at gondola 3, puback; pick 1 item at gondola 2, pick 1 item at gondola 1, pick 1 item at gondola 3.
+# TODO BASELINE-4: 1 person. Pick 1 item at gondola 3, pick 3 items at gondola 2 sequentially, putback 1 item to the correct place.
+# TODO BASELINE-5 [Difficult]: 1 person. Pick 1 green water at gondola 3, puback to wrong place, where there're red water with same weights; from this place, pickup 1 red water, and the misplaced green water. Pickup 1 item from gondola 1.
+# TODO BASELINE-6 [Difficult]: 1 person. Pick 1 big water at gondola 1, put back to wrong place where there're many small water. Pick 2 small water. Pickup 1 item at gondola 3, put back to wrong place at gondola 2, then repick this misplaced item.
+# TODO BASELINE-7: 2 people. Each pick some items. May have crossing hands issue.
+# TODO BASELINE-8: 2 people. Each pick some items. Stay very close, may have crossing hands issue.
+# TODO BASELINE-9: 2 people. Each pick some items. Stay very close, exchange items between them.
+# TODO BASELINE-10: 2 people. Simultaneously pickup 1 same item each from the same place. Simultaneously pickup 1 different item each from the same shelf. 
+# TODO BASELINE-11: 3 people. Very complicated.
+# TODO BASELINE-12: 3 people. Very complicated.
