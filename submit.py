@@ -76,6 +76,8 @@ def get_score(output_paths=['outputs/output-BASELINE-1.json']):
     print("Average F1 score over all test cases: ", cal_avg(f1_scores))
 
 if __name__ == '__main__':
+    if not os.path.exists('outputs'):
+        os.makedirs('outputs')
     output_paths = ['outputs/output-BASELINE-%d.json'%i for i in range(1, 13)]
-    # generate_output()
-    get_score(output_paths)
+    generate_output()
+    # get_score(output_paths)
