@@ -3821,6 +3821,324 @@
             "putback": 1
           }
         ]
+      },
+      {
+        "dataset": "BASELINE-5",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  10
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571953386",
+                  "name": "ICE Ginger Lime",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 532.0
+                }
+              ],
+              "time": "00:07 + 2020-04-20_07-50-19",
+              "todo": null,
+              "target_id": "573342817558179339"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  7
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571953386",
+                  "name": "ICE Ginger Lime",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 532.0
+                }
+              ],
+              "time": "00:18 + 2020-04-20_07-50-19",
+              "todo": null,
+              "target_id": "573342817558179339"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  7
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571950293",
+                  "name": "ICE Strawberry Lemonade",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 534.0
+                }
+              ],
+              "time": "00:22 + 2020-04-20_07-50-19",
+              "todo": null,
+              "target_id": "573342817558179339"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  7
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571953386",
+                  "name": "ICE Ginger Lime",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 532.0
+                }
+              ],
+              "time": "00:24 + 2020-04-20_07-50-19",
+              "todo": null,
+              "target_id": "573342817558179339"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  9
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041508922487",
+                  "name": "ACQUA PANNA PET MINERAL DRINK",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/54543311-1_52a9767b-c3f0-4505-8a65-e85092665bda_128x.jpg?v=1565210202",
+                  "weight": 666.4199829101562
+                }
+              ],
+              "time": "00:35 + 2020-04-20_07-50-19",
+              "todo": null,
+              "target_id": "573342817558179339"
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
+        "dataset": "BASELINE-6",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                
+              ],
+              "time": "00:04 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": ""
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
+        "dataset": "BASELINE7",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                
+              ],
+              "time": "00:04 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": ""
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
+        "dataset": "BASELINE-8",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                
+              ],
+              "time": "00:04 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": ""
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
+        "dataset": "BASELINE-9",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                
+              ],
+              "time": "00:04 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": ""
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
+        "dataset": "BASELINE-10",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                
+              ],
+              "time": "00:04 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": ""
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
+        "dataset": "BASELINE-11",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                
+              ],
+              "time": "00:04 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": ""
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
+        "dataset": "BASELINE-12",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                
+              ],
+              "time": "00:04 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": ""
+            },
+            "putback": 0
+          }
+        ]
       }
     ]
   }
