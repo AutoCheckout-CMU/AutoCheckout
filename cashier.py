@@ -14,6 +14,8 @@ from ScoreCalculate import *
 from utils import *
 from config import *
 
+JITTER_RATE = 0.1
+
 class CustomerReceipt():
     """
     checkIn/Out (datetime): time when customer enters/leaves the store
@@ -133,6 +135,10 @@ class Cashier():
                 # item = (product, count)
                 candidate_products.sort(key=lambda item:abs(item[0].weight*item[1] - event.deltaWeight))
                 product, putback_count = candidate_products[0]
+                
+                # If weight difference is too large, ignore this event
+                if (abs(event.deltaWeight) < JITTER_RATE*product.weight):
+                    continue
 
                 # Put the product on the shelf will affect planogram
                 myBK.addProduct(event.getEventAllPositions(myBK), product)
@@ -147,6 +153,10 @@ class Cashier():
                 topProductExtended = myBK.getProductByID(topProductScore.barcode)
 
                 product = topProductExtended
+
+                # If weight difference is too large, ignore this event
+                if (abs(event.deltaWeight) < JITTER_RATE*product.weight):
+                    continue
             productID = product.barcode
 
             ################################ Update receipt records ################################

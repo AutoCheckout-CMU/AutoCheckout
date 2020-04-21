@@ -3,9 +3,9 @@ DEBUG = 0 (exact competition mode)
 ================== Evaluation Summary ==================
 Databases:  ['ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1', 'BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 57.1%
-Overall recall is: 83.7%
-Overall F1 is: 67.9%
+Overall precision is: 57.5%
+Overall recall is: 85.2%
+Overall F1 is: 68.7%
 
 DEBUG = 1 (with putback events)
 ================== Evaluation Summary ==================
