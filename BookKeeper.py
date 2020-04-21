@@ -9,6 +9,7 @@ import io
 from PIL import Image, ImageDraw
 from config import *
 import json
+import os
 
 INCH_TO_METER = 0.0254
 
@@ -328,11 +329,16 @@ class BookKeeper():
         return product.positions
 
     def getTestStartTime(self):
-        with open('TestCaseStartTime.json', 'r') as f:
-            testStartTime = json.load(f)
-        if self.__dbname not in testStartTime:
+        testCaseStartTimeJSONFilePath = './competition/TestCaseStartTime.json'
+        if os.path.exists(testCaseStartTimeJSONFilePath):
+            with open(testCaseStartTimeJSONFilePath, 'r') as f:
+                testStartTime = json.load(f)
+            if self.__dbname not in testStartTime:
+                return 0
+            return testStartTime[self.__dbname]
+        else:
+            print("!!!WARNING: Didn't find competition/TestCaseStartTime.json, results might not be accurate. Please run TimeTravel.py to get the json file")
             return 0
-        return testStartTime[self.__dbname]
 
 class Position:
     gondola: int
