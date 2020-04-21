@@ -3947,7 +3947,7 @@
                   "name": "ACQUA PANNA PET MINERAL DRINK",
                   "price": 1,
                   "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/54543311-1_52a9767b-c3f0-4505-8a65-e85092665bda_128x.jpg?v=1565210202",
-                  "weight": 666.4199829101562
+                  "weight": 1064.0
                 }
               ],
               "time": "00:35 + 2020-04-20_07-50-19",
@@ -4552,7 +4552,7 @@
                   "name": "ACQUA PANNA PET MINERAL DRINK",
                   "price": 1,
                   "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/54543311-1_52a9767b-c3f0-4505-8a65-e85092665bda_128x.jpg?v=1565210202",
-                  "weight": 666.4199829101562
+                  "weight": 1064.0
                 }
               ],
               "time": "00:45 + 2020-04-20_08-13-17",
@@ -4907,19 +4907,955 @@
               "position": {
                 "gondola": 3,
                 "plates": [
+                  7,
+                  8,
+                  9
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016000126077",
+                  "name": "Chex Mix Savory Snack Mix Bold Party Blend",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/81hMotQdpXL._SY355_d057ad78-b52d-4bd5-b7fb-575f14068a85_128x.jpg?v=1565210281",
+                  "weight": 111.0
+                }
+              ],
+              "time": "00:18 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1,
+                  2,
+                  3
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041419420058",
+                  "name": "Baked Snacks Pretzel",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/P1000628_128x.jpg?v=1565210246",
+                  "weight": 181.0
+                }
+              ],
+              "time": "00:19 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1
+                ],
+                "shelf": 1
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "818780014229",
+                  "name": "Boomchickapop Sweet & Salty Kettle Corn",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/GUEST_d22545b5-3324-4f1e-a661-530ece1d7092_128x.jpg?v=1565210222",
+                  "weight": 71.0
+                }
+              ],
+              "time": "00:22 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041419420058",
+                  "name": "Baked Snacks Pretzel",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/P1000628_128x.jpg?v=1565210246",
+                  "weight": 181.0
+                }
+              ],
+              "time": "00:23 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  5,
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907420108",
+                  "name": "El Sabroso Blazing Hot Cheetos",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/243090-1_3be6caea-96bc-4bcb-aa2d-b873a3648e94_128x.png?v=1565210263",
+                  "weight": 121.02999877929688
+                }
+              ],
+              "time": "00:25 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 6,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
                   2,
                   3
                 ],
                 "shelf": 3
               },
               "products": [
-                
+                {
+                  "barcodeType": "UPC",
+                  "id": "016000126077",
+                  "name": "Chex Mix Savory Snack Mix Bold Party Blend",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/81hMotQdpXL._SY355_d057ad78-b52d-4bd5-b7fb-575f14068a85_128x.jpg?v=1565210281",
+                  "weight": 111.0
+                }
               ],
-              "time": "00:04 + 2020-04-20_07-45-57",
+              "time": "00:25 + 2020-04-20_08-27-43",
               "todo": null,
-              "target_id": ""
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 7,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  4
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "012000286209",
+                  "name": "Pure Leaf Unsweetened Black Tea",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/V2_PLT_Unswt_Black_480x480_48f5f323-5bfe-46de-bb82-bdc56f490140_128x.png?v=1565210355",
+                  "weight": 592.6699829101562
+                }
+              ],
+              "time": "00:25 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
             },
             "putback": 0
+          },
+          {
+            "eventID": 8,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907420108",
+                  "name": "El Sabroso Blazing Hot Cheetos",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/243090-1_3be6caea-96bc-4bcb-aa2d-b873a3648e94_128x.png?v=1565210263",
+                  "weight": 121.02999877929688
+                }
+              ],
+              "time": "00:26 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 8.1,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  4
+                ],
+                "shelf": 1
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "818780014243",
+                  "name": "Boomchickapop Sea Salt Popcorn",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Angies_BCP_small_front_SS_4.8oz_954d4143-c89b-42bf-9799-2fd1635c4fd5_128x.png?v=1565210220",
+                  "weight": 42.33000183105469
+                }
+              ],
+              "time": "00:26 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 9,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "810002650017",
+                  "name": "Paqui Chili Limon",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/large_b1d25174-f630-42bc-b338-2a56ded7b8a4_128x.png?v=1565210352",
+                  "weight": 64.06999969482422
+                }
+              ],
+              "time": "00:28 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 10,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  8
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071142643370",
+                  "name": "ARRWHD MTN WTR SPRT BTL",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/45002084-1_a81951d9-5b43-45b5-acce-076f94e751c0_128x.jpg?v=1565210214",
+                  "weight": 736.0
+                }
+              ],
+              "time": "00:30 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 11,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  10
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "00:31 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 12,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  10
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "00:32 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 13,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  12
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "012000286209",
+                  "name": "Pure Leaf Unsweetened Black Tea",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/V2_PLT_Unswt_Black_480x480_48f5f323-5bfe-46de-bb82-bdc56f490140_128x.png?v=1565210355",
+                  "weight": 592.6699829101562
+                }
+              ],
+              "time": "00:37 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 14,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  9
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "00:38 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 15,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1,
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "026200471594",
+                  "name": "Andy Capps Hot Fry Bag",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/71peyTy8EtL._SY679_44871093-2397-4195-8116-d4f1e5e8831f_128x.jpg?v=1565210210",
+                  "weight": 92.52999877929688
+                }
+              ],
+              "time": "00:39 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 16,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  6
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "00:40 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 17,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  7,
+                  8
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "026200471594",
+                  "name": "Andy Capps Hot Fry Bag",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/71peyTy8EtL._SY679_44871093-2397-4195-8116-d4f1e5e8831f_128x.jpg?v=1565210210",
+                  "weight": 92.52999877929688
+                }
+              ],
+              "time": "00:43 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 18,
+            "observation": {
+              "position": {
+                "gondola": 4,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "818780014243",
+                  "name": "Boomchickapop Sea Salt Popcorn",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Angies_BCP_small_front_SS_4.8oz_954d4143-c89b-42bf-9799-2fd1635c4fd5_128x.png?v=1565210220",
+                  "weight": 42.33000183105469
+                }
+              ],
+              "time": "00:45 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 19,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 1
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "UNKOWN",
+                  "name": "UNKOWN",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 0.0
+                }
+              ],
+              "time": "00:50 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 20,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  9
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041508922487",
+                  "name": "ACQUA PANNA PET MINERAL DRINK",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/54543311-1_52a9767b-c3f0-4505-8a65-e85092665bda_128x.jpg?v=1565210202",
+                  "weight": 1064.0
+                }
+              ],
+              "time": "00:51 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 21,
+            "observation": {
+              "position": {
+                "gondola": 4,
+                "plates": [
+                  8
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071142643370",
+                  "name": "ARRWHD MTN WTR SPRT BTL",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/45002084-1_a81951d9-5b43-45b5-acce-076f94e751c0_128x.jpg?v=1565210214",
+                  "weight": 736.0
+                }
+              ],
+              "time": "00:52 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 22,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  6
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041508922487",
+                  "name": "ACQUA PANNA PET MINERAL DRINK",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/54543311-1_52a9767b-c3f0-4505-8a65-e85092665bda_128x.jpg?v=1565210202",
+                  "weight": 1064.0
+                }
+              ],
+              "time": "00:54 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 23,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 1
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "UNKOWN",
+                  "name": "UNKOWN",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 0.0
+                }
+              ],
+              "time": "01:01 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 24,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  6
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                },
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "01:08 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 25,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  12
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "613008744090",
+                  "name": "AZ MUCHO MANGO",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/00613008744090-zmfxACyWHj2BJg-0_s500_128x.jpg?v=1566251994",
+                  "weight": 563.3300170898438
+                }
+              ],
+              "time": "01:10 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 26,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907420108",
+                  "name": "El Sabroso Blazing Hot Cheetos",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/243090-1_3be6caea-96bc-4bcb-aa2d-b873a3648e94_128x.png?v=1565210263",
+                  "weight": 121.02999877929688
+                },
+                {
+                  "barcodeType": "UPC",
+                  "id": "016000126077",
+                  "name": "Chex Mix Savory Snack Mix Bold Party Blend",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/81hMotQdpXL._SY355_d057ad78-b52d-4bd5-b7fb-575f14068a85_128x.jpg?v=1565210281",
+                  "weight": 111.0
+                }
+              ],
+              "time": "01:10 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 27,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  8
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "859000002145",
+                  "name": "MS SWT TEA PEACH RTD",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/136570733-1_7bbd0d7e-630e-4b9d-ae84-c428060e30a7_128x.jpg?v=1565210338",
+                  "weight": 540.6699829101562
+                }
+              ],
+              "time": "01:14 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 28,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  8
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "613008744090",
+                  "name": "AZ MUCHO MANGO",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/00613008744090-zmfxACyWHj2BJg-0_s500_128x.jpg?v=1566251994",
+                  "weight": 563.3300170898438
+                }
+              ],
+              "time": "01:22 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "14565789552275535698"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 29,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "810002650017",
+                  "name": "Paqui Chili Limon",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/large_b1d25174-f630-42bc-b338-2a56ded7b8a4_128x.png?v=1565210352",
+                  "weight": 64.06999969482422
+                }
+              ],
+              "time": "01:22 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 30,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  7,
+                  8,
+                  9
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016000126077",
+                  "name": "Chex Mix Savory Snack Mix Bold Party Blend",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/81hMotQdpXL._SY355_d057ad78-b52d-4bd5-b7fb-575f14068a85_128x.jpg?v=1565210281",
+                  "weight": 111.0
+                }
+              ],
+              "time": "01:27 + 2020-04-20_08-27-43",
+              "todo": "actually it's JD gives item to carlos, and carlos put it back",
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 31,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  9,
+                  10
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907420108",
+                  "name": "El Sabroso Blazing Hot Cheetos",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/243090-1_3be6caea-96bc-4bcb-aa2d-b873a3648e94_128x.png?v=1565210263",
+                  "weight": 121.02999877929688
+                }
+              ],
+              "time": "01:30 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "6089669910965846909"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 32,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "01:33 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 33,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  12
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "01:36 + 2020-04-20_08-27-43",
+              "todo": null,
+              "note": "6089669910965846909 is JD, 14565789552275535698 is girl, 10159784492149311492 is Carlos?",
+              "target_id": "10159784492149311492"
+            },
+            "putback": 1
           }
         ]
       }
