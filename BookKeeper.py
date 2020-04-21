@@ -103,6 +103,12 @@ class BookKeeper():
             productExtended.price = product.price
             productExtended.weight = product.weight
             productExtended.positions = set()
+
+            # Workaround for database error: [JD] Good catch, the real weight is 538g, 
+            # Our store operator made a mistake when inputing the product in :scales:
+            if productExtended.barcode == '898999010007':
+                productExtended.weight = 538.0
+
             self._productsCache[productExtended.barcode] = productExtended
             self.productIDsFromProductsTable.add(productExtended.barcode)
 
