@@ -6,4 +6,4 @@ data
 __pycache__
 env
 .vscode
-outputs/
+*.json
