@@ -3680,6 +3680,147 @@
             "putback": 0
           }
         ]
+      },
+      {
+        "dataset": "BASELINE-4",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2,
+                  3
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "026200471594",
+                  "name": "Andy Capps Hot Fry Bag",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/71peyTy8EtL._SY679_44871093-2397-4195-8116-d4f1e5e8831f_128x.jpg?v=1565210210",
+                  "weight": 92.52999877929688
+                }
+              ],
+              "time": "00:04 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": "1492556080934987257"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  5,
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907420108",
+                  "name": "El Sabroso Blazing Hot Cheetos",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/243090-1_3be6caea-96bc-4bcb-aa2d-b873a3648e94_128x.png?v=1565210263",
+                  "weight": 121.02999877929688
+                }
+              ],
+              "time": "00:09 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": "1492556080934987257"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "810002650017",
+                  "name": "Paqui Chili Limon",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/large_b1d25174-f630-42bc-b338-2a56ded7b8a4_128x.png?v=1565210352",
+                  "weight": 64.06999969482422
+                }
+              ],
+              "time": "00:14 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": "1492556080934987257"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  7,
+                  8
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "071063437072",
+                  "name": "Taco Bell Mild Tortilla Chips",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/taco-bell-mild-tortilla-chips-002235123_128x.jpg?v=1566941184",
+                  "weight": 103.5999984741211
+                }
+              ],
+              "time": "00:30 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": "1492556080934987257"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  5,
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907420108",
+                  "name": "El Sabroso Blazing Hot Cheetos",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/243090-1_3be6caea-96bc-4bcb-aa2d-b873a3648e94_128x.png?v=1565210263",
+                  "weight": 121.02999877929688
+                }
+              ],
+              "time": "00:35 + 2020-04-20_07-45-57",
+              "todo": null,
+              "target_id": "1492556080934987257"
+            },
+            "putback": 1
+          }
+        ]
       }
     ]
   }
