@@ -4417,27 +4417,8 @@
       {
         "dataset": "BASELINE-9",
         "range" : null,
+        "note": "they will exchange items, too difficult",
         "events": [
-          {
-            "eventID": 1,
-            "observation": {
-              "position": {
-                "gondola": 3,
-                "plates": [
-                  2,
-                  3
-                ],
-                "shelf": 3
-              },
-              "products": [
-                
-              ],
-              "time": "00:04 + 2020-04-20_07-45-57",
-              "todo": null,
-              "target_id": ""
-            },
-            "putback": 0
-          }
         ]
       },
       {
@@ -4450,17 +4431,161 @@
               "position": {
                 "gondola": 3,
                 "plates": [
-                  2,
-                  3
+                  9
                 ],
-                "shelf": 3
+                "shelf": 2
               },
               "products": [
-                
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571953386",
+                  "name": "ICE Ginger Lime",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 532.0
+                }
               ],
-              "time": "00:04 + 2020-04-20_07-45-57",
+              "time": "00:15 + 2020-04-20_08-13-17",
               "todo": null,
-              "target_id": ""
+              "note": "9627915597770929492 is boy, 14029885989282760591 is girl",
+              "target_id": "9627915597770929492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  9
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571953386",
+                  "name": "ICE Ginger Lime",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 532.0
+                }
+              ],
+              "time": "00:15 + 2020-04-20_08-13-17",
+              "todo": null,
+              "note": "9627915597770929492 is boy, 14029885989282760591 is girl",
+              "target_id": "14029885989282760591"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 1
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "818780014229",
+                  "name": "Boomchickapop Sweet & Salty Kettle Corn",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/GUEST_d22545b5-3324-4f1e-a661-530ece1d7092_128x.jpg?v=1565210222",
+                  "weight": 71.0
+                }
+              ],
+              "time": "00:34 + 2020-04-20_08-13-17",
+              "todo": null,
+              "note": "9627915597770929492 is boy, 14029885989282760591 is girl",
+              "target_id": "9627915597770929492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 1
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "818780014229",
+                  "name": "Boomchickapop Sweet & Salty Kettle Corn",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/GUEST_d22545b5-3324-4f1e-a661-530ece1d7092_128x.jpg?v=1565210222",
+                  "weight": 71.0
+                }
+              ],
+              "time": "00:34 + 2020-04-20_08-13-17",
+              "todo": null,
+              "note": "9627915597770929492 is boy, 14029885989282760591 is girl",
+              "target_id": "14029885989282760591"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  9
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041508922487",
+                  "name": "ACQUA PANNA PET MINERAL DRINK",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/54543311-1_52a9767b-c3f0-4505-8a65-e85092665bda_128x.jpg?v=1565210202",
+                  "weight": 666.4199829101562
+                }
+              ],
+              "time": "00:45 + 2020-04-20_08-13-17",
+              "todo": null,
+              "note": "9627915597770929492 is boy, 14029885989282760591 is girl",
+              "target_id": "9627915597770929492"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 6,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  3
+                ],
+                "shelf": 6
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000036",
+                  "name": "FIJI NAT ARTSN WTR 1.5L",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/29742816-1_09b01554-6196-43c8-a0e5-a6e77aaf4ece_128x.jpg?v=1565210269",
+                  "weight": 1572.0
+                }
+              ],
+              "time": "00:45 + 2020-04-20_08-13-17",
+              "todo": null,
+              "note": "9627915597770929492 is boy, 14029885989282760591 is girl",
+              "target_id": "14029885989282760591"
             },
             "putback": 0
           }
