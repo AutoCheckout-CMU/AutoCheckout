@@ -3586,11 +3586,11 @@
               "products": [
                 {
                   "barcodeType": "UPC",
-                  "id": "UNKOWN",
-                  "name": "UNKOWN",
+                  "id": "858369006207",
+                  "name": "Soylent Strawberry",
                   "price": 1,
-                  "thumbnail": null,
-                  "weight": null
+                  "thumbnail": "",
+                  "weight": 467.0
                 }
               ],
               "time": "00:24 + 2020-04-20_07-42-32",
