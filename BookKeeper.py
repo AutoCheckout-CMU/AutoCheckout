@@ -111,7 +111,7 @@ class BookKeeper():
             
             # Workaround for database error: [JD] 1064g for the large one (ACQUA PANNA PET MINERAL DRINK), 800g for the small one
             if productExtended.barcode == '041508922487':
-                productExtended.weight = 538.0
+                productExtended.weight = 1064.0
 
             self._productsCache[productExtended.barcode] = productExtended
             self.productIDsFromProductsTable.add(productExtended.barcode)
