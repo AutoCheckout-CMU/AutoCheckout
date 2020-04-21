@@ -5,8 +5,18 @@ import zipfile
 from datetime import datetime
 import subprocess
 
-with open('./competition/day1-tests.json') as f:
-    testCases = json.load(f)
+# GET test cases
+headers = {
+    'TOKEN': '5ea023be-b530-4816-8eda-5340cfabe9b0'
+}
+response = requests.get(url='http://cps-week.internal.aifi.io/api/v1/testcases', headers=headers)
+
+testCases = []
+if response.status_code == 200:
+    responsStr = response.content
+    testCases = json.loads(responsStr)
+    with open('competition/test_cases.json', 'w') as f:
+        json.dump(testCases, f)
 
 
 
