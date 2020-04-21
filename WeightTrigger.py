@@ -123,6 +123,8 @@ class WeightTrigger:
             np_plate = plate_data_item.data  # [time,shelf,plate]
             np_plate = np.nan_to_num(np_plate, copy=True, nan=0) # replace all NaN elements to 0
             np_plate = np_plate[:, 1:13, 1:13]  # remove first line, which is always NaN elements
+            if gondola_id == 2 or gondola_id == 4:
+                np_plate[:,:,9:12] = 0
             np_shelf = np_plate.sum(axis=2)  # [time,shelf]
             np_shelf = np_shelf.transpose()  # [shelf, time]
             np_plate = np_plate.transpose(1, 2, 0)  # [shelf,plate,time]

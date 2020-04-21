@@ -1,19 +1,19 @@
 # competition score + dry run
 DEBUG = 0 (exact competition mode)
 ================== Evaluation Summary ==================
-Databases:  ['ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1', 'BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6']
+Databases:  ['cps-test-19', 'cps-test-20', 'cps-test-21', 'cps-test-22', 'cps-test-23', 'cps-test-24', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1', 'BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 57.5%
-Overall recall is: 85.2%
-Overall F1 is: 68.7%
+Overall precision is: 60.3%
+Overall recall is: 88.4%
+Overall F1 is: 71.7%
 
 DEBUG = 1 (with putback events)
 ================== Evaluation Summary ==================
-Databases:  ['ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1', 'BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6']
+Databases:  ['cps-test-19', 'cps-test-20', 'cps-test-21', 'cps-test-22', 'cps-test-23', 'cps-test-24', 'ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1', 'BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 53.7%
-Overall recall is: 78.6%
-Overall F1 is: 63.8%
+Overall precision is: 74.7%
+Overall recall is: 78.2%
+Overall F1 is: 76.4%
 
 
 # TODO Mengmeng: fusion total score
