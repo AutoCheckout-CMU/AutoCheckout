@@ -108,6 +108,10 @@ class BookKeeper():
             # Our store operator made a mistake when inputing the product in :scales:
             if productExtended.barcode == '898999010007':
                 productExtended.weight = 538.0
+            
+            # Workaround for database error: [JD] 1064g for the large one (ACQUA PANNA PET MINERAL DRINK), 800g for the small one
+            if productExtended.barcode == '041508922487':
+                productExtended.weight = 538.0
 
             self._productsCache[productExtended.barcode] = productExtended
             self.productIDsFromProductsTable.add(productExtended.barcode)
