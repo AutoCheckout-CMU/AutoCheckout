@@ -7,4 +7,4 @@ data
 __pycache__
 env
 .vscode
-*.json
+outputs

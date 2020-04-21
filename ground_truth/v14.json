@@ -3966,19 +3966,163 @@
             "eventID": 1,
             "observation": {
               "position": {
-                "gondola": 3,
+                "gondola": 1,
                 "plates": [
-                  2,
-                  3
+                  6
                 ],
-                "shelf": 3
+                "shelf": 6
               },
               "products": [
-                
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000029",
+                  "name": "FIJI NATURAL WATER 1LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/44968327-1_10b62570-3eeb-428f-b979-3ad50b29f77d_128x.jpg?v=1565210271",
+                  "weight": 1059.6700439453125
+                }
               ],
-              "time": "00:04 + 2020-04-20_07-45-57",
+              "time": "00:32 + 2020-04-20_07-53-16",
               "todo": null,
-              "target_id": ""
+              "target_id": "3888840034434030007"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  10
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000029",
+                  "name": "FIJI NATURAL WATER 1LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/44968327-1_10b62570-3eeb-428f-b979-3ad50b29f77d_128x.jpg?v=1565210271",
+                  "weight": 1059.6700439453125
+                }
+              ],
+              "time": "00:35 + 2020-04-20_07-53-16",
+              "todo": null,
+              "target_id": "3888840034434030007"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  9
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                },
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000012",
+                  "name": "FIJI WATER .5 LTR",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/fa8ca5380842e626c9d71fbead19caa9_128x.jpg?v=1566945931",
+                  "weight": 538.0
+                }
+              ],
+              "time": "00:41 + 2020-04-20_07-53-16",
+              "todo": null,
+              "target_id": "3888840034434030007"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "898999010007",
+                  "name": "Vita Coco original 500ml",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 41.0
+                }
+              ],
+              "time": "00:55 + 2020-04-20_07-53-16",
+              "todo": null,
+              "target_id": "3888840034434030007"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  12
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "898999010007",
+                  "name": "Vita Coco original 500ml",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 41.0
+                }
+              ],
+              "time": "00:57 + 2020-04-20_07-53-16",
+              "todo": null,
+              "target_id": "3888840034434030007"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 6,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  12
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "898999010007",
+                  "name": "Vita Coco original 500ml",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 41.0
+                }
+              ],
+              "time": "01:02 + 2020-04-20_07-53-16",
+              "todo": null,
+              "target_id": "3888840034434030007"
             },
             "putback": 0
           }
