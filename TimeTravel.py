@@ -3,16 +3,19 @@ import requests
 import os
 import zipfile
 from datetime import datetime
+import subprocess
 
 with open('./competition/day1-tests.json') as f:
     testCases = json.load(f)
 
-tmpDir = '/tmp/'
+
+
+videosDir = './videos/'
 
 archivesDir = './archives/'
 if os.path.exists(archivesDir) != True:
     os.mkdir(archivesDir)
-# archivesPath = os.path.join()
+
 
 
 with open('./TestCaseStartTime.json') as f:
@@ -25,7 +28,7 @@ for testCase in testCases:
 
     if name not in testCaseStartTime:
         videos = testCase['videos']
-        videosDir = tmpDir + name + '/'
+        videosDir = videosDir + name + '/'
         if os.path.exists(videosDir):
             print('have video already')
         else:
@@ -64,6 +67,9 @@ for testCase in testCases:
             print(newUrl)
             r = requests.get(newUrl)
             open(archivePath, 'wb').write(r.content)
+            dbRestoreCommand = 'mongorestore --archive=' + archivePath
+            proc = subprocess.Popen([dbRestoreCommand], stdout=subprocess.PIPE, shell=True) 
+            (out, err) = proc.communicate()
 
 with open('TestCaseStartTime.json', 'w') as f:
     json.dump(testCaseStartTime, f)
