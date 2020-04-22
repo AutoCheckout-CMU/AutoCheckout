@@ -114,8 +114,10 @@ class Cashier():
             if (len(targets)==0):
                 continue
             
-            if CE_ASSOCIATION:
+            if ASSOCIATION_TYPE == CE_ASSOCIATION:
                 target_id, _ =  associate_product_ce(absolutePos, targets)
+            elif ASSOCIATION_TYPE == CLOSEST_ASSOCIATION:
+                target_id, _ = associate_product_closest(absolutePos, targets)
             else:
                 target_id, _ =  associate_product_naive(absolutePos, targets)
 

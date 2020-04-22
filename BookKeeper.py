@@ -10,6 +10,7 @@ from PIL import Image, ImageDraw
 from config import *
 import json
 import os
+from datetime import datetime
 
 INCH_TO_METER = 0.0254
 
@@ -254,10 +255,12 @@ class BookKeeper():
                     targets[target_id].update(target_id, head, left_hand, right_hand, valid_entrance)
             # print(i, num_timestamps, targetDoc['timestamp'])
             # print(targets.items())
-            # print("timestamp: ", targetDoc['date_time'])
             if (i>num_timestamps/2):
+                # print("Trigger duration ", datetime.fromtimestamp(timeBegin), datetime.fromtimestamp(timeEnd))
+                # print("Break at date time: ", targetDoc['date_time'])
                 break
             # if targetDoc['timestamp'] > event.peakTime:
+            #     print("Break at peak", targetDoc['timestamp'])
             #     break
         # print("Event timestamp: ", targetDoc['timestamp'], head)
         if VERBOSE:
