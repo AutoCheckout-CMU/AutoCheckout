@@ -72,16 +72,16 @@ for testCase in testCases:
     archivePath = archivesDir + name + '.archive'
     if os.path.exists(archivePath):
         print("already have archive ", archivePath)
-        continue
-    for url in archives:
-        if url.endswith('.archive'):
-            newUrl = url.replace('cloud.google', 'googleapis')
-            print(newUrl)
-            r = requests.get(newUrl)
-            open(archivePath, 'wb').write(r.content)
-            dbRestoreCommand = 'mongorestore --archive=' + archivePath
-            proc = subprocess.Popen([dbRestoreCommand], stdout=subprocess.PIPE, shell=True) 
-            (out, err) = proc.communicate()
+    else:
+        for url in archives:
+            if url.endswith('.archive'):
+                newUrl = url.replace('cloud.google', 'googleapis')
+                print(newUrl)
+                r = requests.get(newUrl)
+                open(archivePath, 'wb').write(r.content)
+                dbRestoreCommand = 'mongorestore --archive=' + archivePath
+                proc = subprocess.Popen([dbRestoreCommand], stdout=subprocess.PIPE, shell=True) 
+                (out, err) = proc.communicate()
 
 with open(testCaseJSONFilePath, 'w') as f:
     json.dump(testCaseStartTime, f)
