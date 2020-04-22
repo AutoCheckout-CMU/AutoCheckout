@@ -2,17 +2,17 @@
 ================== Evaluation Summary ==================
 Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 78.4%
-Overall recall is: 85.1%
-Overall F1 is: 81.6%
+Overall precision is: 82.6%
+Overall recall is: 80.9%
+Overall F1 is: 81.7%
 
 DEBUG = 1 (with putback)
 ================== Evaluation Summary ==================
 Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 79.5%
-Overall recall is: 72.5%
-Overall F1 is: 75.9%
+Overall precision is: 67.0%
+Overall recall is: 71.4%
+Overall F1 is: 69.1%
 
 # TODO Mengmeng: fusion total score
 event 560g delta
