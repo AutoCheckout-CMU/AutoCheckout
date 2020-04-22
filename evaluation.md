@@ -58,3 +58,22 @@ location productA 100%
 # TODO BASELINE-10: 2 people. Simultaneously pickup 1 same item each from the same place. Simultaneously pickup 1 different item each from the same shelf. 
 # TODO BASELINE-11: 3 people. Very complicated.
 # TODO BASELINE-12: 3 people. Very complicated.
+
+# TODO BASELINE-13[Urgent]: 0.66. 1 person. Pick up two very close but different product.
+# TODO BASELINE-14[Urgent]: 0.66. 1 perosn. Very simple case, not sure why wrong.
+# TODO BASELINE-15: 1.0. 1 person. Simple.
+# TODO BASELINE-16: 0.28. 1 person. Misplaced items and close weight.
+# TODO BASELINE-17: 0.33. 1 person. Hold an item for very long time and pick it up.
+# TODO BASELINE-18: 0.5. 1 person. At the same pick up one water A at plate 3, 2 waters B at plate 6. Same shelf. Then put back B at A's place, they are same weight, so difficult.
+# TODO BASELINE-19: 0.8. 1 person. Pickup 3 chips A, two chips B, one chip C. Put back one 1 chip A to its original place.
+# TODO BASELINE-20[Urgent]: 0.0. 1 person. Pick up three very close but different product, then putback one.
+# TODO BASELINE-21: 0.71. 1 person. Very quickly pick up N close items one by one, then putback one.
+# TODO BASELINE-22: 0.25. 1 person. Slowly pickup 1 item.
+# TODO BASELINE-23[Urgent]: 0.66. 1 person. Putback item and retake, should be simple.
+# TODO BASELINE-24[Urgent]: 0.75. 1 person. Pick up two very close but different product.
+# TODO BASELINE-25: 1.0. 1 person. Pick 4 items, one by one, simple.
+# TODO BASELINE-26: 1.0. 1 person. Pickup 2 same products adjacent plates.
+# TODO BASELINE-27: 1.0. 1 person. Pickup and put back.
+# TODO BASELINE-28: 0.12. 1 person. Hold 2 items on shelf for a long time, then only pick up 1.
+# TODO BASELINE-29: 0.85. 1 person. Pick up adjacent items quickly.
+# TODO BASELINE-30: 0.66. 1 person. Pick 3 items, leave 1 at floor.
