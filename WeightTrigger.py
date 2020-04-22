@@ -202,40 +202,34 @@ class WeightTrigger:
         for gondola_idx in range(num_gondola):
             num_shelf = weight_shelf_mean[gondola_idx].shape[0]
             for shelf_idx in range(num_shelf):
-                # the beginning and end of weight data should have zero variance
-                weight_shelf_std[gondola_idx][shelf_idx][0] = 0
-                weight_shelf_std[gondola_idx][shelf_idx][-1] = 0
-
+                # find a continuous range that variance change is above threshold
                 var_is_active = np.array(weight_shelf_std[gondola_idx][shelf_idx]) > thresholds.get('std_shelf')
-                state_changes = np.diff(var_is_active)
-                state_change_inds = [i for i, v in enumerate(state_changes) if v > 0]
-                prev = 0
-                for state_change_ind in state_change_inds:
-                    n_begin = prev
-                    n_end = state_change_ind
+                i = 0
+                whole_length = len(var_is_active)
+                while (i<whole_length):
+                    if (not var_is_active[i]):
+                        i += 1
+                        continue
+                    n_begin = i
+                    n_end = i
+                    while (n_end+1<whole_length and var_is_active[n_end+1]):
+                        n_end += 1
+                    i = n_end + 1
+                    
                     w_begin = weight_shelf_mean[gondola_idx][shelf_idx][n_begin]
                     w_end = weight_shelf_mean[gondola_idx][shelf_idx][n_end]
                     delta_w = w_end - w_begin
                     length = n_end - n_begin + 1
 
-                    prev = state_change_ind
-
                     if length < thresholds.get('min_event_length'):
                         continue
-                    is_active = var_is_active[n_begin] # TODO
 
-                    # print ('[', n_begin, n_end, '] is active: ', is_active, 'weight change: ', delta_w )
-                    is_active = not is_active 
-                    
                     if abs(delta_w) > thresholds.get('mean_shelf'):
                         trigger_begin = timestamps[gondola_idx][n_begin]
                         trigger_end = timestamps[gondola_idx][n_end]
 
                         plates = [0] * num_plate
                         for plate_id in range(num_plate):
-                            # plates[plate_id] = int(abs(weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_end]
-                            #                            - weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_begin])
-                            #                        > thresholds.get('mean_plate'))
                             plates[plate_id] = weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_end] \
                                                - weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_begin]
 
