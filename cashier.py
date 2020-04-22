@@ -110,6 +110,11 @@ class Cashier():
             # absolutePos = myBK.getProductCoordinates(productID)
             absolutePos = event.getEventCoordinates(myBK)
             targets = myBK.getTargetsForEvent(event)
+            # Initliaze a customer receipt for all new targets
+            for target_id in targets.keys():
+                if target_id not in receipts:
+                    customer_receipt = CustomerReceipt(target_id)
+                    receipts[target_id] = customer_receipt
 
             # No target for the event found at all
             if (len(targets)==0):
