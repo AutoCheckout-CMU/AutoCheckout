@@ -7,15 +7,17 @@ import json
 class PickUpEvent():
     triggerBegin: float # timestamp
     triggerEnd: float # timestamp
+    peakTime: float # timestamp for the time with highest weight variance
     nBegin: int
     nEnd: int
     deltaWeight: np.float
     gondolaID: int
     shelfID: int
     deltaWeights: list
-    def __init__(self, triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights):
+    def __init__(self, triggerBegin, triggerEnd, peakTime, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights):
         self.triggerBegin = triggerBegin
         self.triggerEnd = triggerEnd
+        self.peakTime = peakTime
         self.nBegin = nBegin
         self.nEnd = nEnd
         self.deltaWeight = deltaWeight
@@ -56,9 +58,11 @@ class PickUpEvent():
         return str(self)
 
     def __str__(self):
-        return "[{},{}] deltaWeight: {}, position: {}, {}, {}".format(
+        return "[{},{}] deltaWeight: {}, peakTime: {}, position: {}, {}, {}".format(
             datetime.fromtimestamp(self.triggerBegin), datetime.fromtimestamp(self.triggerEnd),
-            self.deltaWeight, self.gondolaID, self.shelfID, self.deltaWeights)
+            self.deltaWeight,
+            datetime.fromtimestamp(self.peakTime),
+            self.deltaWeight, self.gondolaID, self.shelfID)
 
 class WeightTrigger:
 
@@ -212,11 +216,13 @@ class WeightTrigger:
                         continue
                     n_begin = i
                     n_end = i
+                    n_peak = i
                     maxStd = weight_shelf_std[gondola_idx][shelf_idx][n_begin]
                     while (n_end+1<whole_length and var_is_active[n_end+1]):
                         n_end += 1
                         if weight_shelf_std[gondola_idx][shelf_idx][n_end] > maxStd:
                             maxStd = weight_shelf_std[gondola_idx][shelf_idx][n_end]
+                            n_peak = n_end
                     i = n_end + 1
 
                     w_begin = weight_shelf_mean[gondola_idx][shelf_idx][n_begin]
@@ -230,7 +236,7 @@ class WeightTrigger:
                     if abs(delta_w) > thresholds.get('mean_shelf'):
                         trigger_begin = timestamps[gondola_idx][n_begin]
                         trigger_end = timestamps[gondola_idx][n_end]
-
+                        peakTime = timestamps[gondola_idx][n_peak]
                         plates = [0] * num_plate
                         for plate_id in range(num_plate):
                             plates[plate_id] = weight_plate_mean[gondola_idx][shelf_idx][plate_id][n_end] \
@@ -239,6 +245,7 @@ class WeightTrigger:
                         event = PickUpEvent(
                             trigger_begin, 
                             trigger_end,
+                            peakTime,
                             n_begin,
                             n_end,
                             delta_w,
@@ -261,6 +268,7 @@ class WeightTrigger:
 
             triggerBegin = pickUpEvent.triggerBegin
             triggerEnd = pickUpEvent.triggerEnd
+            peakTime = pickUpEvent.peakTime
             nBegin = pickUpEvent.nBegin
             nEnd = pickUpEvent.nEnd
             gondolaID = pickUpEvent.gondolaID
@@ -308,6 +316,6 @@ class WeightTrigger:
                     deltaWeights[plateID-1] = weightOnThisPlate
                     deltaWeight += weightOnThisPlate
                     
-                splittedEvent = PickUpEvent(triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights)
+                splittedEvent = PickUpEvent(triggerBegin, triggerEnd, peakTime, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights)
                 splittedEvents.append(splittedEvent)
         return splittedEvents
