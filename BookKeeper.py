@@ -257,6 +257,8 @@ class BookKeeper():
             # print("timestamp: ", targetDoc['date_time'])
             if (i>num_timestamps/2):
                 break
+            # if targetDoc['timestamp'] > event.peakTime:
+            #     break
         # print("Event timestamp: ", targetDoc['timestamp'], head)
         if VERBOSE:
             print("Targets: Capture {} targets in this event".format(len(targets)), targets.keys())

@@ -56,8 +56,8 @@ def associate_product_ce(product_loc, targets):
             ce_distance = float('inf')
         else:
             ce_distance /= total_score
-        
-        # print("Distance for target: ", id, "is: ", str(distance))
+            
+        # print("Distance for target: ", id, "is: ", str(ce_distance))
         if (ce_distance <= min_dist):
             result_id = id
             result_target = target

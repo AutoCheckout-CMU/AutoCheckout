@@ -5,17 +5,19 @@ from BookKeeper import Position
 import json
 
 class PickUpEvent():
-    triggerBegin: datetime
-    triggerEnd: datetime
+    triggerBegin: float # timestamp
+    triggerEnd: float # timestamp
+    peakTime: float # timestamp for the point with highest variance
     nBegin: int
     nEnd: int
     deltaWeight: np.float
     gondolaID: int
     shelfID: int
     deltaWeights: list
-    def __init__(self, triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights):
+    def __init__(self, triggerBegin, triggerEnd, peakTime, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights):
         self.triggerBegin = triggerBegin
         self.triggerEnd = triggerEnd
+        self.peakTime = peakTime
         self.nBegin = nBegin
         self.nEnd = nEnd
         self.deltaWeight = deltaWeight
@@ -191,7 +193,7 @@ class WeightTrigger:
                              weight_shelf_std, # TODO: matlab used var
                              weight_plate_mean,
                              weight_plate_std,
-                             timestamps,
+                             timestamps, # timestamps: [gondola, timestamp]
                              num_plate=12,
                              thresholds={'std_shelf': 22, 'mean_shelf': 10, 'mean_plate': 5, 'min_event_length': 30}):
         # the lightest product is: {'_id': ObjectId('5e30c1c0e3a947a97b665757'), 'product_id': {'barcode_type': 'UPC', 'id': '041420027161'}, 'metadata': {'name': 'TROLLI SBC ALL STAR MIX', 'thumbnail': 'https://cdn.shopify.com/s/files/1/0083/0704/8545/products/41420027161_cce873d6-f143-408c-864e-eb351a730114.jpg?v=1565210393', 'price': 1, 'weight': 24}}
@@ -212,10 +214,15 @@ class WeightTrigger:
                         continue
                     n_begin = i
                     n_end = i
+                    peakTime = timestamps[gondola_idx][n_begin]
+                    maxStd = weight_shelf_std[gondola_idx][shelf_idx][n_begin]
                     while (n_end+1<whole_length and var_is_active[n_end+1]):
                         n_end += 1
+                        if weight_shelf_std[gondola_idx][shelf_idx][n_end] > maxStd:
+                            maxStd = weight_shelf_std[gondola_idx][shelf_idx][n_end]
+                            peakTime = n_end
                     i = n_end + 1
-                    
+
                     w_begin = weight_shelf_mean[gondola_idx][shelf_idx][n_begin]
                     w_end = weight_shelf_mean[gondola_idx][shelf_idx][n_end]
                     delta_w = w_end - w_begin
@@ -236,6 +243,7 @@ class WeightTrigger:
                         event = PickUpEvent(
                             trigger_begin, 
                             trigger_end,
+                            peakTime,
                             n_begin,
                             n_end,
                             delta_w,
