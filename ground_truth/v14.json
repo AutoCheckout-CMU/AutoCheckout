@@ -5858,6 +5858,117 @@
             "putback": 1
           }
         ]
+      },
+      {
+        "dataset": "BASELINE-14",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  3
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "898999010007",
+                  "name": "Vita Coco original 500ml",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 538.0
+                }
+              ],
+              "time": "00:05 + 2020-04-22_00-22-17",
+              "todo": null,
+              "target_id": "4018032663420655218"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  3
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "898999010007",
+                  "name": "Vita Coco original 500ml",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 538.0
+                }
+              ],
+              "time": "00:09 + 2020-04-22_00-22-17",
+              "todo": null,
+              "target_id": "4018032663420655218"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  7,
+                  8
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "024100204113",
+                  "name": "CheezIt Original",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/KEB12233_8e87b6a5-e7f8-44ec-873b-3aa86a7b5945_128x.jpg?v=1565210228",
+                  "weight": 209.3300018310547
+                }
+              ],
+              "time": "00:11 + 2020-04-22_00-22-17",
+              "todo": null,
+              "target_id": "4018032663420655218"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  8
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571950293",
+                  "name": "ICE Strawberry Lemonade",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 534.0
+                }
+              ],
+              "time": "00:14 + 2020-04-22_00-22-17",
+              "todo": null,
+              "target_id": "4018032663420655218"
+            },
+            "putback": 0
+          }
+        ]
       }
     ]
   }
