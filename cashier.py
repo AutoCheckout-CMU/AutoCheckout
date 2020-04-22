@@ -61,7 +61,8 @@ class Cashier():
         # weight_plate_mean,weight_plate_std,weight_shelf_mean,weight_shelf_std,timestamps,date_times = weightTrigger.get_weights()
         weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std = weightTrigger.get_moving_weight()
         
-        number_gondolas = 5
+        
+        number_gondolas = len(weight_shelf_mean)
         # reduce timestamp 
         timestamps = weightTrigger.get_agg_timestamps()
         for i in range(number_gondolas):
@@ -75,10 +76,16 @@ class Cashier():
             # weight_plate_std: [gondola, shelf, plate, timestamp]
             # timestamps: [gondola, timestamp]
             timestamps_count = len(timestamps[i])
-            # assert (timestamps_count == weight_shelf_mean[i].shape[1])
-            # assert (timestamps_count == weight_shelf_std[i].shape[1])
-            # assert (timestamps_count == weight_plate_mean[i].shape[2])
-            # assert (timestamps_count == weight_plate_std[i].shape[2])
+            # print ('weight_shelf_mean', weight_shelf_mean[i].shape)
+            # print ('weight_shelf_std',  weight_shelf_std[i].shape)
+            # print ('weight_plate_mean', weight_plate_mean[i].shape)
+            # print ('weight_plate_std', weight_plate_std[i].shape)
+            # print ('timestamps', timestamps_count)
+            assert (timestamps_count == weight_shelf_mean[i].shape[1])
+            assert (timestamps_count == weight_shelf_std[i].shape[1])
+            assert (timestamps_count == weight_plate_mean[i].shape[2])
+            assert (timestamps_count == weight_plate_std[i].shape[2])
+            # print ('timestamps', timestamps[i][0], "to", timestamps[i][-1])
             
         events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, timestamps)
 

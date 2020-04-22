@@ -52,6 +52,9 @@ class PickUpEvent():
         coordinates = bk.get3DCoordinatesForPlate(position.gondola, position.shelf, position.plate)
         return coordinates
 
+    def __repr__(self):
+        return str(self)
+
     def __str__(self):
         return "[{},{}] deltaWeight: {}, position: {}, {}, {}".format(
             datetime.fromtimestamp(self.triggerBegin), datetime.fromtimestamp(self.triggerEnd),
@@ -190,7 +193,7 @@ class WeightTrigger:
                              weight_plate_std,
                              timestamps,
                              num_plate=12,
-                             thresholds={'std_shelf': 22, 'mean_shelf': 10, 'mean_plate': 5, 'N_high': 30, 'N_low': 30}):
+                             thresholds={'std_shelf': 22, 'mean_shelf': 10, 'mean_plate': 5, 'min_event_length': 30}):
         # the lightest product is: {'_id': ObjectId('5e30c1c0e3a947a97b665757'), 'product_id': {'barcode_type': 'UPC', 'id': '041420027161'}, 'metadata': {'name': 'TROLLI SBC ALL STAR MIX', 'thumbnail': 'https://cdn.shopify.com/s/files/1/0083/0704/8545/products/41420027161_cce873d6-f143-408c-864e-eb351a730114.jpg?v=1565210393', 'price': 1, 'weight': 24}}
 
         events = []
@@ -199,37 +202,31 @@ class WeightTrigger:
         for gondola_idx in range(num_gondola):
             num_shelf = weight_shelf_mean[gondola_idx].shape[0]
             for shelf_idx in range(num_shelf):
-                var_is_active = np.array(weight_shelf_std[gondola_idx][shelf_idx]) > thresholds.get('std_shelf')
+                # the beginning and end of weight data should have zero variance
+                weight_shelf_std[gondola_idx][shelf_idx][0] = 0
+                weight_shelf_std[gondola_idx][shelf_idx][-1] = 0
 
+                var_is_active = np.array(weight_shelf_std[gondola_idx][shelf_idx]) > thresholds.get('std_shelf')
                 state_changes = np.diff(var_is_active)
                 state_change_inds = [i for i, v in enumerate(state_changes) if v > 0]
-                state_lengths = np.diff([0] + state_change_inds + [len(var_is_active) - 1])
-                active_inds = [i for i in range(1, len(state_lengths), 2)]
-                stable_inds = [i for i in range(2, len(state_lengths), 2)]
-                valid_active_intervals = [i for i, ind in enumerate(active_inds) if
-                                          state_lengths[ind] > thresholds.get('N_high')]
-                valid_stable_intervals = [i for i, ind in enumerate(stable_inds) if
-                                          state_lengths[ind] > thresholds.get('N_low')]
-
-                min_next_active_interval = -1
-                for active_idx in valid_active_intervals:
-                    if active_idx <= min_next_active_interval:
-                        continue
-
-                    stable_idx = -1
-                    for i in valid_stable_intervals:
-                        if i >= active_idx:
-                            stable_idx = i
-                            break
-                    if stable_idx == -1:
-                        break
-
-                    n_begin = state_change_inds[active_inds[active_idx] - 1] - thresholds.get('N_low')
-                    n_end = state_change_inds[stable_inds[stable_idx] - 1] + 1 + thresholds.get('N_low')
+                prev = 0
+                for state_change_ind in state_change_inds:
+                    n_begin = prev
+                    n_end = state_change_ind
                     w_begin = weight_shelf_mean[gondola_idx][shelf_idx][n_begin]
                     w_end = weight_shelf_mean[gondola_idx][shelf_idx][n_end]
                     delta_w = w_end - w_begin
+                    length = n_end - n_begin + 1
 
+                    prev = state_change_ind
+
+                    if length < thresholds.get('min_event_length'):
+                        continue
+                    is_active = var_is_active[n_begin] # TODO
+
+                    # print ('[', n_begin, n_end, '] is active: ', is_active, 'weight change: ', delta_w )
+                    is_active = not is_active 
+                    
                     if abs(delta_w) > thresholds.get('mean_shelf'):
                         trigger_begin = timestamps[gondola_idx][n_begin]
                         trigger_end = timestamps[gondola_idx][n_end]
@@ -254,5 +251,4 @@ class WeightTrigger:
                         )
 
                         events.append(event)
-                    min_next_active_interval = stable_idx
         return events
