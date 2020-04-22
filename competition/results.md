@@ -180,3 +180,6 @@
 
 =============== Receive feedbacks for outputs/output-BENCHMARK-2.json ===============
 {"f1_score":1.0,"name":"BENCHMARK-2","receipts":[{"products":[{"barcode":"718604971397","quantity":1},{"barcode":"071063437553","quantity":1}],"target_id":"7009787765597311425"}],"testcase":"30c292b1-fdf6-49a0-a641-b3de5465ec1b","user":"5ea023be-b530-4816-8eda-5340cfabe9b0","uuid":"96fa1080-bcd5-455a-abf7-b74fb942fdeb","version":1}"
+
+=============== Receive feedbacks for outputs/output-TEAM-99-DAY-2-TEST-1.json ===============
+"{\"f1_score\":0.975609756097561,\"name\":\"TEAM-99-DAY-2-TEST-1\",\"receipts\":[{\"products\":[{\"barcode\":\"818780014229\",\"quantity\":9},{\"barcode\":\"818780014243\",\"quantity\":6},{\"barcode\":\"850251004087\",\"quantity\":6}],\"target_id\":\"14322669897997084492\"}],\"testcase\":\"ffece222-815b-4fd5-9a22-7fc7527e5d78\",\"user\":\"5ea023be-b530-4816-8eda-5340cfabe9b0\",\"uuid\":\"64e82de4-f766-4548-b54c-b3c2fc05b567\",\"version\":1}\n"

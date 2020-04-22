@@ -36,8 +36,8 @@ def generate_output():
     for test_db in test_cases:
         print(test_db['name'])
         dbName = test_db['name']
-        # if ('DAY-1' in dbName):
-        #     continue
+        if ('DAY-1' in dbName):
+            continue
         dbId = test_db['uuid']
         receipts = myCashier.process(dbName)
         # Generate output file
@@ -90,9 +90,8 @@ def get_score(output_paths=['outputs/output-BASELINE-1.json']):
 if __name__ == '__main__':
     if not os.path.exists('outputs'):
         os.makedirs('outputs')
-    # output_paths = ['outputs/output-BASELINE-%d.json'%i for i in range(1, 31)]
-    # output_paths += ['']
-    output_paths = generate_output()
-    print("Submitting: ", output_paths)
+    # output_paths = generate_output()
+    # print("Submitting: ", output_paths)
     # output_paths = ['outputs/output-BASELINE-1.json', 'outputs/output-BASELINE-2.json', 'outputs/output-BASELINE-3.json', 'outputs/output-BASELINE-4.json', 'outputs/output-BASELINE-5.json', 'outputs/output-BASELINE-6.json', 'outputs/output-BASELINE-7.json', 'outputs/output-BASELINE-8.json', 'outputs/output-BASELINE-9.json', 'outputs/output-BASELINE-10.json', 'outputs/output-BASELINE-11.json', 'outputs/output-BASELINE-12.json', 'outputs/output-BASELINE-13.json', 'outputs/output-BASELINE-14.json', 'outputs/output-BASELINE-15.json', 'outputs/output-BASELINE-16.json', 'outputs/output-BASELINE-17.json', 'outputs/output-BASELINE-18.json', 'outputs/output-BASELINE-19.json', 'outputs/output-BASELINE-20.json', 'outputs/output-BASELINE-21.json', 'outputs/output-BASELINE-22.json', 'outputs/output-BASELINE-23.json', 'outputs/output-BASELINE-24.json', 'outputs/output-BASELINE-25.json', 'outputs/output-BASELINE-26.json', 'outputs/output-BASELINE-28.json', 'outputs/output-BASELINE-27.json', 'outputs/output-BASELINE-28.json', 'outputs/output-BASELINE-29.json', 'outputs/output-BASELINE-30.json', 'outputs/output-TEAM-5-DAY-2-TEST-1.json', 'outputs/output-TEAM-3-DAY-2-TEST-1.json', 'outputs/output-TEAM-3-DAY-2-TEST-2.json', 'outputs/output-TEAM-6-DAY-2-TEST-2.json', 'outputs/output-TEAM-6-DAY-2-TEST-1.json', 'outputs/output-TEAM-6-DAY-2-TEST-3.json', 'outputs/output-TEAM-3-DAY-2-TEST-3.json', 'outputs/output-BENCHMARK-1.json', 'outputs/output-BENCHMARK-2.json']
+    output_paths = ['outputs/output-TEAM-99-DAY-2-TEST-1.json']
     get_score(output_paths)
