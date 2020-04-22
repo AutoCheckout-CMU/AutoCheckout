@@ -27,7 +27,7 @@ def output_json(db_id, user, receipts, path):
 
 def generate_output():
     # Load JSON
-    f = open('competition/day1-tests.json')
+    f = open('competition/test_cases.json')
 
     test_cases = json.load(f)
     myCashier = Cashier()
@@ -78,6 +78,6 @@ def get_score(output_paths=['outputs/output-BASELINE-1.json']):
 if __name__ == '__main__':
     if not os.path.exists('outputs'):
         os.makedirs('outputs')
-    output_paths = ['outputs/output-BASELINE-%d.json'%i for i in range(1, 13)]
+    output_paths = ['outputs/output-BASELINE-%d.json'%i for i in range(1, 31)]
     generate_output()
     # get_score(output_paths)
