@@ -5860,6 +5860,74 @@
         ]
       },
       {
+        "dataset": "BASELINE-13",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  4,
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "613008743734",
+                  "name": "AZ GREEN TEA",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/img-313132011_2_640x640_116c5ab0-845f-47ce-9b04-41b814c45be0_128x.jpg?v=1566252111",
+                  "weight": 557.3300170898438
+                },
+                {
+                  "barcodeType": "UPC",
+                  "id": "613008744120",
+                  "name": "AZ WATERMELON",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/29672883-1_8677c718-ae1a-47cf-bf13-5a1d847f2a20_128x.jpg?v=1565210218",
+                  "weight": 567.0
+                }
+              ],
+              "time": "00:03 + 2020-04-22_00-11-53",
+              "todo": null,
+              "target_id": "4417709785322490302"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  10,
+                  11
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016000160101",
+                  "name": "Chex Mix Traditional",
+                  "price": 9,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/142349_b7ab90b8-7f9c-4244-a187-8dc6c488c799.jpg?v=1565210285",
+                  "weight": 110.0
+                }
+              ],
+              "time": "00:10 + 2020-04-22_00-11-53",
+              "todo": null,
+              "target_id": "4417709785322490302"
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
         "dataset": "BASELINE-14",
         "range" : null,
         "events": [
@@ -5968,6 +6036,27 @@
             },
             "putback": 0
           }
+        ]
+      },
+      {
+        "dataset": "BASELINE-20",
+        "range" : null,
+        "events": [
+
+        ]
+      },
+      {
+        "dataset": "BASELINE-23",
+        "range" : null,
+        "events": [
+
+        ]
+      },
+      {
+        "dataset": "BASELINE-24",
+        "range" : null,
+        "events": [
+
         ]
       }
     ]
