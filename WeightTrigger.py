@@ -58,12 +58,15 @@ class PickUpEvent():
         return str(self)
 
     def __str__(self):
-        return "[{},{}] deltaWeight: {}, peakTime: {}, position: {}, {}, {}".format(
+        res = "[{},{}] deltaWeight: {}, peakTime: {}, gondola {}, shelf {}\n deltaWeights: [".format(
             datetime.fromtimestamp(self.triggerBegin), datetime.fromtimestamp(self.triggerEnd),
             self.deltaWeight,
             datetime.fromtimestamp(self.peakTime),
-            self.deltaWeight, self.gondolaID, self.shelfID)
-
+            self.gondolaID, self.shelfID)
+        for deltaWeight in self.deltaWeights:
+            res += "%.2f, " % deltaWeight
+        res += "]"
+        return res
 class WeightTrigger:
 
     # full event trigger: to get all event triggers from the current database
@@ -265,6 +268,7 @@ class WeightTrigger:
             if pickUpEvent.deltaWeight > 0:
                 splittedEvents.append(pickUpEvent)
                 continue
+            
 
             triggerBegin = pickUpEvent.triggerBegin
             triggerEnd = pickUpEvent.triggerEnd
@@ -275,17 +279,28 @@ class WeightTrigger:
             shelfID = pickUpEvent.shelfID
 
             # calculate the threshold for contributing plates
+            potentialActivePlateIDs = []
             numberOfPlates = 12
             if gondolaID == 2 or gondolaID == 4 or gondolaID == 5:
                 numberOfPlates = 9
-          
+            absDeltaWeights = []
+            for i in range(numberOfPlates):
+                absDeltaWeights.append(abs(pickUpEvent.deltaWeights[i]))
+            plateActiveThreashold = sum(absDeltaWeights)/numberOfPlates
+
+            
+            for i in range(numberOfPlates):
+                if absDeltaWeights[i] >= plateActiveThreashold:
+                    potentialActivePlateIDs.append(i+1)
+            
             # use planogram to split events into groups
             # shelf planogram [1,2],[1,2,3],[3,4,5], [6,7,8,9] 
             # => poetential event [1-5], [6-9]
             groups = [] # [subEvent=[3,4,5], subEvent=[7,8]]
             productsInLastPlate = set()
-            for i in range(numberOfPlates): # [0, 11] or [0, 8]
-                plateID = i+1
+            for i in range(len(potentialActivePlateIDs)):
+            # for i in range(numberOfPlates): # [0, 11] or [0, 8]
+                plateID = potentialActivePlateIDs[i]
                 productsInPlateI = self.__bk.getProductIDsFromPosition(gondolaID, shelfID, plateID) # [1, 12] or [1, 9]
                 if i==0:
                     for productID in productsInPlateI:

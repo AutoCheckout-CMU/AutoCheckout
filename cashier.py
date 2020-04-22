@@ -16,7 +16,7 @@ from config import *
 
 # 0.75 might be better but its results jitter betweeen either 82.4 or 83.2???
 PUTBACK_JITTER_RATE = 0.75
-GRAB_FROM_SHELF_JITTER_RATE = 0.1
+GRAB_FROM_SHELF_JITTER_RATE = 0.33
 
 class CustomerReceipt():
     """
@@ -171,7 +171,7 @@ class Cashier():
 
                 product = topProductExtended
 
-                # If weight difference is too large, ignore this event
+                # If deltaWeight is too small compared to the predicted product, ignore this event
                 if (abs(event.deltaWeight) < GRAB_FROM_SHELF_JITTER_RATE*product.weight):
                     continue
             productID = product.barcode
