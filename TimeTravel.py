@@ -39,7 +39,6 @@ if os.path.exists(testCaseJSONFilePath):
 for testCase in testCases:
     archives = testCase['archives']
     name = testCase['name']
-
     if name not in testCaseStartTime:
         videos = testCase['videos']
         dirForCurrentTestCase = videosDir + name
