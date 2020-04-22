@@ -14,7 +14,9 @@ from ScoreCalculate import *
 from utils import *
 from config import *
 
-JITTER_RATE = 0.1
+# 0.75 might be better but its results jitter betweeen either 82.4 or 83.2???
+PUTBACK_JITTER_RATE = 0.5
+GRAB_FROM_SHELF_JITTER_RATE = 0.1
 
 class CustomerReceipt():
     """
@@ -144,7 +146,7 @@ class Cashier():
                 product, putback_count = candidate_products[0]
                 
                 # If weight difference is too large, ignore this event
-                if (abs(event.deltaWeight) < JITTER_RATE*product.weight):
+                if (abs(event.deltaWeight) < PUTBACK_JITTER_RATE*product.weight):
                     continue
 
                 # Put the product on the shelf will affect planogram
@@ -162,7 +164,7 @@ class Cashier():
                 product = topProductExtended
 
                 # If weight difference is too large, ignore this event
-                if (abs(event.deltaWeight) < JITTER_RATE*product.weight):
+                if (abs(event.deltaWeight) < GRAB_FROM_SHELF_JITTER_RATE*product.weight):
                     continue
             productID = product.barcode
 
