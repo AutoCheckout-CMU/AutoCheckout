@@ -259,9 +259,6 @@ class BookKeeper():
                 # print("Trigger duration ", datetime.fromtimestamp(timeBegin), datetime.fromtimestamp(timeEnd))
                 # print("Break at date time: ", targetDoc['date_time'])
                 break
-            # if targetDoc['timestamp'] > event.peakTime:
-            #     print("Break at peak", targetDoc['timestamp'])
-            #     break
         # print("Event timestamp: ", targetDoc['timestamp'], head)
         if VERBOSE:
             print("Targets: Capture {} targets in this event".format(len(targets)), targets.keys())

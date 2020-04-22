@@ -7,17 +7,15 @@ import json
 class PickUpEvent():
     triggerBegin: float # timestamp
     triggerEnd: float # timestamp
-    peakTime: float # timestamp for the point with highest variance
     nBegin: int
     nEnd: int
     deltaWeight: np.float
     gondolaID: int
     shelfID: int
     deltaWeights: list
-    def __init__(self, triggerBegin, triggerEnd, peakTime, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights):
+    def __init__(self, triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights):
         self.triggerBegin = triggerBegin
         self.triggerEnd = triggerEnd
-        self.peakTime = peakTime
         self.nBegin = nBegin
         self.nEnd = nEnd
         self.deltaWeight = deltaWeight
@@ -214,13 +212,11 @@ class WeightTrigger:
                         continue
                     n_begin = i
                     n_end = i
-                    peakTime = timestamps[gondola_idx][n_begin]
                     maxStd = weight_shelf_std[gondola_idx][shelf_idx][n_begin]
                     while (n_end+1<whole_length and var_is_active[n_end+1]):
                         n_end += 1
                         if weight_shelf_std[gondola_idx][shelf_idx][n_end] > maxStd:
                             maxStd = weight_shelf_std[gondola_idx][shelf_idx][n_end]
-                            peakTime = n_end
                     i = n_end + 1
 
                     w_begin = weight_shelf_mean[gondola_idx][shelf_idx][n_begin]
@@ -243,7 +239,6 @@ class WeightTrigger:
                         event = PickUpEvent(
                             trigger_begin, 
                             trigger_end,
-                            peakTime,
                             n_begin,
                             n_end,
                             delta_w,
@@ -254,3 +249,60 @@ class WeightTrigger:
 
                         events.append(event)
         return events
+
+    # events
+    def splitEvents(self, pickUpEvents):
+        splittedEvents = []
+        for pickUpEvent in pickUpEvents:
+            triggerBegin = pickUpEvent.triggerBegin
+            triggerEnd = pickUpEvent.triggerEnd
+            nBegin = pickUpEvent.nBegin
+            nEnd = pickUpEvent.nEnd
+            gondolaID = pickUpEvent.gondolaID
+            shelfID = pickUpEvent.shelfID
+
+            # calculate the threshold for contributing plates
+            numberOfPlates = 12
+            if gondolaID == 2 or gondolaID == 4 or gondolaID == 5:
+                numberOfPlates = 9
+          
+            # use planogram to split events into groups
+            # shelf planogram [1,2],[1,2,3],[3,4,5], [6,7,8,9] 
+            # => poetential event [1-5], [6-9]
+            groups = [] # [subEvent=[3,4,5], subEvent=[7,8]]
+            productsInLastPlate = set()
+            for i in range(numberOfPlates): # [0, 11] or [0, 8]
+                plateID = i+1
+                productsInPlateI = self.__bk.getProductIDsFromPosition(gondolaID, shelfID, plateID) # [1, 12] or [1, 9]
+                if i==0:
+                    for productID in productsInPlateI:
+                        productsInLastPlate.add(productID)
+                    groups.append([plateID])
+                else:
+                    connected = False
+                    for productID in productsInPlateI:
+                        if productID in productsInLastPlate:
+                            connected = True
+                            break
+                    if connected:
+                        for productID in productsInPlateI:
+                            productsInLastPlate.add(productID)
+                        groups[-1].append(plateID)
+                    else:
+                        groups.append([plateID])
+                        productsInLastPlate = set()
+                        for productID in productsInPlateI:
+                            productsInLastPlate.add(productID)
+            
+            # generate subEvent for each group
+            for group in groups:
+                deltaWeights = np.zeros(numberOfPlates)
+                deltaWeight = 0
+                for plateID in group:
+                    weightOnThisPlate = pickUpEvent.deltaWeights[plateID-1]
+                    deltaWeights[plateID-1] = weightOnThisPlate
+                    deltaWeight += weightOnThisPlate
+                    
+                splittedEvent = PickUpEvent(triggerBegin, triggerEnd, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights)
+                splittedEvents.append(splittedEvent)
+        return splittedEvents

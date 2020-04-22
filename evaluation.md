@@ -2,15 +2,9 @@
 ================== Evaluation Summary ==================
 Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12', 'BASELINE-13', 'BASELINE-14', 'BASELINE-20']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 78.9%
-Overall recall is: 83.3%
-Overall F1 is: 81.1%
-
-# TODO Mengmeng: fusion total score
-event 560g delta
-weight socre productA 530g 70%
-weight socre productB 610g 30%
-location productA 100%
+Overall precision is: 77.4%
+Overall recall is: 88.9%
+Overall F1 is: 82.8%
 
 # DRY RUN
 # TODO: ALL-SIMPLE-CHIP-1, 1 person, take one item and put it at another place, not purchasing anything else.

@@ -90,6 +90,7 @@ class Cashier():
             # print ('timestamps', timestamps[i][0], "to", timestamps[i][-1])
             
         events = weightTrigger.detect_weight_events(weight_shelf_mean, weight_shelf_std, weight_plate_mean, weight_plate_std, timestamps)
+        events = weightTrigger.splitEvents(events)
         events.sort(key=lambda pickUpEvent:pickUpEvent.triggerBegin)
         # Non-associated purchasing products
         active_products = []
