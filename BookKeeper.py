@@ -257,7 +257,11 @@ class BookKeeper():
             # print(targets.items())
             if (i>num_timestamps/2):
                 # print("Trigger duration ", datetime.fromtimestamp(timeBegin), datetime.fromtimestamp(timeEnd))
+                # print("Peak time ", datetime.fromtimestamp(event.peakTime))
+                # print(timeBegin, event.peakTime, timeEnd)
                 # print("Break at date time: ", targetDoc['date_time'])
+                break
+            if (targetDoc['timestamp'] > event.peakTime):
                 break
         # print("Event timestamp: ", targetDoc['timestamp'], head)
         if VERBOSE:
