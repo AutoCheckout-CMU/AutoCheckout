@@ -2,6 +2,8 @@ from cashier import Cashier
 import subprocess
 import json
 import os
+from pprint import pprint
+
 
 def output_json(db_id, user, receipts, path):
     print ('=======================')
@@ -20,6 +22,8 @@ def output_json(db_id, user, receipts, path):
             # The following product is scanned by our scanner with an extra "0":
             if purchase == '120130':
                 productID = '01201303'
+            elif purchase == '120850':
+                productID = '0120850'
             else:
                 productID = purchase
             product['barcode'] = productID
@@ -70,7 +74,7 @@ def get_score(output_paths=['outputs/output-BASELINE-1.json']):
     # ]
     pre_cmd = 'curl --location --request POST \'cps-week.internal.aifi.io/api/v1/results\' --header \'TOKEN: 5ea023be-b530-4816-8eda-5340cfabe9b0\' --header \'Content-Type: application/json\' --data-raw '
     f1_scores = []
-    f = open("competition/results.md", "a")
+    f = open("competition/results.md", "w")
     # output_str = ""
     for path in output_paths:
         with open(path, 'r') as file:
@@ -84,19 +88,19 @@ def get_score(output_paths=['outputs/output-BASELINE-1.json']):
         stream = os.popen(cmd)
         output = stream.read()
         print(output)
-        json.dump(output, f)
         output_dict = json.loads(output)
+        pprint(output_dict, f)
         f1_scores.append(output_dict['f1_score'])
 
-    print("Average F1 score over all test cases: ", cal_avg(f1_scores))
-    # Save to file
-    # f.write(output_str)
+    averageScoreStr = ("Average F1 score over all test cases: %f\n" % (cal_avg(f1_scores)))
+    print(averageScoreStr)
+    f.write(averageScoreStr)
     f.close()
 
 if __name__ == '__main__':
     if not os.path.exists('outputs'):
         os.makedirs('outputs')
     output_paths = generate_output()
+    # output_paths = ['outputs/output-BASELINE-1.json', 'outputs/output-BASELINE-2.json']
     print("Submitting: ", output_paths)
-    # output_paths = ['outputs/output-BASELINE-1.json', 'outputs/output-BASELINE-2.json', 'outputs/output-BASELINE-3.json', 'outputs/output-BASELINE-4.json', 'outputs/output-BASELINE-5.json', 'outputs/output-BASELINE-6.json', 'outputs/output-BASELINE-7.json', 'outputs/output-BASELINE-8.json', 'outputs/output-BASELINE-9.json', 'outputs/output-BASELINE-10.json', 'outputs/output-BASELINE-11.json', 'outputs/output-BASELINE-12.json', 'outputs/output-TEAM-3-DAY-1-TEST-2.json', 'outputs/output-TEAM-3-DAY-1-TEST-1.json', 'outputs/output-TEAM-3-DAY-1-TEST-3.json', 'outputs/output-TEAM-3-DAY-1-TEST-4.json', 'outputs/output-TEAM-3-DAY-1-TEST-5.json', 'outputs/output-BASELINE-13.json', 'outputs/output-BASELINE-14.json', 'outputs/output-BASELINE-15.json', 'outputs/output-BASELINE-16.json', 'outputs/output-BASELINE-17.json', 'outputs/output-BASELINE-18.json', 'outputs/output-BASELINE-19.json', 'outputs/output-BASELINE-20.json', 'outputs/output-BASELINE-21.json', 'outputs/output-BASELINE-22.json', 'outputs/output-BASELINE-23.json', 'outputs/output-BASELINE-24.json', 'outputs/output-BASELINE-25.json', 'outputs/output-BASELINE-26.json', 'outputs/output-BASELINE-28.json', 'outputs/output-BASELINE-27.json', 'outputs/output-BASELINE-28.json', 'outputs/output-BASELINE-29.json', 'outputs/output-BASELINE-30.json', 'outputs/output-TEAM-5-DAY-2-TEST-1.json', 'outputs/output-TEAM-3-DAY-2-TEST-2.json', 'outputs/output-TEAM-6-DAY-2-TEST-2.json', 'outputs/output-TEAM-6-DAY-2-TEST-1.json', 'outputs/output-TEAM-6-DAY-2-TEST-3.json', 'outputs/output-TEAM-3-DAY-2-TEST-3.json', 'outputs/output-BENCHMARK-1.json', 'outputs/output-BENCHMARK-2.json', 'outputs/output-TEAM-99-DAY-2-TEST-1.json', 'outputs/output-TEAM-3-DAY-2-TEST-1.json']
     get_score(output_paths)
