@@ -18,8 +18,8 @@ def output_json(db_id, user, receipts, path):
             product = {}
             # Workaround for db error: [JD] You are correct on BASELINE-3 and BASELINE-11:
             # The following product is scanned by our scanner with an extra "0":
-            if purchase == '1201303':
-                productID = '01201303'
+            if purchase == '120130':
+                productID = '0120130'
             else:
                 productID = purchase
             product['barcode'] = productID
@@ -97,7 +97,7 @@ if __name__ == '__main__':
     if not os.path.exists('outputs'):
         os.makedirs('outputs')
     output_paths = generate_output()
-    print("Submitting: ", output_paths)
+    # print("Submitting: ", output_paths)
     # output_paths = ['outputs/output-BASELINE-1.json', 'outputs/output-BASELINE-2.json', 'outputs/output-BASELINE-3.json', 'outputs/output-BASELINE-4.json', 'outputs/output-BASELINE-5.json', 'outputs/output-BASELINE-6.json', 'outputs/output-BASELINE-7.json', 'outputs/output-BASELINE-8.json', 'outputs/output-BASELINE-9.json', 'outputs/output-BASELINE-10.json', 'outputs/output-BASELINE-11.json', 'outputs/output-BASELINE-12.json', 'outputs/output-BASELINE-13.json', 'outputs/output-BASELINE-14.json', 'outputs/output-BASELINE-15.json', 'outputs/output-BASELINE-16.json', 'outputs/output-BASELINE-17.json', 'outputs/output-BASELINE-18.json', 'outputs/output-BASELINE-19.json', 'outputs/output-BASELINE-20.json', 'outputs/output-BASELINE-21.json', 'outputs/output-BASELINE-22.json', 'outputs/output-BASELINE-23.json', 'outputs/output-BASELINE-24.json', 'outputs/output-BASELINE-25.json', 'outputs/output-BASELINE-26.json', 'outputs/output-BASELINE-28.json', 'outputs/output-BASELINE-27.json', 'outputs/output-BASELINE-28.json', 'outputs/output-BASELINE-29.json', 'outputs/output-BASELINE-30.json', 'outputs/output-TEAM-5-DAY-2-TEST-1.json', 'outputs/output-TEAM-3-DAY-2-TEST-1.json', 'outputs/output-TEAM-3-DAY-2-TEST-2.json', 'outputs/output-TEAM-6-DAY-2-TEST-2.json', 'outputs/output-TEAM-6-DAY-2-TEST-1.json', 'outputs/output-TEAM-6-DAY-2-TEST-3.json', 'outputs/output-TEAM-3-DAY-2-TEST-3.json', 'outputs/output-BENCHMARK-1.json', 'outputs/output-BENCHMARK-2.json']
-    output_paths += ['outputs/output-TEAM-99-DAY-2-TEST-1.json']
-    get_score(output_paths)
+    # output_paths += ['outputs/output-TEAM-99-DAY-2-TEST-1.json']
+    # get_score(output_paths)
