@@ -6181,6 +6181,120 @@
             "putback": 1
           }
         ]
+      },
+      {
+        "dataset": "BASELINE-25",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "632565000654",
+                  "name": "FIJI NAT ARTSN WTR 700ML",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/37990432-1_95ff0c22-933a-4197-8bd0-573c2ae75fcc_128x.jpg?v=1565210270",
+                  "weight": 759.0
+                }
+              ],
+              "time": "00:08 + 2020-04-22_01-00-31",
+              "todo": null,
+              "target_id": "8675111650378861961"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 2,
+                "plates": [
+                  1,
+                  2
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "078907916342",
+                  "name": "El Sabroso Hot Spicy Cracklins",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/102001-1_3091e392-ec45-481c-87f3-d5fe5b4a1de3_128x.png?v=1565210266",
+                  "weight": 52.65999984741211
+                }
+              ],
+              "time": "00:10 + 2020-04-22_01-00-31",
+              "todo": null,
+              "target_id": "8675111650378861961"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  5,
+                  6
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016000502789",
+                  "name": "General Mills Gardetto Garlic Rye Chip",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/51L_2BK86nk6L_41ed7964-d891-4a47-be68-25ae1866efd1_128x.jpg?v=1565210282",
+                  "weight": 137.6699981689453
+                }
+              ],
+              "time": "00:12 + 2020-04-22_01-00-31",
+              "todo": null,
+              "target_id": "8675111650378861961"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 4,
+                "plates": [
+                  7,
+                  8
+                ],
+                "shelf": 3
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "028400090858",
+                  "name": "Lay's Classic",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Screen_Shot_2020-02-20_at_11.57.59_AM_128x.png?v=1582228933",
+                  "weight": 30.0
+                }
+              ],
+              "time": "00:08 + 2020-04-22_01-00-31",
+              "todo": null,
+              "target_id": "8675111650378861961"
+            },
+            "putback": 0
+          }
+        ]
       }
     ]
   }
