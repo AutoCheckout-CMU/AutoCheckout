@@ -16,7 +16,13 @@ def output_json(db_id, user, receipts, path):
         products = []
         for purchase in receipt.purchaseList:
             product = {}
-            product['barcode'] = purchase
+            # Workaround for db error: [JD] You are correct on BASELINE-3 and BASELINE-11:
+            # The following product is scanned by our scanner with an extra "0":
+            if purchase == '1201303':
+                productID = '01201303'
+            else:
+                productID = purchase
+            product['barcode'] = productID
             product['quantity'] = receipt.purchaseList[purchase][1]
             products.append(product)
         receipt_json['products'] = products
