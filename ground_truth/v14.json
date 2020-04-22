@@ -6140,20 +6140,157 @@
             "eventID": 1,
             "observation": {
               "position": {
-                "gondola": 1,
+                "gondola": 3,
+                "plates": [
+                  6
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571940331",
+                  "name": "ICE Coconut Pineapple",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 534.0
+                }
+              ],
+              "time": "00:22 + 2020-04-22_00-54-10",
+              "todo": null,
+              "target_id": "5297516002756738124"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  8
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "016571950293",
+                  "name": "ICE Strawberry Lemonade",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 534.0
+                }
+              ],
+              "time": "00:25 + 2020-04-22_00-54-10",
+              "todo": null,
+              "target_id": "5297516002756738124"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  1
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "120850",
+                  "name": "Mtn Dew",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 390.0
+                }
+              ],
+              "time": "00:30 + 2020-04-22_00-54-10",
+              "todo": null,
+              "target_id": "5297516002756738124"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 3,
                 "plates": [
                   12
                 ],
-                "shelf": 5
+                "shelf": 2
               },
               "products": [
-               
+                {
+                  "barcodeType": "UPC",
+                  "id": "120850",
+                  "name": "Mtn Dew",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 390.0
+                }
               ],
-              "time": " + ",
+              "time": "00:37 + 2020-04-22_00-54-10",
               "todo": null,
-              "target_id": ""
+              "target_id": "5297516002756738124"
             },
             "putback": 1
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  11
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "90162909",
+                  "name": "Red Bull",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 274.0
+                }
+              ],
+              "time": "00:38 + 2020-04-22_00-54-10",
+              "todo": null,
+              "target_id": "5297516002756738124"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 6,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  12
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "120850",
+                  "name": "Mtn Dew",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 390.0
+                }
+              ],
+              "time": "00:47 + 2020-04-22_00-54-10",
+              "todo": null,
+              "target_id": "5297516002756738124"
+            },
+            "putback": 0
           }
         ]
       },
@@ -6178,7 +6315,7 @@
               "todo": null,
               "target_id": ""
             },
-            "putback": 1
+            "putback": 0
           }
         ]
       },
