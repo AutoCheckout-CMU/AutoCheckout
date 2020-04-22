@@ -254,6 +254,11 @@ class WeightTrigger:
     def splitEvents(self, pickUpEvents):
         splittedEvents = []
         for pickUpEvent in pickUpEvents:
+
+            if pickUpEvent.deltaWeight > 0:
+                splittedEvents.append(pickUpEvent)
+                continue
+
             triggerBegin = pickUpEvent.triggerBegin
             triggerEnd = pickUpEvent.triggerEnd
             nBegin = pickUpEvent.nBegin
