@@ -64,7 +64,7 @@ def evaluate_intenvory(dbs, gt_path):
         ########## Evaluate Ground truth ##########
         gt_entry = gt_list[i]
         # Find groundtruth entry for this database
-        tmp_i = i
+        tmp_i = 0
         while (gt_entry['dataset'] != dbName):
             tmp_i += 1 
             gt_entry = gt_list[tmp_i]
@@ -133,9 +133,9 @@ def evaluate_intenvory(dbs, gt_path):
     print("Overall F1 is: {:.1f}%".format(f1))
 
 if __name__ == "__main__":
-    # dbs=['cps-test-01', 'cps-test-2'] + ['cps-test-'+str(i) for i in range(4, 13)]
-    # dbs = ['cps-test-19', 'cps-test-20','cps-test-21','cps-test-22','cps-test-23','cps-test-24'] # TODO: cps-test-23 exception
-    # dbs = ['ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
-    dbs = ['BASELINE-1','BASELINE-2','BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7','BASELINE-8','BASELINE-10','BASELINE-11', 'BASELINE-12']
+    dbs =['cps-test-01', 'cps-test-2'] + ['cps-test-'+str(i) for i in range(4, 13)]
+    dbs += ['cps-test-19', 'cps-test-20','cps-test-21','cps-test-22','cps-test-23','cps-test-24'] # TODO: cps-test-23 exception
+    dbs += ['ALL-SIMPLE-CHIP-1', 'TEAM-PEI-1', 'TEAM-PEI-JD-1', 'TEAM-8-1']
+    dbs += ['BASELINE-1','BASELINE-2','BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7','BASELINE-8','BASELINE-10','BASELINE-11', 'BASELINE-12']
     gt_path='ground_truth/v14.json' # list of ground truth W.R.T the previous databases
     evaluate_intenvory(dbs, gt_path)
