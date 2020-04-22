@@ -1,18 +1,10 @@
 # competition score + dry run
 ================== Evaluation Summary ==================
-Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12']
+Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12', 'BASELINE-14']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 82.6%
-Overall recall is: 80.9%
-Overall F1 is: 81.7%
-
-DEBUG = 1 (with putback)
-================== Evaluation Summary ==================
-Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12']
-Ground truth version:  ground_truth/v14.json
-Overall precision is: 67.0%
-Overall recall is: 71.4%
-Overall F1 is: 69.1%
+Overall precision is: 82.0%
+Overall recall is: 83.7%
+Overall F1 is: 82.8%
 
 # TODO Mengmeng: fusion total score
 event 560g delta
