@@ -1,10 +1,10 @@
 # competition score + dry run
 ================== Evaluation Summary ==================
-Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12', 'BASELINE-13', 'BASELINE-14', 'BASELINE-20']
+Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12', 'BASELINE-13', 'BASELINE-14', 'BASELINE-20', 'BASELINE-23', 'BASELINE-25']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 83.1%
-Overall recall is: 90.7%
-Overall F1 is: 86.7%
+Overall precision is: 82.6%
+Overall recall is: 91.9%
+Overall F1 is: 87.0%
 
 # DRY RUN
 # TODO: ALL-SIMPLE-CHIP-1, 1 person, take one item and put it at another place, not purchasing anything else.
