@@ -351,7 +351,12 @@ class BookKeeper():
                 testStartTime = json.load(f)
             if self.__dbname not in testStartTime:
                 return 0
-            return testStartTime[self.__dbname]
+            videoStartTime = testStartTime[self.__dbname]
+            dbStartTime = self.plateDB.find_one(sort=[("timestamp", 1)])["timestamp"]
+            if videoStartTime - dbStartTime >= 10:
+                return videoStartTime
+            else:
+                return 0
         else:
             print("!!!WARNING: Didn't find competition/TestCaseStartTime.json, results might not be accurate. Please run TimeTravel.py to get the json file")
             return 0
