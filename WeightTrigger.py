@@ -200,7 +200,7 @@ class WeightTrigger:
                              weight_plate_std,
                              timestamps, # timestamps: [gondola, timestamp]
                              num_plate=12,
-                             thresholds={'std_shelf': 22, 'mean_shelf': 10, 'mean_plate': 5, 'min_event_length': 30}):
+                             thresholds={'std_shelf': 20, 'mean_shelf': 10, 'mean_plate': 5, 'min_event_length': 30}):
         # the lightest product is: {'_id': ObjectId('5e30c1c0e3a947a97b665757'), 'product_id': {'barcode_type': 'UPC', 'id': '041420027161'}, 'metadata': {'name': 'TROLLI SBC ALL STAR MIX', 'thumbnail': 'https://cdn.shopify.com/s/files/1/0083/0704/8545/products/41420027161_cce873d6-f143-408c-864e-eb351a730114.jpg?v=1565210393', 'price': 1, 'weight': 24}}
 
         events = []

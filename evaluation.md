@@ -2,9 +2,9 @@
 ================== Evaluation Summary ==================
 Databases:  ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4', 'BASELINE-5', 'BASELINE-6', 'BASELINE-7', 'BASELINE-8', 'BASELINE-10', 'BASELINE-11', 'BASELINE-12', 'BASELINE-13', 'BASELINE-14', 'BASELINE-20', 'BASELINE-22', 'BASELINE-23', 'BASELINE-25']
 Ground truth version:  ground_truth/v14.json
-Overall precision is: 82.2%
-Overall recall is: 90.9%
-Overall F1 is: 86.3%
+Overall precision is: 88.4%
+Overall recall is: 92.4%
+Overall F1 is: 90.4%
 
 # DRY RUN
 # TODO: ALL-SIMPLE-CHIP-1, 1 person, take one item and put it at another place, not purchasing anything else.
@@ -48,7 +48,7 @@ Overall F1 is: 86.3%
 # BASELINE-19: 0.8  [Urgent]. 1 person. Pickup 3 chips A, two chips B, one chip C. Put back one 1 chip A to its "original place".
 # BASELINE-20: 1.0. 1 person. Pick up three very close but different product, then putback one.
 # BASELINE-21: 0.85. 1 person. Very quickly pick up N close items one by one, then putback one.
-# BASELINE-22: 0.28 [Urgent]. 1 person. Slowly pickup 1 item.
+# BASELINE-22: 1.0. 1 person. Slowly pickup 1 item.
 # BASELINE-23: 1.0. 1 person. Putback item and retake, should be simple.
 # BASELINE-24: 1.0. 1 person. Pick up two very close but different product.
 # BASELINE-25: 1.0. 1 person. Pick 4 items, one by one, simple.
