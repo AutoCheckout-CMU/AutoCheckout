@@ -61,7 +61,12 @@ for testCase in testCases:
             split1 = videoName.split('_')
             dateStr, fooTimeStr = split1[1], split1[2]
             timeStr = fooTimeStr.split('.')[0]
-            completeTimeStr = dateStr + '_' + timeStr + ' +0200'
+            completeTimeStr = dateStr + '_' + timeStr
+            if name in ['BASELINE-1', 'BASELINE-2', 'BASELINE-3', 'BASELINE-4']:
+                print('special! ', name)
+                completeTimeStr += ' +0200'
+            else:
+                completeTimeStr += ' +0000'
             # '2020-04-20_07-33-37'
             datetimeObj = datetime.strptime(completeTimeStr, '%Y-%m-%d_%H-%M-%S %z')
             timestamps.append(datetimeObj.timestamp())
