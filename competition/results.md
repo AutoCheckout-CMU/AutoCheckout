@@ -8,7 +8,7 @@
                'target_id': '262334541341563771'}],
  'testcase': '2c983824-fa65-4ad5-8075-dfd1dbdb1de3',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '89621c55-1f7e-400b-bc41-5eaf7ec319f3',
+ 'uuid': '8aacc087-f915-45b0-8859-f52e46af2bc1',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-2.json ===============
@@ -20,7 +20,7 @@
                'target_id': '13933261984050196906'}],
  'testcase': 'c495d2e9-99a5-44f1-841d-0de28f229b38',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '55e02818-4323-4338-bbbc-62d2c5d57a65',
+ 'uuid': '6f9302a0-ffed-419f-95bb-6a9e3c0d9153',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-3.json ===============
@@ -32,7 +32,7 @@
                'target_id': '1236364328026240777'}],
  'testcase': '43f90189-0066-4235-a4f0-e342a3deafb9',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'f33f6e77-5147-4030-bca6-eda22450e9be',
+ 'uuid': 'a2085076-988c-4df2-8736-260e8ef9ef55',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-4.json ===============
@@ -44,7 +44,7 @@
                'target_id': '1492556080934987257'}],
  'testcase': '733c0096-f791-41c4-be88-37b314968b7e',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'e05e77f5-b6f1-40dd-87e8-b914c2642641',
+ 'uuid': '50f0c37d-a47d-42f0-aa26-b1819a45ff4d',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-5.json ===============
@@ -55,7 +55,7 @@
                'target_id': '573342817558179339'}],
  'testcase': '06980868-4cf2-4296-b649-0d3040208071',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'f4fd74bc-1dae-4366-a8a8-62d2f536684e',
+ 'uuid': '77408352-11f8-4a8b-b049-6bcf105747bc',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-6.json ===============
@@ -66,7 +66,7 @@
                'target_id': '3888840034434030007'}],
  'testcase': '256e5ede-83dc-47a4-b188-e5b41edc0183',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '7700b70f-4b5e-4318-8b83-cd9453344c60',
+ 'uuid': 'ecf261d9-046f-4479-86b7-23fa0cadc9ed',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-7.json ===============
@@ -80,7 +80,7 @@
                'target_id': '7946131933500845507'}],
  'testcase': '744fa5ca-4750-4009-b7a4-710f4fb90fb0',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'd66de16c-4156-4fa6-8179-a3f0747e7f55',
+ 'uuid': 'f82fc8e3-89aa-4c48-85a9-bf0f52f09b23',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-8.json ===============
@@ -96,7 +96,7 @@
                'target_id': '15658319909819810116'}],
  'testcase': 'a6ee23b8-7ac4-4702-8203-a54ce30de6d7',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'b21e00a6-a418-41f9-9e01-498f0fc0ff75',
+ 'uuid': '0e57522e-791d-444a-93fc-26f146fd37f9',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-9.json ===============
@@ -112,7 +112,7 @@
                'target_id': '5955946653814540232'}],
  'testcase': '58ec05b5-dfed-4759-8a65-55ab69302892',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '4c8a2361-b990-468f-87ef-c0a7f97c71c3',
+ 'uuid': '1061fe79-2dca-49c4-a7e2-e53cd0282c58',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-10.json ===============
@@ -126,7 +126,7 @@
                'target_id': '9627915597770929492'}],
  'testcase': 'de3043db-8b1a-4d70-8829-bbd53f0aff1e',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '98d876e0-45bd-40d3-9ff6-c030e711724b',
+ 'uuid': '57f1e230-afa8-4944-9c1f-1afa8a01a0c3',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-11.json ===============
@@ -148,7 +148,7 @@
                'target_id': '308931970322059155'}],
  'testcase': 'e638295b-93fc-4a9a-83c5-a1979d4fdf6f',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'a27eba42-a587-4ee3-b35a-c5e48f671023',
+ 'uuid': 'afebce9a-1fb4-4b3c-960f-ea7a9e9e3dac',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-12.json ===============
@@ -163,7 +163,7 @@
                'target_id': '10159784492149311492'}],
  'testcase': 'f669f003-bf52-423c-916a-18afb67b5e43',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'c8b3aaa1-d205-4d14-8d1d-e17bc79264fc',
+ 'uuid': 'ca6dd098-c11e-448e-9522-6ac437ed305c',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-3-DAY-1-TEST-2.json ===============
@@ -172,7 +172,7 @@
  'receipts': [{'products': [], 'target_id': '6709869706495945714'}],
  'testcase': '947403e8-3f27-478f-a844-44f71e8ec4d9',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'ff880742-0611-484c-9caa-d62c93dc69d1',
+ 'uuid': 'f9334c9f-9272-4c12-a64d-8be3192b5754',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-3-DAY-1-TEST-1.json ===============
@@ -183,7 +183,7 @@
                'target_id': '5443857284823924273'}],
  'testcase': 'd71fe1d9-9637-4b91-bd7f-bce7e6649723',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'b26269f4-dc25-4ab3-beb1-7374d4d89c19',
+ 'uuid': '27286301-13fa-489f-8f53-6d46a7473924',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-3-DAY-1-TEST-3.json ===============
@@ -194,7 +194,7 @@
                'target_id': '3170847708177702955'}],
  'testcase': 'aee2510c-3f24-43fc-891e-d0a256b3310e',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '49acc79f-6bff-46ac-835c-ace19cb0e3b9',
+ 'uuid': 'a8920c20-4ffa-4b11-a006-55ea872a1fed',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-3-DAY-1-TEST-4.json ===============
@@ -205,7 +205,7 @@
                'target_id': '7349475208896584059'}],
  'testcase': '55279e8e-2f76-4fd7-ba9e-e205bd193731',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '22adfc35-0d30-48e3-936d-d7b2ef284ac9',
+ 'uuid': 'bb2168ed-0d6e-4b3d-afa0-4cffb9112506',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-3-DAY-1-TEST-5.json ===============
@@ -214,7 +214,7 @@
  'receipts': [{'products': [], 'target_id': '12200280878833000401'}],
  'testcase': '2e9ab876-4c5e-40ed-9fa3-6353846fad26',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '6cd0f1b4-cb91-4c66-b11c-284af2a01882',
+ 'uuid': '09aecb23-3a3c-4023-8ce9-45ddc9c8d1a0',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-13.json ===============
@@ -226,7 +226,7 @@
                'target_id': '4417709785322490302'}],
  'testcase': 'fbe32b50-3b5e-40ff-a020-096fd70eb604',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '4019886b-90fd-442f-9dc5-d6f2e1df8a04',
+ 'uuid': 'aa46b758-dee9-488d-89bb-239db5f79013',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-14.json ===============
@@ -237,7 +237,7 @@
                'target_id': '4018032663420655218'}],
  'testcase': 'd3e60550-d89b-47ed-8216-5850add7cabf',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '893b0f09-0f61-48ea-85fe-77be70dd8405',
+ 'uuid': 'd52a3f42-fb71-432a-8f8a-b8a1c69bf469',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-15.json ===============
@@ -249,7 +249,7 @@
                'target_id': '946884305940698620'}],
  'testcase': '21c26580-7592-41b9-8cdb-b4c9393a0af9',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '36c3e699-3762-4db9-a16a-a0dd39c490ab',
+ 'uuid': '36130de1-7c11-4dc9-936a-812280ebc42d',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-16.json ===============
@@ -261,17 +261,17 @@
                'target_id': '2158767450400819431'}],
  'testcase': 'ccec6e05-2aba-4228-817b-7083cea1a058',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '524b0652-d7d9-4755-bb44-c47e214a4aab',
+ 'uuid': '62e05304-6040-4755-bd40-196524877eec',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-17.json ===============
 {'f1_score': 0.3333333333333333,
  'name': 'BASELINE-17',
- 'receipts': [{'products': [{'barcode': '859000002145', 'quantity': 4}],
+ 'receipts': [{'products': [{'barcode': '812475012262', 'quantity': 4}],
                'target_id': '16353278540920596593'}],
  'testcase': 'e4688857-1b37-4aa3-a15b-5013a64226a5',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '92db5b55-4078-4722-8d5e-85e20ac67f7c',
+ 'uuid': '24dffba3-0a11-4c39-b926-89f3dcc029b3',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-18.json ===============
@@ -281,7 +281,7 @@
                'target_id': '13058356704050782136'}],
  'testcase': '0b5530d8-1ddb-4d1a-8765-7be0eb08d24a',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'ccdb3339-527f-4bd3-b206-4f106919d333',
+ 'uuid': '82c6e5af-b345-4feb-bfe1-824359851afe',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-19.json ===============
@@ -293,7 +293,7 @@
                'target_id': '1915322838341770658'}],
  'testcase': 'e264b9cb-72e0-49b4-ba50-2782e82714bd',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '0652fe86-cfd0-4b48-94c9-49ed9d82b954',
+ 'uuid': 'e91dd920-8e35-4a66-bcba-e8c3f3748ae2',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-20.json ===============
@@ -304,7 +304,7 @@
                'target_id': '642006569391422346'}],
  'testcase': '3369acdf-31ca-428f-af51-7d5e169aaa5c',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'f21ec679-9d31-4383-8dea-86c613143f8e',
+ 'uuid': '19a223dd-bfb4-49ea-aab3-8f506e345a76',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-21.json ===============
@@ -317,7 +317,7 @@
                'target_id': '11862702062109848410'}],
  'testcase': '4c679371-07e9-4b8e-87c4-ff89cbac5189',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '967a481f-2a26-4994-8308-629c33f469bf',
+ 'uuid': '80fee929-a220-42a4-84cd-1b8629cf68bf',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-22.json ===============
@@ -328,7 +328,7 @@
                'target_id': '8404231968713716562'}],
  'testcase': 'c3ff9732-0de7-42be-ab3b-55a8d41ce8b1',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'c242ef27-7973-4f35-aefd-4a72aeb3a439',
+ 'uuid': 'abb2ad70-5f49-46ad-b053-48f7f7c62ccd',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-23.json ===============
@@ -341,7 +341,7 @@
                'target_id': '5297516002756738124'}],
  'testcase': '72796871-4f24-4923-ab22-df4d7a009353',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '9b316ce1-626f-4c88-869a-e22c11d6fe4e',
+ 'uuid': 'dc9c99d5-8e7a-4459-a7f6-d3a890148ebb',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-24.json ===============
@@ -353,7 +353,7 @@
                'target_id': '1528141661029589575'}],
  'testcase': '8f41849c-7c99-44c6-9ed7-34a064fc73ea',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'b179d87d-4773-4682-93ea-46dc634a2169',
+ 'uuid': '8d757eeb-f199-46a3-80ea-7c425c002210',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-25.json ===============
@@ -366,7 +366,7 @@
                'target_id': '8675111650378861961'}],
  'testcase': '0f2a376b-95d2-42e2-90ad-08b87fe2db8d',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'b448d96a-7022-4263-a9d1-364b9b40b110',
+ 'uuid': '9f2689aa-7a9c-40b7-af0a-bcf6575d6b1d',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-26.json ===============
@@ -377,7 +377,7 @@
                'target_id': '7187018151052092791'}],
  'testcase': '92ad3d94-541f-44e0-aebc-d5eb7f1540ec',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '217d0b7a-5b8b-42c7-820e-6f8618db9122',
+ 'uuid': '078151da-707e-4be5-bf07-57f52fc54b96',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-27.json ===============
@@ -388,7 +388,7 @@
                'target_id': '16847447871194999919'}],
  'testcase': '17039fd6-8edd-4b83-8819-2c8f3ee4edd0',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '8c38f1ff-c735-46ea-8f11-0f0038eead1f',
+ 'uuid': '83f987e0-abd4-4d40-a4f7-daad94b39481',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-28.json ===============
@@ -398,7 +398,7 @@
                'target_id': '15532588919727479656'}],
  'testcase': '37e287b7-86a9-40fd-b73c-e765aa3182b1',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'e49f264f-6301-4d9c-b8ff-15e8346744ad',
+ 'uuid': '8c8d525e-85a7-43ae-848b-99def4880695',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-29.json ===============
@@ -410,7 +410,7 @@
                'target_id': '3312636844139292264'}],
  'testcase': 'edfbd677-7c5c-40e7-b26c-b21ea2acb1b1',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '03e69c15-ce15-47d0-ae94-2a8c0c73f9e3',
+ 'uuid': '19ea7a6a-82ab-4816-8c1b-a16b93cc88c7',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BASELINE-30.json ===============
@@ -422,7 +422,7 @@
                'target_id': '4232879026856291429'}],
  'testcase': '52afc683-bc9a-46d8-bd73-8cd57aa16580',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '55ddde15-2e2c-4844-a782-7ee8e47e3aec',
+ 'uuid': 'b802b85d-df4c-4a93-995d-dbfc264e8010',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-5-DAY-2-TEST-1.json ===============
@@ -436,7 +436,7 @@
                'target_id': '12691084683513433826'}],
  'testcase': '5ecfce66-8c44-4492-92bf-c2fa4c64aac7',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'c549f84e-d943-4be6-87c8-9ce3bf502a2e',
+ 'uuid': '84343e24-0b84-4615-80bb-aa2d7ed344fc',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-3-DAY-2-TEST-2.json ===============
@@ -446,7 +446,7 @@
                'target_id': '12819928669911829225'}],
  'testcase': 'fd195f8e-00c8-4e35-9b42-6ea63ba913dd',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '8fe85b40-6bbc-4b35-ae47-14707463584e',
+ 'uuid': '67e57dc6-e9f0-4664-86d3-ad322a7dd79c',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-6-DAY-2-TEST-2.json ===============
@@ -455,7 +455,7 @@
  'receipts': [],
  'testcase': 'f9cd9f1c-14d2-4cb5-9773-9f5bac06010b',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '25aa7721-7ba0-4840-9b11-b30531c2750d',
+ 'uuid': '3beadbcc-424f-4f76-98f5-3975541ba4ae',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-6-DAY-2-TEST-1.json ===============
@@ -464,7 +464,7 @@
  'receipts': [],
  'testcase': 'db930904-f2e6-496f-a152-f01d5ae016c4',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '90ea036e-1059-46f2-86b2-5384f8e8341e',
+ 'uuid': 'abd7cb51-28ab-4cd7-89fb-edebaf4ff60a',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-6-DAY-2-TEST-3.json ===============
@@ -475,7 +475,7 @@
                'target_id': '9155920447302000803'}],
  'testcase': 'd8933337-23bc-4a1c-8436-bc4de9961e80',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'b04f1376-ed77-42ad-bbdc-e709f40d0109',
+ 'uuid': '51610aae-a0d3-4465-aac1-0db982efdcd3',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-3-DAY-2-TEST-3.json ===============
@@ -485,7 +485,7 @@
                'target_id': '17572971891111381846'}],
  'testcase': '21c40ac3-0538-495a-8955-cc985b827406',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'bfc761fe-7383-41c2-8286-7476f2d6a3ce',
+ 'uuid': '83af10c0-b366-43c4-8a81-4a5dcca09813',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BENCHMARK-1.json ===============
@@ -495,7 +495,7 @@
                'target_id': '3325379692103139202'}],
  'testcase': 'e36974f6-d580-4703-9c25-190771bceb4d',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': '9bfbc12e-dd97-4f0c-96f4-6600dd41fd9d',
+ 'uuid': '64237197-166a-4438-8c64-7f95dd2d786a',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-BENCHMARK-2.json ===============
@@ -506,17 +506,19 @@
                'target_id': '7009787765597311425'}],
  'testcase': '30c292b1-fdf6-49a0-a641-b3de5465ec1b',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'ad4463ad-ff74-47ac-978b-68ea78becb3b',
+ 'uuid': 'a0b896ee-918a-484f-a1a4-c6e1fc47a002',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-99-DAY-2-TEST-1.json ===============
-{'f1_score': 0.6206896551724138,
+{'f1_score': 0.975609756097561,
  'name': 'TEAM-99-DAY-2-TEST-1',
- 'receipts': [{'products': [{'barcode': '818780014229', 'quantity': 9}],
+ 'receipts': [{'products': [{'barcode': '818780014229', 'quantity': 9},
+                            {'barcode': '818780014243', 'quantity': 6},
+                            {'barcode': '850251004087', 'quantity': 6}],
                'target_id': '14322669897997084492'}],
  'testcase': 'ffece222-815b-4fd5-9a22-7fc7527e5d78',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'fe80639d-52ed-4a69-86dc-d16d3f94fa3c',
+ 'uuid': 'c178f9c6-2fc3-4a28-bcd5-8d2201ae84e3',
  'version': 1}
 
 =============== Receive feedbacks for outputs/output-TEAM-3-DAY-2-TEST-1.json ===============
@@ -525,6 +527,6 @@
  'receipts': [{'products': [], 'target_id': '18202171883971610849'}],
  'testcase': '4b3fedc2-7912-4ddd-89e5-ac264cf0a7d3',
  'user': '5ea023be-b530-4816-8eda-5340cfabe9b0',
- 'uuid': 'c7499bb7-0592-4f99-9d42-e84c4707526d',
+ 'uuid': '2cfeef42-66aa-4cfd-a326-a6a804222c5f',
  'version': 1}
-Average F1 score over all test cases: 0.835910
+Average F1 score over all test cases: 0.843797

@@ -16,7 +16,7 @@ from config import *
 
 # 0.75 might be better but its results jitter betweeen either 82.4 or 83.2???
 PUTBACK_JITTER_RATE = 0.75
-GRAB_FROM_SHELF_JITTER_RATE = 0.33
+GRAB_FROM_SHELF_JITTER_RATE = 0.4
 
 class CustomerReceipt():
     """

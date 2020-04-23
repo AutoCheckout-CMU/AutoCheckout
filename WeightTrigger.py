@@ -58,7 +58,7 @@ class PickUpEvent():
         return str(self)
 
     def __str__(self):
-        res = "[{},{}] deltaWeight: {}, peakTime: {}, gondola {}, shelf {}\n deltaWeights: [".format(
+        res = "[{},{}] deltaWeight: {}, peakTime: {}, gondola {}, shelf {}, deltaWeights: [".format(
             datetime.fromtimestamp(self.triggerBegin), datetime.fromtimestamp(self.triggerEnd),
             self.deltaWeight,
             datetime.fromtimestamp(self.peakTime),
@@ -264,7 +264,8 @@ class WeightTrigger:
     def splitEvents(self, pickUpEvents):
         splittedEvents = []
         for pickUpEvent in pickUpEvents:
-
+            # print ('----------------------')
+            # print ('event', pickUpEvent)
             if pickUpEvent.deltaWeight > 0:
                 splittedEvents.append(pickUpEvent)
                 continue
@@ -286,11 +287,19 @@ class WeightTrigger:
             absDeltaWeights = []
             for i in range(numberOfPlates):
                 absDeltaWeights.append(abs(pickUpEvent.deltaWeights[i]))
-            plateActiveThreashold = sum(absDeltaWeights)/numberOfPlates
 
-            
+            productIDsOnThisShelf = self.__bk.getProductIDsFromPosition(gondolaID, shelfID)
+            minWeightOnThisShelf = float('inf')
+            for productID in productIDsOnThisShelf:
+                productExtended = self.__bk.getProductByID(productID)
+                if productExtended.weight < minWeightOnThisShelf:
+                    minWeightOnThisShelf = productExtended.weight
+
+            plateActiveThreshold = minWeightOnThisShelf / 3.0
+            # print (minWeightOnThisShelf)
+            # print (plateActiveThreshold)
             for i in range(numberOfPlates):
-                if absDeltaWeights[i] >= plateActiveThreashold:
+                if absDeltaWeights[i] >= plateActiveThreshold:
                     potentialActivePlateIDs.append(i+1)
             
             # use planogram to split events into groups
@@ -333,4 +342,5 @@ class WeightTrigger:
                     
                 splittedEvent = PickUpEvent(triggerBegin, triggerEnd, peakTime, nBegin, nEnd, deltaWeight, gondolaID, shelfID, deltaWeights)
                 splittedEvents.append(splittedEvent)
+                # print ('splitted event:', splittedEvent)
         return splittedEvents
