@@ -14,6 +14,11 @@ This project shares our solution for AiFi's CPS-IoT Autocheckout [Competition](h
 
 - The complete public datasets available at http://aifi.io/research under Sample Data.
 
+- To import the data into mongodb: 
+```
+mongorestore --archive="cps-test-01-nodepth.archive"
+```
+
 ## Installation
 ```
 pip3 install -r requirements.txt
