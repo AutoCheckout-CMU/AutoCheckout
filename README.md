@@ -1,9 +1,21 @@
 # MPS: Multi-Person Shopping for Cashier-Less Store
-This project shares our solution for AiFi's CPS-IoT Autocheckout [Competition](https://www.aifi.io/research). We're the winner: Team 3!
+This project shares our solution for AiFi's CPS-IoT Autocheckout [Competition](https://www.aifi.io/research). `We're the winner: Team 3!`
 - Authors: [Yixin Bao](https://www.linkedin.com/in/yixinbao/), [Xinyue Cao](https://www.linkedin.com/in/xinyuecao/), [Chenghui Li](https://www.linkedin.com/in/leochli/), [Mengmeng Zhang](https://www.linkedin.com/in/zhangmengmeng/)
 - Affiliation: Carnegie Mellon University, U.S.
 
 ![team3](competition/team3.gif)
+
+
+## Installation
+- Install and start [mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) in order to store the test case data
+```
+sudo systemctl start mongod
+```
+- Install dependencies
+```
+pip3 install -r requirements.txt
+```
+
 ## Sample Data
 
 - Download Videos [Here](https://storage.googleapis.com/aifi-public-data/AiFi%20Nanostore%20AutoCheckout%20Competition%20-%20CPS-IoT%20Week%202020/cps-test-01/cps-test-videos.gz) (17.1MB)
@@ -17,11 +29,6 @@ This project shares our solution for AiFi's CPS-IoT Autocheckout [Competition](h
 - To import the data into mongodb: 
 ```
 mongorestore --archive="cps-test-01-nodepth.archive"
-```
-
-## Installation
-```
-pip3 install -r requirements.txt
 ```
 
 ## Get started
