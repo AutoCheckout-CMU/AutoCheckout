@@ -6039,6 +6039,168 @@
         ]
       },
       {
+        "dataset": "BASELINE-16",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  2
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "496580",
+                  "name": "Diet Coke Can 12 FL OZ",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Screen_Shot_2020-03-04_at_11.39.25_AM.png?v=1583350870",
+                  "weight": 371.5
+                }
+              ],
+              "time": "00:08 + 2020-04-22_00-27-21",
+              "todo": null,
+              "target_id": "2158767450400819431"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 2,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  11
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "496580",
+                  "name": "Diet Coke Can 12 FL OZ",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Screen_Shot_2020-03-04_at_11.39.25_AM.png?v=1583350870",
+                  "weight": 371.5
+                }
+              ],
+              "time": "00:12 + 2020-04-22_00-27-21",
+              "todo": null,
+              "target_id": "2158767450400819431"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 3,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  3
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "898999010007",
+                  "name": "Vita Coco original 500ml",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 538.0
+                }
+              ],
+              "time": "00:15 + 2020-04-22_00-27-21",
+              "todo": null,
+              "target_id": "2158767450400819431"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 4,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  11
+                ],
+                "shelf": 5
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "496580",
+                  "name": "Diet Coke Can 12 FL OZ",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Screen_Shot_2020-03-04_at_11.39.25_AM.png?v=1583350870",
+                  "weight": 371.5
+                }
+              ],
+              "time": "00:21 + 2020-04-22_00-27-21",
+              "todo": null,
+              "target_id": "2158767450400819431"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 5,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "496580",
+                  "name": "Diet Coke Can 12 FL OZ",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/Screen_Shot_2020-03-04_at_11.39.25_AM.png?v=1583350870",
+                  "weight": 371.5
+                }
+              ],
+              "time": "00:25 + 2020-04-22_00-27-21",
+              "todo": null,
+              "target_id": "2158767450400819431"
+            },
+            "putback": 1
+          },
+          {
+            "eventID": 6,
+            "observation": {
+              "position": {
+                "gondola": 3,
+                "plates": [
+                  6
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "120130",
+                  "name": "Pepsi",
+                  "price": 1,
+                  "thumbnail": "",
+                  "weight": 381.0
+                }
+              ],
+              "time": "00:30 + 2020-04-22_00-27-21",
+              "todo": null,
+              "target_id": "2158767450400819431"
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
         "dataset": "BASELINE-19",
         "range" : null,
         "events": [
