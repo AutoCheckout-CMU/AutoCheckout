@@ -25,6 +25,15 @@ pip3 install -r requirements.txt
 ```
 
 ## Get started
+To test one single testcase:
+```python
+python3 test.py
+```
+To get more detaild log, change in `config.py`:
+```bash
+VERBOSE = 1
+```
+To test it against the competition API:
 ```
 python3 submit.py
 ```
