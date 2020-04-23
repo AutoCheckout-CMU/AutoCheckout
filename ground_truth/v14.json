@@ -6133,6 +6133,82 @@
         ]
       },
       {
+        "dataset": "BASELINE-22",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  10,
+                  11,
+                  12
+                ],
+                "shelf": 2
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "041364002323",
+                  "name": "Original Red Jumbo",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/00041364002323-6c472iy4sCmiIg-0_s500_128x.jpg?v=1566251666",
+                  "weight": 245.0
+                },
+                {
+                  "barcodeType": "UPC",
+                  "id": "041364002323",
+                  "name": "Original Red Jumbo",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/00041364002323-6c472iy4sCmiIg-0_s500_128x.jpg?v=1566251666",
+                  "weight": 245.0
+                },
+                {
+                  "barcodeType": "UPC",
+                  "id": "041364002323",
+                  "name": "Original Red Jumbo",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/00041364002323-6c472iy4sCmiIg-0_s500_128x.jpg?v=1566251666",
+                  "weight": 245.0
+                }
+              ],
+              "time": "00:15 + 2020-04-22_00-51-29",
+              "todo": null,
+              "target_id": "8404231968713716562"
+            },
+            "putback": 0
+          },
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  4
+                ],
+                "shelf": 4
+              },
+              "products": [
+                {
+                  "barcodeType": "UPC",
+                  "id": "613008743734",
+                  "name": "AZ GREEN TEA",
+                  "price": 1,
+                  "thumbnail": "https://cdn.shopify.com/s/files/1/0083/0704/8545/products/img-313132011_2_640x640_116c5ab0-845f-47ce-9b04-41b814c45be0_128x.jpg?v=1566252111",
+                  "weight": 557.3300170898438
+                }
+              ],
+              "time": "00:26 + 2020-04-22_00-51-29",
+              "todo": null,
+              "target_id": "8404231968713716562"
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
         "dataset": "BASELINE-23",
         "range" : null,
         "events": [
