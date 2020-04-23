@@ -1,6 +1,6 @@
 # MPS: Multi-Person Shopping for Cashier-Less Store
 This project shares our solution for AiFi's CPS-IoT Autocheckout [Competition](https://www.aifi.io/research). We're Team 3:
-- Authors: Yixin Bao, Xinyue Cao, Chenghui Li, [Mengmeng Zhang](https://www.linkedin.com/in/zhangmengmeng/)
+- Authors: [Yixin Bao](https://www.linkedin.com/in/yixinbao/), [Xinyue Cao](https://www.linkedin.com/in/xinyuecao/), [Chenghui Li](https://www.linkedin.com/in/leochli/), [Mengmeng Zhang](https://www.linkedin.com/in/zhangmengmeng/)
 - Affiliation: Carnegie Mellon University, U.S.
 
 ## Sample Data
@@ -17,10 +17,10 @@ This project shares our solution for AiFi's CPS-IoT Autocheckout [Competition](h
 ```
 pip3 install -r requirements.txt
 ```
+
 ## Get started
 ```
-# python3
-Cashier().process(dbName="cps-test-01")
+python3 submit.py
 ```
 
 ## Ground truth
