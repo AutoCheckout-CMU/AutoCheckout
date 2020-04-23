@@ -6039,6 +6039,31 @@
         ]
       },
       {
+        "dataset": "BASELINE-19",
+        "range" : null,
+        "events": [
+          {
+            "eventID": 1,
+            "observation": {
+              "position": {
+                "gondola": 1,
+                "plates": [
+                  12
+                ],
+                "shelf": 5
+              },
+              "products": [
+               
+              ],
+              "time": " + ",
+              "todo": null,
+              "target_id": ""
+            },
+            "putback": 0
+          }
+        ]
+      },
+      {
         "dataset": "BASELINE-20",
         "range" : null,
         "events": [
