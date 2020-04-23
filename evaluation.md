@@ -32,7 +32,7 @@ Overall F1 is: 86.3%
 # BASELINE-3: 1.0. 1 person. Pick 1 item at gondola 3, puback; pick 1 item at gondola 2, pick 1 item at gondola 1, pick 1 item at gondola 3.
 # BASELINE-4: 1.0. 1 person. Pick 1 item at gondola 3, pick 3 items at gondola 2 sequentially, putback 1 item to the correct place.
 # BASELINE-5 0.67. [Vision]: 1 person. Pick 1 green water at gondola 3, puback to wrong place, where there're red water with same weights; from this place, pickup 1 red water, and the misplaced green water. Pickup 1 item from gondola 1.
-# BASELINE-6 1.0. : 1 person. Pick 1 big water at gondola 1, put back to wrong place where there're many small water. Pick 2 small water. Pickup 1 item at gondola 3, put back to wrong place at gondola 2, then repick this misplaced item.
+# BASELINE-6 1.0. : 1 person. Pick 1 big water at gondola 1, put back to wrong place where there're many small water. Pick 2 small water. 
 # BASELINE-7 1.0.: 2 people. Each pick some items. May have crossing hands issue.
 # BASELINE-8 0.83. [Todo]: 2 people. Each pick some items. Stay very close, may have crossing hands issue.
 # BASELINE-9 0.5. [Difficult, Vision]: 2 people. Each pick some items. Stay very close, exchange items between them.
