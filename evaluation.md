@@ -54,11 +54,11 @@ Overall F1 is: 90.0%
 # BASELINE-25: 1.0. 1 person. Pick 4 items, one by one, simple.
 # BASELINE-26: 1.0. 1 person. Pickup 2 same products adjacent plates.
 # BASELINE-27: 1.0. 1 person. Pickup and put back.
-# BASELINE-28: 0.12 [Urgent] 1 person. Hold 2 items on shelf for a long time, then only pick up 1.
+# BASELINE-28: 0.28 [Urgent] 1 person. Hold 2 items on shelf for a long time, then only pick up 1.
 # BASELINE-29: 1.0. 1 person. Pick up adjacent items quickly.
 # BASELINE-30: 0.80. 1 person. Pick 3 items, leave 1 at floor.
 
-# TEAM-3-DAY-1-TEST-1 0.75： suggest not included.
+# TEAM-3-DAY-1-TEST-1 1.0： suggest not included.
 # TEAM-3-DAY-1-TEST-2 1.0:
 # TEAM-3-DAY-1-TEST-3 1.0:
 # TEAM-3-DAY-1-TEST-4 1.0:
@@ -71,4 +71,9 @@ Overall F1 is: 90.0%
 # BENCHMARK-1: 1.0.
 # BENCHMARK-2: 1.0.
 
-# TEAM-99-DAY-2-TEST-1: 0.62 [Todo]
+# TEAM-99-DAY-2-TEST-1: 0.975
+
+# TEAM-5-DAY-2-TEST-1
+# TEAM-6-DAY-2-TEST-1
+# TEAM-6-DAY-2-TEST-2
+# TEAM-6-DAY-2-TEST-3

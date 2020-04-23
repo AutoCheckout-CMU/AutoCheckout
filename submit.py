@@ -46,8 +46,6 @@ def generate_output():
     for test_db in test_cases:
         print(test_db['name'])
         dbName = test_db['name']
-        if ('DAY-1' in dbName and 'TEAM-3' not in dbName):
-            continue
         dbId = test_db['uuid']
         receipts = myCashier.process(dbName)
         # Generate output file
