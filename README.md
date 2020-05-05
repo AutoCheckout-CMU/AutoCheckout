@@ -59,5 +59,26 @@ python3 submit.py
 ## Ground truth
 For most of testcases in public dataset and the competition datast, we have manually labeled the [ground truth](https://github.com/AutoCheckout-CMU/AutoCheckout/tree/master/ground_truth). 
 
+To get a F1-score out of the ground truth, modify the main function in `evaluation.py` to include your target database, then:
+
+```
+python3 evaluation.py
+```
+## Documentation & Benchmark Results
+If you're interested in our methodologies and benchmark results, please refer to our
+[Report](https://github.com/AutoCheckout-CMU/AutoCheckout/tree/master/doc/Multi_Person_Shopping.pdf).
+
 ## Our team
 ![team3](competition/team3.gif)
+
+## Citing MPS
+If you use MPS in your research or wish to refer to the baseline results published in [Report](https://github.com/AutoCheckout-CMU/AutoCheckout/tree/master/doc/Multi_Person_Shopping.pdf), please use the following BibTeX entry.
+
+```BibTeX
+@unpublished{MPS2020,
+  author = {Yixin Bao, Xinyue Cao, Chenghui Li, Mengmeng Zhang},
+  title = {Multi-Person Shopping (MPS) for Cashier-Less Store},
+  school = {Carnegie Mellon University},
+  year = {2020},
+  note = {Unpublished: https://github.com/AutoCheckout-CMU/AutoCheckout}
+}
